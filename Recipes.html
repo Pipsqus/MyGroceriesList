@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-      <style media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
       html {
         scroll-behavior: smooth;
       }
@@ -11,128 +13,204 @@
         color : Green;
       }
       body {
-      margin: 0vw 0vw 0vw 2vw;
-      background-color:rgb(235,230,255 );
+      margin: 0vw 0vw 0vw 2vw;>
+      background-color: rgb(235,230,255 );
       font-family: "Tahoma";
-      font-size: 20px;
+      font-size: 23px;
       line-height: 1.4;
       }
-      a:link {
+      ul.a:link, ul.a:visited {
       text-decoration: none;
-      }
-      a:visited {
-      color: blue
-      }
-      a:hover {
-        padding: 0px 5px 0px 5px;
+      color: blue;
+      font-size: 30px;
       }
       input {
         transform: scale(1.8);
       }
       #list_groceries {
-        line-height: 1.0
-      }
-      button {
-        transform: scale(1.8)
+        line-height: 0
       }
       li {
         margin-top: 13px;
         margin-bottom: 13px;
+        font-size: 30px;
       }
-      div.Groups {
+      .Groups {
         margin: 10px;
         font-family: monospace;
       }
-      </style>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Recipes</title>
-    </head>
+      .Buttons {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+        float: right;
+        margin-right: 4vw;
+        margin-bottom: 2vw;
+      }
+      button {
+        transform: scale(1.4)
+      }
+      .Dropdown {
+        position: sticky;
+        top: 0;
+        float: right;
+        margin-right: 15vw;
+        display: inline-block;
+      }
+      .DropdownButton{
+        border-radius: 30px;
+        margin: 20px;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        background-color: inherit;
+      }
+      .DropdownButton:hover {
+        background-color: rgb(200,200,200);
+      }
+      .DropdownContent {
+        border-radius: 30px;
+        text-align: center;
+        display: none;
+        position: absolute;
+        right: -30px;
+        z-index: 1;
+        background-color: rgb(200,200,200);
+        box-shadow: 0px 6px 10px 10px rgb(100,100,100,0.2);
+        padding: 5px;
+      }
+      .show {
+        display:block;
+      }
+      .Baloba {
+        padding: 0px;
+      }
+    </style>
+    <title>Recipes</title>
+  </head>
+
+<!--
+TO-DO LIST
+- order by Häufigkeit
+DONE - clean up the style
+DONE - modify the li tag
+DONE - add the ingredients to the var ingredienti
+- put links to recipes
+- fix the onclick effect
+- add the functions
+- add the text input box
+- add a context menu to navigate the list (pasta, panetteria...)
+- publish the website and access it from phone
+- test it for the first time!
+- something new, testing git
+-->
+
 
 <!-- Add here the food we might eat  -->
     <body>
+      <div class="Dropdown">
+        <button class="DropdownButton" onclick="Dropdown()"> &#10048; </button>
+        <div id="DropdownMenu" class="DropdownContent">
+          <a onclick=GoToPasta()> Pasta </a>
+          <a onclick=GoToRisotto()> Risotto </a>
+          <a onclick=GoToMinestre()> Minestre </a>
+          <a onclick=GoToPanetteria()> Panetteria </a>
+          <a onclick=GoToFrittura()> Frittura </a>
+          <a onclick=GoToCarne()> Carne </a>
+          <a onclick=GoToSecondi()> Secondi </a>
+          <a onclick=GoToDolci()> Dolci </a>
+          <a onclick=GoToUtilita()> Utilità </a> <br><br>
+
+          <button type="button" name="generate_list" style="position:sticky; margin-bottom: 2vw;" onclick="generate_list()"> &#9818;</button> <br><br>
+
+          <button type="button" name="clear_list" style="position:sticky; margin: 0px;" onclick="clear_list()"> &#128099;</button>
+
+        </div>
+        </div>
+      </div>
 <h1>Booty Sustenance</h1>
 <ul>
-  <li>Pasta (Tagliatelle, Pici, Corzetti, Garganelli, Mandilli, Gnocchi, Orecchiette, Spätzle, Strozzapreti, Trofie, Lasagne, Scarpinocc, Pi Fasacc, Raschiatelli, Sagne Torte)</li>
+  <li id="liPasta">Pasta</li>
     <ul>
+
+              <div class="Groups" style="margin: 0vw 15vw 0vw 15vw"> <strong>Tagliatelle, Pici, Corzetti, Garganelli, Mandilli, Gnocchi, Orecchiette, Spätzle, Strozzapreti, Trofie, Lasagne, Raschiatelli, Sagne Torte</strong> </div>
       <input type="checkbox" id="PaneCipolle" onclick="PaneCipolle()">  <label for="PaneCipolle">Pane e cipolle</label>
       <br>
-      <input type="checkbox" id="CremaAsparagi" onclick="CremaAsparagi()">  <label for="CremaAsparagi">Crema di asparagi</label>
-      <br>
-      <input type="checkbox" id="Ripieno di tartufo" onclick="Ripienoditartufo()">  <label for="Ripieno di tartufo"> <a href="https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/"> Ripieno di tartufo</a> </label>  <br>
+      <input type="checkbox" id="CremaAsparagi" onclick="CremaAsparagi()"> <label for="CremaAsparagi"> Crema di asparagi </label> <a href="https://www.fattoincasadabenedetta.it/ricetta/farfalle-alla-crema-di-asparagi/">&#10170;</a> <br>
+      <input type="checkbox" id="RipienoTartufo" onclick="RipienoTartufo()">  <label for="RipienoTartufo"> Ripieno di tartufo </label> <a href="https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/">&#10170;</a>  <br>
       <input type="checkbox" id="Aglione" onclick="Aglione()">  <label for="Aglione">Aglione</label> <br>
       <input type="checkbox" id="AglioOlio" onclick="AglioOlio()">  <label for="AglioOlio">Aglio e olio</label> <br>
       <input type="checkbox" id="Soffritto" onclick="Soffritto()">  <label for="Soffritto">Soffritto</label> <br>
-      <input type="checkbox" id="GorgonzolaRadicchio" onclick="GorgonzolaRadiccio()">  <label for="GorgonzolaRadicchio">Gorgonzola e radicchio</label> <br>
-      <input type="checkbox" id="SfogliaLorda" onclick="SfogliaLorda()">  <label for="SfogliaLorda">Sfoglia Lorda</label>
-      <br>
+      <input type="checkbox" id="GorgonzolaRadicchio" onclick="GorgonzolaRadiccio()">  <label for="GorgonzolaRadicchio">Gorgonzola e radicchio </label> <a href="https://www.lospicchiodaglio.it/ricetta/gnocchi-gorgonzola-noci-radicchio?refresh_ce"> &#10170; </a>  <br>
+      <input type="checkbox" id="SfogliaLorda" onclick="SfogliaLorda()">  <label for="SfogliaLorda"> Sfoglia Lorda </label> <a href="https://www.youtube.com/watch?v=2gTrsfaFR24"> &#10170; </a> <br>
       <input type="checkbox" id="Cannelloni" onclick="Cannelloni()">  <label for="Cannelloni">Cannelloni besciamella, funghi, spinaci</label> <br>
-      <input type="checkbox" id="Lasagnarolls"  onclick="Lasagnarolls()">  <label for="Lasagnarolls"><a href="https://ricette.giallozafferano.it/Lasagna-roll.html">Lasagna rolls</a></label> <br>
+      <input type="checkbox" id="LasagnaRolls"  onclick="LasagnaRolls()">  <label for="LasagnaRolls">Lasagna rolls </label> <a href="https://ricette.giallozafferano.it/Lasagna-roll.html"> &#10170; </a> <br>
 
 
-              <div class="Groups">  &nbsp; <strong>Ravioli</strong> </div>
-      <input type="checkbox" id="RicottaSpinaci" onclick="RicottaSpinaci()">  <label for="RicottaSpinaci">Ricotta, spinaci</label> <br>
+              <div class="Groups">  &nbsp; <strong>Ravioli, Scarpinocc, Pi Fasacc</strong> </div>
+      <input type="checkbox" id="RavioliRicottaSpinaci" onclick="RavioliRicottaSpinaci()">  <label for="RavioliRicottaSpinaci">Ricotta, spinaci</label> <br>
       <input type="checkbox" id="PereRicottaZafferanoBurro" onclick="PereRicottaZafferanoBurro()">  <label for="PereRicottaZafferanoBurro">Pere, ricotta, zafferano, burro</label> <br>
+      <input type="checkbox" id="Gyoza" onclick="Gyoza()">  <label for="Gyoza">Gyoza</label> <a href="https://www.recipetineats.com/gyoza-japanese-dumplings-potstickers/">  &#10170;</a> <br>
 
 
               <div class="Groups">  &nbsp; <strong>Tortellini, Cappellacci</strong> </div>
-      <input type="checkbox" id="AllaZucca" onclick="AllaZucca()">  <label for="AllaZucca">Alla zucca</label> <br>
-      <input type="checkbox" id="VerdeDiCarne" onclick="VerdeDiCarne()">  <label for="VerdeDiCarne" >Verde di carne</label> <br>
+      <input type="checkbox" id="CappellacciAllaZucca" onclick="CappellacciAllaZucca()">  <label for="CappellacciAllaZucca"> Alla zucca </label> <a href="https://www.lospicchiodaglio.it/ricetta/cappellacci-di-zucca"> &#10170; </a> <br>
+      <input type="checkbox" id="VerdeDiCarne" onclick="VerdeDiCarne()">  <label for="VerdeDiCarne">  Verde di carne </label> <a href="https://ricette.giallozafferano.it/Tortellini.html"> &#10170; </a> <br>
       <input type="checkbox" id="TortelliPere" onclick="TortelliPere()">  <label for="TortelliPere">Tortelli con pere e formaggi</label> <br>
 
 
 
               <div class="Groups">  &nbsp; <strong>Pesti, Salse</strong> </div>
-      <input type="checkbox" id="ZucchineNoci" onclick="ZucchineNoci()">  <label for="ZucchineNoci">Di zucchine e noci</label> <br>
-      <input type="checkbox" id="DiRucola" onclick="DiRucola()">  <label for="DiRucola">Di rucola, mandorle, pinoli, noci, pomodorini</label> <br>
-      <input type="checkbox" id="DiSedano" onclick="DiSedano()">  <label for="DiSedano">Di sedano</label> <br>
-      <input type="checkbox" id="Genovese" onclick="Genovese()">  <label for="Genovese">Genovese</label> <br>
-      <input type="checkbox" id="Trapanese" onclick="Trapanese()">  <label for="Trapanese"> <a href="https://www.cookist.it/pesto-alla-trapanese-ricetta/">Trapanese</a></label> <br>
-      <input type="checkbox" id="Allenoci" onclick="Allenoci()">  <label for="Allenoci">Alle noci</label> <br>
+      <input type="checkbox" id="PestoZucchineNoci" onclick="PestoZucchineNoci()">  <label for="PestoZucchineNoci">Di zucchine e noci</label> <br>
+      <input type="checkbox" id="PestoDiRucola" onclick="PestoDiRucola()">  <label for="PestoDiRucola">Di rucola, mandorle, pinoli, noci, pomodorini</label> <br>
+      <input type="checkbox" id="PestoDiSedano" onclick="PestoDiSedano()">  <label for="PestoDiSedano">Di sedano</label> <br>
+      <input type="checkbox" id="PestoGenovese" onclick="PestoGenovese()">  <label for="PestoGenovese">Genovese</label> <br>
+      <input type="checkbox" id="PestoTrapanese" onclick="PestoTrapanese()">  <label for="PestoTrapanese"> Trapanese </label> <a href="https://www.cookist.it/pesto-alla-trapanese-ricetta/"> &#10170; </a> <br>
+      <input type="checkbox" id="PestoAlleNoci" onclick="PestoAlleNoci()">  <label for="PestoAlleNoci">Alle noci</label> <br>
 
     </ul>
 
-  <li>Risotto/Riso</li>
+  <li id="liRisotto">Risotto/Riso</li>
     <ul>
-      <input type="checkbox" id="Alla zucca" onclick="Allazucca()">  <label for="Alla zucca">Alla zucca</label> <br>
-      <input type="checkbox" id="Porro e gorgonzola" onclick="Porroegorgonzola()">  <label for="Porro e gorgonzola">Porro e gorgonzola</label> <br>
-      <input type="checkbox" id="Fritto" onclick="Fritto()">  <label for="Fritto">Fritto</label> <br>
+      <input type="checkbox" id="RisottoAllaZucca" onclick="RisottoAllaZucca()">  <label for="RisottoAllaZucca">Alla zucca</label> <br>
+      <input type="checkbox" id="RisottoPorroGorgonzola" onclick="RisottoPorroGorgonzola()">  <label for="RisottoPorroGorgonzola">Porro e gorgonzola</label> <br>
+      <input type="checkbox" id="RisottoZucchine" onclick="RisottoZucchine()">  <label for="RisottoZucchine">Di Zucchine</label> <br>
+      <input type="checkbox" id="RisoFritto" onclick="RisoFritto()">  <label for="RisoFritto">Fritto</label> <br>
     </ul>
 
-  <li>Minestre</li>
+  <li id="liMinestre">Minestre</li>
     <ul>
         <input type="checkbox" id="Vichyssoise" onclick="Vichyssoise()">  <label for="Vichyssoise">Vichyssoise</label> <br>
         <input type="checkbox" id="Stracciatella" onclick="Stracciatella()">  <label for="Stracciatella">Stracciatella</label> <br>
     </ul>
 
-  <li>Panetteria</li>
+  <li id="liPanetteria">Panetteria</li>
     <ul>
       <input type="checkbox" id="FrenchToast" onclick="FrenchToast()">  <label for="FrenchToast">French Toast</label> <br>
       <input type="checkbox" id="Strangolapreti" onclick="Strangolapreti()">  <label for="Strangolapreti">Strangolapreti</label> <br>
       <input type="checkbox" id="Canederli" onclick="Canederli()">  <label for="Canederli">Canederli</label> <br>
       <input type="checkbox" id="PolentaFunghiGorgonzola" onclick="PolentaFunghiGorgonzola()">  <label for="PolentaFunghiGorgonzola">Polenta funghi e gorgonzola</label> <br>
-      <input type="checkbox" id="PanettoneGastronomico" onclick="PanettoneGastronomico()">  <label for="PanettoneGastronomico"><a href="https://ricette.giallozafferano.it/Panettone-gastronomico.html">Panettone Gastronomico</a> </label> <br>
+      <input type="checkbox" id="PanettoneGastronomico" onclick="PanettoneGastronomico()">  <label for="PanettoneGastronomico"> Panettone Gastronomico </label> <a href="https://ricette.giallozafferano.it/Panettone-gastronomico.html"> &#10170; </a> <br>
       <input type="checkbox" id="Hamburger" onclick="Hamburger()">  <label for="Hamburger">Hamburger di fagioli e funghi</label> <br>
-      <input type="checkbox" id="PolpettediParmigiano" onclick="Polpettediparmigiano()">  <label for="PolpettediParmigiano">Polpette di parmigiano</label> <br>
+      <input type="checkbox" id="PolpetteParmigiano" onclick="PolpetteParmigiano()">  <label for="PolpetteParmigiano">Polpette di parmigiano</label> <br>
       <input type="checkbox" id="PolpetteSedanoPatate" onclick="PolpetteSedanoPatate()">  <label for="PolpetteSedanoPatate">Polpette di sedano e patate con cuore di formaggio</label> <br>
 
 
             <div class="Groups">  &nbsp; <strong>Crescia</strong> </div>
       <input type="checkbox" id="CresciaOrtolana" onclick="CresciaOrtolana()">  <label for="CresciaOrtolana">Ortolana</label> <br>
-      <input type="checkbox" id="Provenzale" onclick="Provenzale()">  <label for="Provenzale">Provenzale</label> <br>
-      <input type="checkbox" id="SquacqueroneRucolaPomodorini" onclick="SquacqueroneRucolaPomodorini()">  <label for="SquacqueroneRucolaPomodorini">Squacquerone, Rucola e Pomodorini</label> <br>
+      <input type="checkbox" id="CresciaProvenzale" onclick="CresciaProvenzale()">  <label for="CresciaProvenzale">Provenzale</label> <br>
+      <input type="checkbox" id="CresciaAutunno" onclick="CresciaAutunno()">  <label for="CresciaAutunno">Autunno</label> <br>
+      <input type="checkbox" id="CresciaSquacqueroneRucolaPomodorini" onclick="CresciaSquacqueroneRucolaPomodorini()">  <label for="CresciaSquacqueroneRucolaPomodorini">Squacquerone, Rucola e Pomodorini</label> <br>
 
 
             <div class="Groups">  &nbsp; <strong>Sfoglia</strong> </div>
-      <input type="checkbox" id="ZucchineUova" onclick="ZucchineUova()">  <label for="ZucchineUova">Zucchine e uova</label>
+      <input type="checkbox" id="SfogliaZucchineUova" onclick="SfogliaZucchineUova()">  <label for="SfogliaZucchineUova">Zucchine e uova</label>
       <br>
       <input type="checkbox" id="Pizzette" onclick="Pizzette()">  <label for="Pizzette">Pizzette</label>
       <br>
-      <input type="checkbox" id="AcciugheCipolla" onclick="AcciugheCipolla()">  <label for="AcciugheCipolla">Acciughe cipolla</label>
+      <input type="checkbox" id="SfogliaPatateRicotta" onclick="SfogliaPatateRicotta()">  <label for="SfogliaPatateRicotta">Patate ricotta</label>
       <br>
-      <input type="checkbox" id="PatateRicotta" onclick="PatateRicotta()">  <label for="PatateRicotta">Patate ricotta</label>
-      <br>
-      <input type="checkbox" id="RicottaSpinaciCotto" onclick="RicottaSpinaciCotto()">  <label for="RicottaSpinaciCotto">Ricotta, spinaci, cotto</label>
+      <input type="checkbox" id="SfogliaRicottaSpinaciCotto" onclick="SfogliaRicottaSpinaciCotto()">  <label for="SfogliaRicottaSpinaciCotto">Ricotta, spinaci, cotto</label>
       <br>
 
               <div class="Groups">  &nbsp; <strong>Pizza</strong> </div>
@@ -143,9 +221,14 @@
       <input type="checkbox" id="PizzaCipollaTonno" onclick="PizzaCipollaTonno()">  <label for="PizzaCipollaTonno">Cipolla e Tonno</label>
       <br>
 
+
+              <div class="Groups">  &nbsp; <strong>Foccacia</strong> </div>
+      <input type="checkbox" id="FoccaciaCipollaGorgonzola" onclick="FoccaciaCipollaGorgonzola()">  <label for="FoccaciaCipollaGorgonzola">Foccacia Cipolla e Gorgonzola</label><br>
+      <input type="checkbox" id="FoccaciaPomodoriOlive" onclick="FoccaciaPomodoriOlive()">  <label for="FoccaciaPomodoriOlive">Foccacia Pomodori e Olive</label><br>
+      <input type="checkbox" id="FoccaciaPatateRosmarino" onclick="FoccaciaPatateRosmarino()">  <label for="FoccaciaPatateRosmarino">Foccacia Patate e Rosmarino</label><br>
     </ul>
 
-  <li>Frittura</li>
+  <li id="liFrittura">Frittura</li>
     <ul>
       <input type="checkbox" id="Gnocco" onclick="Gnocco()">  <label for="Gnocco">Gnocco</label> <br>
       <input type="checkbox" id="OliveAscolane" onclick="OliveAscolane()">  <label for="OliveAscolane">Olive Ascolane</label> <br>
@@ -153,37 +236,29 @@
       <input type="checkbox" id="MozzarellaInCarrozza" onclick="MozzarellaInCarrozza()">  <label for="MozzarellaInCarrozza">Mozzarella in carrozza</label> <br>
     </ul>
 
-  <li>Altri</li>
-    <ul>
-      <input type="checkbox" id="Gyoza" onclick="Gyoza()">  <label for="Gyoza">Gyoza</label> <br>
-    </ul>
 
-
-  <li>Carne</li>
+  <li id="liCarne">Carne</li>
     <ul>
-      <input type="checkbox" id="Ragù" onclick="Ragù()">  <label for="Ragù">Ragù</label>
-      <br>
+      <input type="checkbox" id="Ragù" onclick="Ragù()">  <label for="Ragù">Ragù</label><br>
       <input type="checkbox" id="AllaFilippo" onclick="AllaFilippo()">  <label for="AllaFilippo">Alla Filippo (vino rosso, salsiccia, panna) </label> <br>
       <input type="checkbox" id="Lasagna" onclick="Lasagna()">  <label for="Lasagna">Lasagna (verde; prosciutto e funghi)</label> <br>
-      <input type="checkbox" id="CrispyMcBacon" onclick="CrispyMcBacon()">  <label for="CrispyMcBacon"> <a href="https://chefincamicia.com/ricetta/crispy-mcbacon-homemade/">Crispy McBacon</a></label> <br>
+      <input type="checkbox" id="CrispyMcBacon" onclick="CrispyMcBacon()">  <label for="CrispyMcBacon"> Crispy McBacon </label> <a href="https://chefincamicia.com/ricetta/crispy-mcbacon-homemade/"> &#10170;</a>  <br>
       <input type="checkbox" id="KaeseLauch" onclick="KaeseLauch()">  <label for="KaeseLauch">Käse Lauch Suppe</label> <br>
-      <input type="checkbox" id="CroquetasdeJamon" onclick="CroquetasdeJamon()">  <label for="CroquetasdeJamon">Croquetas de Jamon</label> <br>
+      <input type="checkbox" id="CroquetasDeJamon" onclick="CroquetasDeJamon()">  <label for="CroquetasDeJamon">Croquetas de Jamon</label> <br>
 
                 <div class="Groups">  &nbsp; <strong>Pollo</strong> </div>
-      <input type="checkbox" id="PolloMandorle" onclick="PolloMandorle()">  <label for="PolloMandorle">Pollo alle Mandorle</label>
-      <br>
-      <input type="checkbox" id="TikkaMasala" onclick="TikkaMasala()">  <label for="TikkaMasala"> Tikka Masala </label> <br>
-      <input type="checkbox" id="RedCurryChicken" onclick="RedCurryChicken()">  <label for="RedCurryChicken"> <a href="https://chefincamicia.com/ricetta/crispy-mcbacon-homemade/">Red curry chicken (Thai recipe) </a></label> <br>
+      <input type="checkbox" id="TikkaMasala" onclick="TikkaMasala()">  <label for="TikkaMasala"> Tikka Masala </label> <a href="https://www.theguardian.com/lifeandstyle/wordofmouth/2014/apr/24/how-to-cook-perfect-chicken-tikka-masala"> &#10170; </a> <br>
+      <input type="checkbox" id="RedCurryChicken" onclick="RedCurryChicken()">  <label for="RedCurryChicken"> Red curry chicken (Thai recipe) </a></label> <a href=""> &#10170;</a> <br>
       <input type="checkbox" id="BratwurstSauerkraut" onclick="BratwurstSauerkraut()">  <label for="BratwurstSauerkraut">Bratwurst mit Sauerkraut</label> <br>
       <input type="checkbox" id="PastaSalsicciaZucca" onclick="PastaSalsicciaZucca()">  <label for="PastaSalsicciaZucca">Pasta Salsiccia e Zucca</label> <br>
       </ul>
 
 
-  <li>Secondi</li>
+  <li id="liSecondi">Secondi</li>
 
       <ul>
-        <input type="checkbox" id="Zangarköpfe" onclick="Zangarköpfe()">  <label for="Zangarköpfe">Zangarköpfe</label> <br>
-        <input type="checkbox" id="Parmigiana" onclick="Parmigiana()">  <label for="Parmigiana">Parmigiana</label> <br>
+        <input type="checkbox" id="Zangarkoepfe" onclick="Zangarkoepfe()">  <label for="Zangarkoepfe">Zangarköpfe</label> <br>
+        <input type="checkbox" id="Parmigiana" onclick="Parmigiana()">  <label for="Parmigiana"> Parmigiana </label> <br>
 
 
                 <div class="Groups">  &nbsp; <strong>Uova</strong> </div>
@@ -198,9 +273,9 @@
 
 
                 <div class="Groups">  &nbsp; <strong>Sauces</strong> </div>
-        <input type="checkbox" id="BabaGanoush" onclick="BabaGanoush()">  <label for="BabaGanoush">Baba Ganoush (toasted sesame seeds, lemon juice, oil-roasted eggplant flesh, garlic, parsley > mixed) </label>
+        <input type="checkbox" id="BabaGanoush" onclick="BabaGanoush()">  <label for="BabaGanoush">Baba Ganoush </label> <a href="https://www.theguardian.com/lifeandstyle/wordofmouth/2013/sep/25/how-to-make-perfect-baba-ganoush"> &#10170; </a>
         <br>
-        <input type="checkbox" id="ThaiChili" onclick="ThaiChili()">  <label for="ThaiChili">Thai Sweet Chili Sauce (2 tbsp chili, 2 tbsp Fish sauce, garlic, salt, 125 water, 180 vinegar, 300 sugar)</label>
+        <input type="checkbox" id="ThaiChiliSauce" onclick="ThaiChiliSauce()">  <label for="ThaiChiliSauce">Thai Sweet Chili Sauce</label>
         <br>
         <input type="checkbox" id="CremaBroccoliCeci" onclick="CremaBroccoliCeci()">  <label for="CremaBroccoliCeci">Crema di Broccoli e ceci</label>
         <br>
@@ -208,27 +283,27 @@
 
                 <div class="Groups">  &nbsp; <strong>Insalate</strong> </div>
         <input type="checkbox" id="InsalataGreca" onclick="InsalataGreca()">  <label for="InsalataGreca">Insalata Greca</label><br>
-        <input type="checkbox" id="Caesar" onclick="Caesar()">  <label for="Caesar">Caesar</label><br>
-        <input type="checkbox" id="Estiva" onclick="Estiva()">  <label for="Estiva">Estiva</label><br>
+        <input type="checkbox" id="InsalataCaesar" onclick="InsalataCaesar()">  <label for="InsalataCaesar">Caesar</label><br>
+        <input type="checkbox" id="InsalataEstiva" onclick="InsalataEstiva()">  <label for="InsalataEstiva">Estiva</label><br>
 
   </ul>
 
-  <li>Dolci</li>
+  <li id="liDolci">Dolci</li>
     <ul>
-      <input type="checkbox" id="PistachioEclaire" onclick="PistachioEclaire()">  <label for="PistachioEclaire"> Pistachio Eclaire <br>
-      <input type="checkbox" id="Cicerchiata" onclick="Cicerchiata()">  <label for="Cicerchiata"><a href="https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/">Cicerchiata</a> <br>
-      <input type="checkbox" id="Cookies" onclick="Cookies()">  <label for="Cookies"> <a href="https://www.theguardian.com/food/2018/nov/24/pear-recipes-cheesecake-choc-chip-cookie-ginger-cake-yotam-ottolenghi">Cookies</a> with <a href="https://www.mnn.com/food/recipes/stories/whats-wrong-with-my-cookies-a-troubleshooting-guide">troubleshooting</a><br>
-      <input type="checkbox" id="PannaCotta" onclick="PannaCotta()">  <label for="PannaCotta"> Panna Cotta <br>
-      <input type="checkbox" id="Waffles" onclick="Waffles()">  <label for="Waffles"> Waffles <br>
-      <input type="checkbox" id="Profiteroles" onclick="Profiteroles()">  <label for="Profiteroles"> Profiteroles <br>
-      <input type="checkbox" id="Tiramisù" onclick="Tiramisù()">  <label for="Tiramisù"> Tiramisù <br>
-      <input type="checkbox" id="CremaPasticcera" onclick="CremaPasticcera()">  <label for="CremaPasticcera"> Crema Pasticcera <br>
-      <input type="checkbox" id="PereVino" onclick="PereVino()">  <label for="PereVino"> Pere e Vino <br>
-      <input type="checkbox" id="Wassail" onclick="Wassail()">  <label for="Wassail"> Wassail <br>
+      <input type="checkbox" id="PistachioEclaire" onclick="PistachioEclaire()">  <label for="PistachioEclaire"> Pistachio Eclaire </label> <a href="https://www.roadtopastry.com/blog/recipes/pate-a-choux/recipe-pistachio-and-strawberry-eclairs"> &#10170; </a> <br>
+      <input type="checkbox" id="Cicerchiata" onclick="Cicerchiata()"> <label for="Cicerchiata"> Cicerchiata </label> <a href="https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/"> &#10170;</a><br>
+      <input type="checkbox" id="Cookies" onclick="Cookies()">  <label for="Cookies"> Cookies </label> <a href="https://www.theguardian.com/food/2018/nov/24/pear-recipes-cheesecake-choc-chip-cookie-ginger-cake-yotam-ottolenghi"> &#10170;</a> with <a href="https://www.mnn.com/food/recipes/stories/whats-wrong-with-my-cookies-a-troubleshooting-guide">troubleshooting</a><br>
+      <input type="checkbox" id="PannaCotta" onclick="PannaCotta()">  <label for="PannaCotta"> Panna Cotta </label> <br>
+      <input type="checkbox" id="Waffles" onclick="Waffles()">  <label for="Waffles"> Waffles </label> <a href="https://www.tasteofhome.com/recipes/true-belgian-waffles/">&#10170;</a> <br>
+      <input type="checkbox" id="Profiteroles" onclick="Profiteroles()">  <label for="Profiteroles"> Profiteroles </label> <a href="https://ricette.giallozafferano.it/Profiteroles-al-cioccolato.html">&#10170;</a> <br>
+      <input type="checkbox" id="Tiramisù" onclick="Tiramisù()">  <label for="Tiramisù"> Tiramisù </label> <a href="https://ricette.giallozafferano.it/Tiramisu.html">&#10170;</a> <br>
+      <input type="checkbox" id="CremaPasticcera" onclick="CremaPasticcera()">  <label for="CremaPasticcera"> Crema Pasticcera </label> <a href="https://www.fattoincasadabenedetta.it/ricetta/crema-pasticcera/"> &#10170;</a> <br>
+      <input type="checkbox" id="PereVino" onclick="PereVino()">  <label for="PereVino"> Pere e Vino  </label> <a href="https://ricette.giallozafferano.it/pere-al-vino-rosso.html">&#10170;</a> <br>
+      <input type="checkbox" id="Wassail" onclick="Wassail()">  <label for="Wassail"> Wassail </label> <br>
 
     </ul>
 
-    <li>Utilità</li>
+    <li id="liUtilita">Utilità</li>
       <ul>
         <input type="checkbox" id="Bagnoschiuma/Sapone" onclick="Bagnoschiuma/Sapone()">  <label for="Bagnoschiuma/Sapone"> Sapone <br>
         <input type="checkbox" id="Dentifricio" onclick="Dentifricio()">  <label for="Dentifricio"> Dentifricio <br>
@@ -252,26 +327,115 @@
   ingredienti = JSON.parse(retrievedObject);
 } else {
   ingredienti = {
-      pomodoro: 0,
-      sedano: 0,
-      cipolle: 0,
-      carote: 0,
-      rosmarino: 0,
-      vino_rosso: 0,
-      sale: 0,
-      parmigiano: 0,
-      latte: 0,
-      pepe: 0,
-      burro: 0,
-      farina: 0,
-      funghi: 0,
-      mozzarella: 0,
+      pane: 0,
+      avena: 0,
+      cioccolato: 0,
+      savoiardi: 0,
+      pomodori: 0,
+      pomodorini: 0,
+      mele: 0,
+      pere: 0,
+      pesche: 0,
+      fragole: 0,
+      limone: 0,
+      porro: 0,
+      zucchine: 0,
+      melanzane: 0,
+      chinakohl: 0,
+      mangold: 0,
+      zenzero: 0,
       aglio: 0,
-      pane: 0, };
+      sedano: 0,
+      funghi: 0,
+      asparagi: 0,
+      cipolle: 0,
+      cipolle_rosse: 0,
+      patate: 0,
+      carote: 0,
+      zucca: 0,
+      brodo: 0,
+      radicchio: 0,
+      noci: 0,
+      mandorle: 0,
+      pistacchi: 0,
+      nocciole: 0,
+      uova: 0,
+      farina: 0,
+      zucchero: 0,
+      brown_sugar: 0,
+      olio: 0,
+      strutto: 0,
+      polenta: 0,
+      cacao: 0,
+      lievito_birra: 0,
+      lievito_dolce: 0,
+      amido: 0,
+      gelatina: 0,
+      aceto: 0,
+      aceto_balsamico: 0,
+      passata: 0,
+      ceci: 0,
+      riso: 0,
+      fagioli_kidney: 0,
+      sauerkraut: 0,
+      olive_verdi: 0,
+      olive_nere: 0,
+      tonno: 0,
+      vino_rosso: 0,
+      vino_bianco:0,
+      vino_liquoroso: 0,
+      sale: 0,
+      pepe: 0,
+      origano: 0,
+      rosmarino: 0,
+      basilico: 0,
+      timo: 0,
+      salvia: 0,
+      muskat: 0,
+      peperoncino: 0,
+      cumin: 0,
+      cardamom: 0,
+      cannella: 0,
+      zafferano: 0,
+      prosciutto_cotto: 0,
+      prosciutto_crudo: 0,
+      pancetta: 0,
+      bratwurst: 0,
+      pollo: 0,
+      bacon: 0,
+      salsiccia: 0,
+      hackfleisch: 0,
+      latte: 0,
+      panna: 0,
+      yoghurt: 0,
+      burro: 0,
+      mascarpone: 0,
+      gorgonzola: 0,
+      mozzarella: 0,
+      parmigiano: 0,
+      schmelzkäse: 0,
+      feta: 0,
+      ricotta: 0,
+      spinaci: 0,
+      soia: 0,
+      coconut_milk: 0,
+      red_currypaste: 0,
+      fish_sauce: 0,
+
+      kaffir_lime: 0,
+      tahini: 0,
+
+      sapone: 0,
+      dentifricio: 0,
+      detersivo: 0,
+      spugne: 0,
+      guanti: 0,
+      spazzatura: 0,
+       };
 }
 
   function Ragù() {
-      ingredienti.pomodoro += 3;
+      ingredienti.passata += 3;
       ingredienti.carote += 1;
       ingredienti.cipolle += 1;
       ingredienti.sedano += 1;
@@ -281,7 +445,7 @@
   }
 
   function Cannelloni() {
-      ingredienti.pomodoro += 1;
+      ingredienti.passata += 1;
       ingredienti.latte += 1;
       ingredienti.farina += 1;
       ingredienti.funghi += 1;
@@ -307,8 +471,10 @@
 
         var label = document.createElement("LABEL")
         label.htmlFor = key;
-        var text = document.createTextNode(" " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value);
-        label.appendChild(text);
+        var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value
+        var TextNode = TextNode.replace("_", " ");
+        var TextNode = document.createTextNode(TextNode);
+        label.appendChild(TextNode);
 
         var parag = document.createElement("P")
         parag.appendChild(box)
@@ -316,45 +482,99 @@
 
         document.getElementById("list_groceries").appendChild(parag);
       };
+
     };
     localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
+    document.getElementById("end").scrollIntoView()
 }
 
     function clear_list() {
       ingredienti = {
-        pomodoro: 0,
-        sedano: 0,
-        cipolle: 0,
-        carote: 0,
-        rosmarino: 0,
-        vino_rosso: 0,
-        sale: 0,
-        parmigiano: 0,
-        latte: 0,
-        pepe: 0,
-        burro: 0,
-        farina: 0,
-        funghi: 0,
-        mozzarella: 0,
-        aglio: 0,
-        pane: 0,
+            pane: 0,
+            pomodori: 0,
+            pomodorini: 0,
+            mele: 0,
+            pere: 0,
+            pesche: 0,
+            aglio: 0,
+            sedano: 0,
+            funghi: 0,
+            asparagi: 0,
+            cipolle: 0,
+            carote: 0,
+            radicchio: 0,
+            noci: 0,
+            mandorle: 0,
+            nocciole: 0,
+            uova: 0,
+            farina: 0,
+            passata: 0,
+            vino_rosso: 0,
+            vino_bianco:0,
+            sale: 0,
+            pepe: 0,
+            origano: 0,
+            rosmarino: 0,
+            timo: 0,
+            muskat: 0,
+            peperoncino: 0,
+            zafferano: 0,
+            latte: 0,
+            burro: 0,
+            gorgonzola: 0,
+            mozzarella: 0,
+            parmigiano: 0,
+            schmelzkäse: 0,
+            spinaci: 0,
+
       };
       document.getElementById("list_groceries").innerHTML = "";
       localStorage.clear();
     }
 
+    function Dropdown() {
+  document.getElementById("DropdownMenu").classList.toggle("show");
+}
+    function GoToPasta() {
+      document.getElementById("liPasta").scrollIntoView()
+    }
+    function GoToMinestre() {
+      document.getElementById("liMinestre").scrollIntoView()
+    }
+    function GoToRisotto() {
+      document.getElementById("liRisotto").scrollIntoView()
+    }
+    function GoToPanetteria() {
+      document.getElementById("liPanetteria").scrollIntoView()
+    }
+    function GoToFrittura() {
+      document.getElementById("liFrittura").scrollIntoView()
+    }
+    function GoToCarne() {
+      document.getElementById("liCarne").scrollIntoView()
+    }
+    function GoToSecondi() {
+      document.getElementById("liSecondi").scrollIntoView()
+    }
+    function GoToDolci() {
+      document.getElementById("liDolci").scrollIntoView()
+    }
+    function GoToUtilita() {
+      document.getElementById("liUtilita").scrollIntoView()
+    }
 </script>
 
+<!-- User inputs for ingredients that are not on the list -->
 
 
-<!-- The list of groceries is generated in the following p's -->
-
-<a href="#end"><button type="button" name="generate_list" style="position:fixed;  bottom: 250px;
-  right: 100px;  width: 100px" onclick="generate_list()"> Fai la lista!</button></a> <br>
-<button type="button" name="clear_list" style="position:fixed;  bottom: 100px;
-  right: 90px;  width: 120px;" onclick="clear_list()"> Reset la lista!</button>
+<!-- The list of groceries is generated in the following div's -->
 
 <div id="list_groceries">
+</div>
+
+
+<div class="Buttons">
+
 </div>
 
 <p id="end">
