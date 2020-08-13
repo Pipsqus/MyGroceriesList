@@ -128,6 +128,7 @@ DONE - something new, testing git
           <a onclick=GoToCarne()> Carne </a>
           <a onclick=GoToSecondi()> Secondi </a>
           <a onclick=GoToDolci()> Dolci </a>
+          <a onclick=GoToFondamentali()> Fondamentali </a>
           <a onclick=GoToUtilita()> Utilità </a> <br> <br>
 
           &nbsp;<button type="button" name="generate_list" style="margin-bottom: 4vw;" onclick="generate_list()"> Fai la lista </button> <br>
@@ -312,7 +313,7 @@ DONE - something new, testing git
 
     </ul>
 
-    <li id="liUtilita"> Fondamentali </li>
+    <li id="liFondamentali"> Fondamentali </li>
       <ul>
         <input type="checkbox" id="Farina" onclick="Farina()">  <label for="Farina"> Farina </label> <br>
         <input type="checkbox" id="Aglio" onclick="Aglio()">  <label for="Aglio"> Aglio </label> <br>
@@ -323,23 +324,36 @@ DONE - something new, testing git
         <input type="checkbox" id="Olio" onclick="Olio()">  <label for="Olio"> Olio </label> <br>
         <input type="checkbox" id="Brodo" onclick="Brodo()">  <label for="Brodo"> Brodo </label> <br>
         <input type="checkbox" id="LievitoBirraDolci" onclick="LievitoBirraDolci()">  <label for="LievitoBirraDolci"> Lieviti, birra e per dolci </label> <br>
-        <input type="checkbox" id="BrownSugar" onclick="BrownSugar()">  <label for="BrownSugar"> Zucchero di canna </label> <br>
+        <input type="checkbox" id="Sugar" onclick="Sugar()">  <label for="Sugar"> Sugar </label> <br>
+        <input type="checkbox" id="BrownSugar" onclick="BrownSugar()">  <label for="BrownSugar"> Brown sugar </label> <br>
         <input type="checkbox" id="Amido" onclick="Amido()">  <label for="Amido"> Amido </label> <br>
-        <input type="checkbox" id="Bagnoschiuma/Sapone" onclick="Bagnoschiuma/Sapone()">  <label for="Bagnoschiuma/Sapone"> Sapone </label> <br>
-        <input type="checkbox" id="Dentifricio" onclick="Dentifricio()">  <label for="Dentifricio"> Dentifricio </label> <br>
-        <input type="checkbox" id="Detersivo/Ammorbidente" onclick="Detersivo/Ammorbidente()">  <label for="Detersivo/Ammorbidente"> Detersivo/Ammorbidente </label> <br>
-        <input type="checkbox" id="Spugne" onclick="Spugne()">  <label for="Spugne"> Spugne </label><br>
-        <input type="checkbox" id="Guanti" onclick="Guanti()">  <label for="Guanti"> Guanti </label><br>
-        <input type="checkbox" id="Spazzatura" onclick="Spazzatura()">  <label for="Spazzatura"> Spazzatura </label><br>
+        <input type="checkbox" id="Riso" onclick="Riso()">  <label for="Riso"> Riso </label> <br>
 
 
                 <div class="Groups">  &nbsp; <strong>Spezie</strong> </div>
+        <input type="checkbox" id="Sale" onclick="Sale()">  <label for="Sale"> Sale </label><br>
+        <input type="checkbox" id="Pepe" onclick="Pepe()">  <label for="Pepe"> Pepe </label><br>
         <input type="checkbox" id="Origano" onclick="Origano()">  <label for="Origano"> Origano </label><br>
         <input type="checkbox" id="Rosmarino" onclick="Rosmarino()">  <label for="Rosmarino"> Rosmarino </label><br>
         <input type="checkbox" id="Timo" onclick="Timo()">  <label for="Timo"> Timo </label><br>
-        <input type="checkbox" id="Noce_Moscata" onclick="Noce_Moscata()">  <label for="Noce_Moscata"> Salvia </label><br>
+        <input type="checkbox" id="Noce_Moscata" onclick="Noce_Moscata()">  <label for="Noce_Moscata"> Noce moscata </label><br>
         <input type="checkbox" id="Cannella" onclick="Cannella()">  <label for="Cannella"> Cannella </label><br>
         <input type="checkbox" id="Zafferano" onclick="Zafferano()">  <label for="Zafferano"> Zafferano </label><br>
+      </ul>
+
+    <li id="liUtilita"> Utilità </li>
+      <ul>
+        <input type="checkbox" id="Scottex" onclick="Scottex()">  <label for="Scottex"> Scottex </label> <br>
+        <input type="checkbox" id="Tissues" onclick="Tissues()">  <label for="Tissues"> Tissues </label> <br>
+        <input type="checkbox" id="BagnoschiumaSapone" onclick="BagnoschiumaSapone()">  <label for="BagnoschiumaSapone"> Bagnoschiuma, sapone </label> <br>
+        <input type="checkbox" id="Dentifricio" onclick="Dentifricio()">  <label for="Dentifricio"> Dentifricio </label> <br>
+        <input type="checkbox" id="Detersivo" onclick="Detersivo()">  <label for="Detersivo"> Detersivo/Ammorbidente </label> <br>
+        <input type="checkbox" id="Spugne" onclick="Spugne()">  <label for="Spugne"> Spugne </label><br>
+        <input type="checkbox" id="Guanti" onclick="Guanti()">  <label for="Guanti"> Guanti </label><br>
+        <input type="checkbox" id="Spazzatura" onclick="Spazzatura()">  <label for="Spazzatura"> Spazzatura </label><br>
+        <input type="checkbox" id="Lettiera" onclick="Lettiera()">  <label for="Lettiera"> Lettiera </label><br>
+        <input type="checkbox" id="DishwasherApparatus" onclick="DishwasherApparatus()">  <label for="DishwasherApparatus"> Dishwasher apparatus </label><br>
+
       </ul>
 
 </ul> <br>
@@ -370,6 +384,7 @@ DONE - something new, testing git
       zucchine: 0,
       melanzane: 0,
       chinakohl: 0,
+      blumenkohl: 0,
       mangold: 0,
       zenzero: 0,
       aglio: 0,
@@ -463,12 +478,16 @@ DONE - something new, testing git
       kaffir_lime: 0,
       tahini: 0,
 
-      sapone: 0,
+      scottex: 0,
+      tissues: 0,
+      bagnoschiuma_e_sapone: 0,
       dentifricio: 0,
       detersivo: 0,
       spugne: 0,
       guanti: 0,
       spazzatura: 0,
+      lettiera: 0,
+      dishwasher_apparatus: 0,
     };
 }
 
@@ -493,7 +512,6 @@ DONE - something new, testing git
     ingredienti.mandorle += 1;
     ingredienti.pomodorini += 1;
     ingredienti.rucola += 1;
-    ingredienti.aglio += 1;
     ingredienti.parmigiano += 1;
   }
   function PestoPistacchiPomodorini() {
@@ -505,15 +523,11 @@ DONE - something new, testing git
     var isChecked = document.getElementById("Ragù").checked
     if (isChecked == true) {
       ingredienti.carote += 1;
-      ingredienti.cipolle += 1;
       ingredienti.sedano += 1;
-      ingredienti.rosmarino += 1;
       ingredienti.vino_rosso += 1;
       ingredienti.parmigiano += 1 } else {
       ingredienti.carote -= 1;
-      ingredienti.cipolle -= 1;
       ingredienti.sedano -= 1;
-      ingredienti.rosmarino -= 1;
       ingredienti.vino_rosso -= 1;
       ingredienti.parmigiano -= 1
       }
@@ -526,8 +540,8 @@ DONE - something new, testing git
     }
   function Cannelloni() {
       ingredienti.funghi += 1;
-      ingredienti.mozzarella += 1;
-      ingredienti.aglio += 1;
+      ingredienti.spinaci += 1;
+      ingredienti.burro += 1;
   }
   function PaneCipolle() {
       ingredienti.pane += 1;
@@ -545,12 +559,10 @@ DONE - something new, testing git
     ingredienti.noci += 2;
     ingredienti.radicchio += 1;
     ingredienti.parmigiano += 1;
-  }
+  }scottex: 0,
   function LasagnaRolls() {
-    ingredienti.cipolle += 1;
     ingredienti.spinaci += 1;
     ingredienti.parmigiano += 1;
-    ingredienti.aglio += 1;
     ingredienti.mozzarella += 2;
     ingredienti.ricotta += 1;
   }
@@ -560,27 +572,29 @@ DONE - something new, testing git
     ingredienti.mandorle += 1;
   }
   function PizzaMargherita() {
-    ingredienti.mozzarella += 1;
+    ingredienti.mozzarella += 2;
   }
   function PizzaQuattroFormaggi() {
-    ingredienti.mozzarella += 1;
+    ingredienti.mozzarella += 2;
     ingredienti.parmigiano += 1;
     ingredienti.gorgonzola += 1;
   }
   function PizzaCipollaTonno() {
-    ingredienti.mozzarella += 1;
+    ingredienti.mozzarella += 2;
     ingredienti.tonno +=1 ;
   }
   function PizzaCavolfiore() {
     ingredienti.blumenkohl += 1;
     ingredienti.parmigiano += 1;
-    ingredienti.mozzarella += 1;
+    ingredienti.mozzarella += 2;
   }
   function Hamburger() {
     ingredienti.funghi += 1;
     ingredienti.fagioli += 1;
     ingredienti.cipolle_rosse += 1;
     ingredienti.burro += 1;
+    ingredienti.rucola += 1;
+    ingredienti.pomodori += 1;
   }
   function Gnocco() {
     ingredienti.strutto += 1;
@@ -624,34 +638,9 @@ DONE - something new, testing git
     ingredienti.mandorle += 1;
     ingredienti.fragole += 1;
   }
-  function LievitoBirraDolci() {
-    ingredienti.lievito_birra += 1;
-    ingredienti.lievito_dolce += 1;
-  }
 
-  function Uova() {
-    ingredienti.uova += 1;
-  }
-  function Latte() {
-    ingredienti.latte += 1;
-  }
   function Farina() {
     ingredienti.farina += 1;
-  }
-  function Sugar () {
-    ingredienti.sugar += 1;
-  }
-  function BrownSugar() {
-    ingredienti.brown_sugar += 1;
-  }
-  function Olio() {
-    ingredienti.olio += 1;
-  }
-  function PassataPomodoro() {
-    ingredienti.passata_di_pomodoro += 1;
-  }
-  function Amido() {
-    ingredienti.amido += 1;
   }
   function Aglio() {
     ingredienti.aglio += 1;
@@ -659,8 +648,50 @@ DONE - something new, testing git
   function Cipolle() {
     ingredienti.cipolle += 1;
   }
+  function Uova() {
+    ingredienti.uova += 1;
+  }
+  function PassataPomodoro() {
+    ingredienti.passata_di_pomodoro += 1;
+  }
+  function Latte() {
+    ingredienti.latte += 1;
+  }
+  function Olio() {
+    ingredienti.olio += 1;
+  }
   function Brodo() {
     ingredienti.brodo += 1;
+  }
+  function LievitoBirraDolci() {
+    ingredienti.lievito_birra += 1;
+    ingredienti.lievito_dolce += 1;
+  }
+  function Sugar () {
+    ingredienti.sugar += 1;
+  }
+  function BrownSugar() {
+    ingredienti.brown_sugar += 1;
+  }
+  function Amido() {
+    ingredienti.amido += 1;
+  }
+  function Riso() {
+    ingredienti.riso += 1;
+  }
+
+
+  function Sale() {
+  ingredienti.sale += 1;
+  }
+  function Pepe() {
+  ingredienti.pepe += 1;
+  }
+  function Origano() {
+  ingredienti.origano += 1;
+  }
+  function Salvia() {
+    ingredienti.salvia += 1;
   }
   function Rosmarino() {
     ingredienti.rosmarino += 1;
@@ -676,6 +707,36 @@ DONE - something new, testing git
   }
   function Zafferano() {
     ingredienti.zafferano += 1;
+  }
+  function Scottex() {
+    ingredienti.scottex += 1;
+  }
+  function Tissues() {
+    ingredienti.tissues += 1;
+  }
+  function BagnoschiumaSapone() {
+    ingredienti.bagnoschiuma_e_sapone += 1;
+  }
+  function Dentifricio() {
+    ingredienti.dentifricio += 1;
+  }
+  function Detersivo() {
+    ingredienti.detersivo += 1;
+  }
+  function Spugne() {
+    ingredienti.spugne += 1;
+  }
+  function Guanti() {
+    ingredienti.guanti += 1;
+  }
+  function Spazzatura() {
+    ingredienti.spazzatura += 1;
+  }
+  function Lettiera() {
+    ingredienti.lettiera += 1;
+  }
+  function DishwasherApparatus() {
+      ingredienti.dishwasher_apparatus += 1;
   }
 
 
@@ -726,6 +787,7 @@ DONE - something new, testing git
         zucchine: 0,
         melanzane: 0,
         chinakohl: 0,
+        blumenkohl: 0,
         mangold: 0,
         zenzero: 0,
         aglio: 0,
@@ -795,6 +857,7 @@ DONE - something new, testing git
         hackfleisch: 0,
         latte: 0,
         panna: 0,
+        panna_montata: 0,
         yoghurt: 0,
         burro: 0,
         pecorino: 0,
@@ -818,12 +881,16 @@ DONE - something new, testing git
         kaffir_lime: 0,
         tahini: 0,
 
-        sapone: 0,
+        scottex: 0,
+        tissues: 0,
+        bagnoschiuma_e_sapone: 0,
         dentifricio: 0,
         detersivo: 0,
         spugne: 0,
         guanti: 0,
         spazzatura: 0,
+        lettiera: 0,
+        dishwasher_apparatus: 0,
       };
       document.getElementById("list_groceries").innerHTML = "";
       localStorage.clear();
@@ -859,6 +926,10 @@ DONE - something new, testing git
     function GoToUtilita() {
       document.getElementById("liUtilita").scrollIntoView()
     }
+    function GoToFondamentali() {
+      document.getElementById("liFondamentali").scrollIntoView()
+    }
+
 </script>
 
 <!-- User inputs for ingredients that are not on the list -->
