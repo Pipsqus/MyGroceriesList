@@ -355,6 +355,9 @@ function Spazzatura() {
 function Lettiera() {
   (ingredienti.lettiera += 1) || (ingredienti.lettiera = 1);
 }
+function CatFood() {
+  (ingredienti.cat_food += 1) || (ingredienti.cat_food = 1)
+}
 function DishwasherApparatus() {
   (ingredienti.dishwasher_apparatus += 1) || (ingredienti.dishwasher_apparatus = 1);
 }
