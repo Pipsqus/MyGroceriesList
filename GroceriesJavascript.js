@@ -117,6 +117,10 @@ document.getElementById("DropdownMenu").classList.toggle("show");
 
 // Following, all our recipes
 
+function Scarpinocc() {
+  (ingredienti.pane += 2) || (ingredienti.pane = 2);
+  (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
+}
 function SfogliaLorda() {
   (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
   (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
@@ -141,10 +145,31 @@ function PestoTrapanese() {
   (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
   (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
 }
+function PestoDiRucola() {
+  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+  (ingredienti.noci += 1) || (ingredienti.noci = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+}
 function PestoPistacchiPomodorini() {
   (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
   (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
   (ingredienti.porri += 1) || (ingredienti.porri = 1);
+}
+function Vichyssoise() {
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
+  (ingredienti.patate += 1) || (ingredienti.patate = 1);
+  (ingredienti.porri += 1) || (ingredienti.porri = 1);
+}
+function CresciaHummus() {
+  (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+}
+function PolentaFunghiGorgonzola() {
+  (ingredienti.polenta += 1) || (ingredienti.polenta = 1);
+  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
 }
 function Ragù() {
     (ingredienti.carote += 1) || (ingredienti.carote = 1);
@@ -257,6 +282,20 @@ function PistachioEclaire () {
   (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
   (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
   (ingredienti.fragole += 1) || (ingredienti.fragole = 1);
+}
+function CresciaBrie() {
+  (ingredienti.berries_or_pesca_or_pere += 1) || (ingredienti.berries_or_pesca_or_pere = 1);
+}
+function Cicerchiata() {
+  (ingredienti.vino_liquoroso += 1) || (ingredienti.vino_liquoroso = 1);
+  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
+}
+function Milkshake() {
+  (ingredienti.marmellata += 1) || (ingredienti.marmellata = 1);
+  (ingredienti.nocciole += 1) || (ingredienti.nocciole = 1);
+  (ingredienti.berries += 1) || (ingredienti.berries = 1);
+  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
+  (ingredienti.gelato_alla_vaniglia += 1) || (ingredienti.gelato_alla_vaniglia = 1);
 }
 
 function Farina() {
