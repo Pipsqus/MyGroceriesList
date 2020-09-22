@@ -126,7 +126,6 @@ function SfogliaLorda() {
   (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
   (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
 }
-
 function Parmigiana() {
   (ingredienti.zucchine += 2) || (ingredienti.zucchine = 2);
   (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
@@ -211,11 +210,7 @@ function LasagnaRolls() {
   (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
   (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
 }
-function Camille() {
-  (ingredienti.carote += 1) || (ingredienti.carote = 1);
-  (ingredienti.succo_di_arancia += 1) || (ingredienti.succo_di_arancia = 1);
-  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-}
+
 function PizzaMargherita() {
   (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
 }
@@ -283,8 +278,13 @@ function PistachioEclaire () {
   (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
   (ingredienti.fragole += 1) || (ingredienti.fragole = 1);
 }
-function CresciaBrie() {
+function Cestini() {
   (ingredienti.berries_or_pesca_or_pere += 1) || (ingredienti.berries_or_pesca_or_pere = 1);
+}
+function Camille() {
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+  (ingredienti.succo_di_arancia += 1) || (ingredienti.succo_di_arancia = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
 }
 function Cicerchiata() {
   (ingredienti.vino_liquoroso += 1) || (ingredienti.vino_liquoroso = 1);
