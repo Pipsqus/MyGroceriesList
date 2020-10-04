@@ -160,16 +160,19 @@ function Vichyssoise() {
   (ingredienti.patate += 1) || (ingredienti.patate = 1);
   (ingredienti.porri += 1) || (ingredienti.porri = 1);
 }
-function CresciaHummus() {
-  (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
-  (ingredienti.carote += 1) || (ingredienti.carote = 1);
-}
 function PolentaFunghiGorgonzola() {
   (ingredienti.polenta += 1) || (ingredienti.polenta = 1);
   (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
   (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
   (ingredienti.panna += 1) || (ingredienti.panna = 1);
 }
+function Cannelloni() {
+    (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+    (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+    (ingredienti.burro += 1) || (ingredienti.burro = 1);
+}
+
+// Carne
 function Ragù() {
     (ingredienti.carote += 1) || (ingredienti.carote = 1);
     (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
@@ -182,11 +185,7 @@ function KaeseLauch() {
     (ingredienti.schmelzkäse += 1) || (ingredienti.schmelzkäse = 1);
     (ingredienti.porro += 1) || (ingredienti.porro = 1);
   }
-function Cannelloni() {
-    (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-    (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-    (ingredienti.burro += 1) || (ingredienti.burro = 1);
-}
+
 function PaneCipolle() {
     (ingredienti.pane += 1) || (ingredienti.pane = 1);
     (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
@@ -211,6 +210,7 @@ function LasagnaRolls() {
   (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
 }
 
+// Panetteria
 function PizzaMargherita() {
   (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
 }
@@ -245,6 +245,10 @@ function Gnocco() {
 function Crescia() {
   (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
 }
+function CresciaHummus() {
+  (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+}
 function CresciaOrtolana() {
   (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
   (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
@@ -269,6 +273,8 @@ function CresciaBrie() {
   (ingredienti.mele += 1) || (ingredienti.mele = 1);
   (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
 }
+
+// Dolci
 function PistachioEclaire () {
   (ingredienti.burro += 1) || (ingredienti.burro = 1);
   (ingredienti.gelatina += 1) || (ingredienti.gelatina = 1);
@@ -298,6 +304,7 @@ function Milkshake() {
   (ingredienti.gelato_alla_vaniglia += 1) || (ingredienti.gelato_alla_vaniglia = 1);
 }
 
+// Fondamentali
 function Farina() {
   (ingredienti.farina += 1) || (ingredienti.farina = 1);
 }
@@ -317,6 +324,9 @@ function Latte() {
   (ingredienti.latte += 1) || (ingredienti.latte = 1);
 }
 function Olio() {
+  (ingredienti.olio += 1) || (ingredienti.olio = 1);
+}
+function Burro() {
   (ingredienti.olio += 1) || (ingredienti.olio = 1);
 }
 function Brodo() {
