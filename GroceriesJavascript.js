@@ -287,6 +287,17 @@ function PistachioEclaire () {
 function Cestini() {
   (ingredienti.berries_or_pesca_or_pere += 1) || (ingredienti.berries_or_pesca_or_pere = 1);
 }
+function Profiteroles() {
+  (ingredienti.cioccolato_fondente += 1) || (ingredienti.cioccolato_fondente = 1);
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
+  (ingredienti.zucchero_velo += 1) || (ingredienti.zucchero_velo = 1);
+}
+function Tiramisù() {
+  (ingredienti.mascarpone += 1) || (ingredienti.mascarpone = 1);
+  (ingredienti.caffè += 1) || (ingredienti.caffè = 1);
+  (ingredienti.savoiardi += 1) || (ingredienti.savoiardi = 1);
+  (ingredienti.cacao += 1) || (ingredienti.cacao = 1);
+}
 function Camille() {
   (ingredienti.carote += 1) || (ingredienti.carote = 1);
   (ingredienti.succo_di_arancia += 1) || (ingredienti.succo_di_arancia = 1);
