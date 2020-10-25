@@ -78,8 +78,9 @@ function clear_list() {
 
 
 // Menu Dropdown
-function Dropdown() {
-document.getElementById("DropdownMenu").classList.toggle("show");
+  function Dropdown() {
+    document.getElementById("DropdownMenu").classList.toggle("show");
+    event.stopPropagation();
   }
   function GoToPasta() {
     document.getElementById("liPasta").scrollIntoView()

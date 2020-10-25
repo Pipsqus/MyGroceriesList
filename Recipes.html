@@ -33,7 +33,7 @@ DONE - something new, testing git
 <!-- Add here the food we might eat  -->
     <body onload="DefineIngredienti()">
       <div class="Dropdown">
-        <button class="DropdownButton" onclick="Dropdown()"> &#10048; </button>
+        <button class="DropdownButton" id="DropdownButton" onclick="Dropdown()"> &#10048; </button>
         <div id="DropdownMenu" class="DropdownContent">
           <button class="GoToButton" type="button" onclick=GoToPasta()> Pasta </button><br>
           <button class="GoToButton" type="button" onclick=GoToRisotto()> Risotto </button><br>
@@ -307,7 +307,11 @@ DONE - something new, testing git
 </p>
 
 
-
+<script type="text/javascript">
+  document.addEventListener("click", function() {
+    document.getElementById("DropdownMenu").classList.remove("show");
+  })
+</script>
 
 
     </body>
