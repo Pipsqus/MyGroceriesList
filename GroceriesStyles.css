@@ -3,6 +3,7 @@ html {
 }
 h1 {
   position: relative;
+  left: 5vw;
   color: rgb(50,160,180);
 }
 body {
@@ -29,10 +30,17 @@ li {
   text-align: center;
   list-style-type: none;
 
-  width: 30vw;
+  width: 20vw;
   min-width: 8em;
-  border-radius: 20px;
+
   background-color: rgb(200,200,200);
+  background:
+      radial-gradient(circle at top right, transparent 20px, rgb(0, 180, 117,80%) 0) top right,
+      radial-gradient(circle at top left, transparent 20px, rgb(0, 180, 117,80%) 0) top left,
+      radial-gradient(circle at bottom left, transparent 20px, rgb(0, 180, 117,80%) 0) bottom left,
+      radial-gradient(circle at bottom right, transparent 20px, rgb(0, 180, 117,80%) 0) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
 }
 .Groups {
   margin: 0.6em 1em;
