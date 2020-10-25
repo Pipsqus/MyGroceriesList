@@ -6,10 +6,10 @@ h1 {
   color: rgb(50,160,180);
 }
 body {
-  margin: 0vw 0vw 0vw 2vw;>
-  background-color: rgb(235,230,255 );
+  margin: 0vw 0vw 0vw 2vw;
+  background-color: rgb(235,230,255, 40%);
   font-family: "Trebuchet MS";
-  font-size: 23px;
+  font-size: 1.45em;
   line-height: 1.4;
 }
 ul.a:link, ul.a:visited {
@@ -22,18 +22,20 @@ ul {
   padding: 0px;
 }
 li {
-  margin-top: 13px;
-  margin-bottom: 13px;
-  font-size: 32px;
+  padding: 1em 1.6em;
+  margin: 0.6em auto;
+  font-size: 1.3em;
   letter-spacing: 4px;
   text-align: center;
   list-style-type: none;
+
+  width: 30vw;
+  min-width: 8em;
+  border-radius: 20px;
+  background-color: rgb(200,200,200);
 }
 .Groups {
-  margin-left: 20px ;
-  margin-top: 10px ;
-  margin-bottom: 10px ;
-  font-size: 20px;
+  margin: 0.6em 1em;
 }
 .Buttons {
   position: -webkit-sticky;
@@ -48,6 +50,10 @@ button {
 }
 input {
   transform: scale(1.8);
+  margin-left: 2vw;
+}
+label {
+  margin: 0.1em 2vw 0 2vw;
 }
 #list_groceries {
   line-height: 0

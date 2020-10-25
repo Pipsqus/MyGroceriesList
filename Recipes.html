@@ -12,21 +12,7 @@
 
 <!--
 TO-DO LIST
-- order by Häufigkeit
-DONE - clean up the style
-DONE - modify the li tag
-DONE - add the ingredients to the var ingredienti
-- put links to recipes
-- fix the onclick effect
-DONE - add the functions I
-- add the functions II
-- add the functions III
-- add the functions IV
-- add the text input box
-DONE - add a context menu to navigate the list (pasta, paetteria...)
-DONE - publish the website and access it from phone
-- test it for the first time!
-DONE - something new, testing git
+
 -->
 
 
@@ -55,56 +41,57 @@ DONE - something new, testing git
       </div>
       <h1> Sustenance </h1>
 <ul>
-  <li id="liPasta">Pasta</li>
+  <li id="liPasta"> Pasta </li>
     <ul>
 
-              <div class="Groups"> <strong>Tagliatelle, Pici, Corzetti, Garganelli, Mandilli, Gnocchi, Orecchiette, Spätzle, Strozzapreti, Trofie, Lasagne, Raschiatelli, Sagne Torte</strong> </div>
+              <div class="Groups"> <strong>Tagliatelle, Spätzle, Pici, Corzetti <br>
+              <span style="font-size:0.8em;"> Garganelli, Mandilli, Gnocchi, Orecchiette, Strozzapreti, Trofie, Raschiatelli, Sagne Torte </span>   </strong> </div>
       <input type="radio" id="Aglione" onclick="Aglione(); this.onclick=null;">  <label for="Aglione">Aglione</label> <br>
-      <input type="radio" id="AglioOlio" onclick="AglioOlio(); this.onclick=null;">  <label for="AglioOlio">Aglio e olio</label> <br>
+      <input type="radio" id="AglioOlio" onclick="AglioOlio(); this.onclick=null;">  <label for="AglioOlio">Aglio e Olio</label> <br>
       <input type="radio" id="Soffritto" onclick="Soffritto(); this.onclick=null;">  <label for="Soffritto">Soffritto</label> <br>
       <input type="radio" id="SfogliaLorda" onclick="SfogliaLorda(); this.onclick=null;">  <label for="SfogliaLorda"> Sfoglia Lorda </label> <a href="https://www.youtube.com/watch?v=2gTrsfaFR24"> &#10170; </a> <br>
-      <input type="radio" id="Cannelloni" onclick="Cannelloni(); this.onclick=null;">  <label for="Cannelloni">Cannelloni besciamella, funghi, spinaci</label> <br>
-      <input type="radio" id="LasagnaRolls"  onclick="LasagnaRolls(); this.onclick=null;">  <label for="LasagnaRolls">Lasagna rolls </label> <a href="https://ricette.giallozafferano.it/Lasagna-roll.html"> &#10170; </a> <br>
-      <input type="radio" id="PaneCipolle" onclick="PaneCipolle(); this.onclick=null;">  <label for="PaneCipolle">Pane e cipolle</label> <a href="https://www.fattoincasadabenedetta.it/ricetta/pasta-pane-e-cipolle/"> &#10170;</a>
+      <input type="radio" id="Cannelloni" onclick="Cannelloni(); this.onclick=null;">  <label for="Cannelloni">Cannelloni Besciamella, Funghi, Spinaci</label> <br>
+      <input type="radio" id="LasagnaRolls"  onclick="LasagnaRolls(); this.onclick=null;">  <label for="LasagnaRolls">Lasagna Rolls </label> <a href="https://ricette.giallozafferano.it/Lasagna-roll.html"> &#10170; </a> <br>
+      <input type="radio" id="PaneCipolle" onclick="PaneCipolle(); this.onclick=null;">  <label for="PaneCipolle">Pane e Cipolle</label> <a href="https://www.fattoincasadabenedetta.it/ricetta/pasta-pane-e-cipolle/"> &#10170;</a>
       <br>
-      <input type="radio" id="GorgonzolaRadicchio" onclick="GorgonzolaRadiccio(); this.onclick=null;">  <label for="GorgonzolaRadicchio">Gorgonzola e radicchio </label> <a href="https://www.lospicchiodaglio.it/ricetta/gnocchi-gorgonzola-noci-radicchio?refresh_ce"> &#10170; </a>  <br>
-      <input type="radio" id="CremaAsparagi" onclick="CremaAsparagi(); this.onclick=null;"> <label for="CremaAsparagi"> Crema di asparagi </label> <a href="https://www.fattoincasadabenedetta.it/ricetta/farfalle-alla-crema-di-asparagi/">&#10170;</a> <br>
-      <input type="radio" id="RipienoTartufo" onclick="RipienoTartufo(); this.onclick=null;">  <label for="RipienoTartufo"> Ripieno di tartufo </label> <a href="https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/">&#10170;</a>  <br>
+      <input type="radio" id="GorgonzolaRadicchio" onclick="GorgonzolaRadiccio(); this.onclick=null;">  <label for="GorgonzolaRadicchio">Gorgonzola e Radicchio </label> <a href="https://www.lospicchiodaglio.it/ricetta/gnocchi-gorgonzola-noci-radicchio?refresh_ce"> &#10170; </a>  <br>
+      <input type="radio" id="CremaAsparagi" onclick="CremaAsparagi(); this.onclick=null;"> <label for="CremaAsparagi"> Crema di Asparagi </label> <a href="https://www.fattoincasadabenedetta.it/ricetta/farfalle-alla-crema-di-asparagi/">&#10170;</a> <br>
+      <input type="radio" id="RipienoTartufo" onclick="RipienoTartufo(); this.onclick=null;">  <label for="RipienoTartufo"> Ripieno di Tartufo </label> <a href="https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/">&#10170;</a>  <br>
 
 
 
 
               <div class="Groups">  &nbsp; <strong>Ravioli, Scarpinocc, Pi Fasacc</strong> </div>
-      <input type="radio" id="RavioliRicottaSpinaci" onclick="RavioliRicottaSpinaci(); this.onclick=null;">  <label for="RavioliRicottaSpinaci">Ricotta, spinaci</label> <a href="https://www.cucchiaio.it/ricetta/ricetta-ravioli-ricotta-spinaci/"> &#10170; </a> <br>
-      <input type="radio" id="PereRicottaZafferanoBurro" onclick="PereRicottaZafferanoBurro(); this.onclick=null;">  <label for="PereRicottaZafferanoBurro">Pere, ricotta, zafferano, burro</label> <br>
-      <input type="radio" id="Scarpinocc" onclick="Scarpinocc(); this.onclick=null;">  <label for="Scarpinocc"> Scarpinocc </label> <br>
+      <input type="radio" id="RavioliRicottaSpinaci" onclick="RavioliRicottaSpinaci(); this.onclick=null;">  <label for="RavioliRicottaSpinaci">Ricotta, Spinaci</label> <a href="https://www.cucchiaio.it/ricetta/ricetta-ravioli-ricotta-spinaci/"> &#10170; </a> <br>
+      <input type="radio" id="PereRicottaZafferanoBurro" onclick="PereRicottaZafferanoBurro(); this.onclick=null;">  <label for="PereRicottaZafferanoBurro">Pere, Ricotta, Zafferano, Burro</label> <br>
+      <input type="radio" id="Scarpinocc" onclick="Scarpinocc(); this.onclick=null;">  <label for="Scarpinocc"> Scarpinocc </label> <a href="https://www.ilgiornaledelcibo.it/scarpinocc-dove-trovarli-ricetta/"> &#10170; </a> <br>
       <input type="radio" id="Gyoza" onclick="Gyoza(); this.onclick=null;">  <label for="Gyoza">Gyoza</label> <a href="https://www.recipetineats.com/gyoza-japanese-dumplings-potstickers/">  &#10170;</a> <br>
 
 
               <div class="Groups">  &nbsp; <strong>Tortellini, Cappellacci</strong> </div>
       <input type="radio" id="CappellacciAllaZucca" onclick="CappellacciAllaZucca(); this.onclick=null;">  <label for="CappellacciAllaZucca"> Alla zucca </label> <a href="https://www.lospicchiodaglio.it/ricetta/cappellacci-di-zucca"> &#10170; </a> <br>
-      <input type="radio" id="VerdeDiCarne" onclick="VerdeDiCarne(); this.onclick=null;">  <label for="VerdeDiCarne">  Verde di carne </label> <a href="https://ricette.giallozafferano.it/Tortellini.html"> &#10170; </a> <br>
-      <input type="radio" id="TortelliPere" onclick="TortelliPere(); this.onclick=null;">  <label for="TortelliPere">Tortelli con pere e formaggi</label> <br>
+      <input type="radio" id="VerdeDiCarne" onclick="VerdeDiCarne(); this.onclick=null;">  <label for="VerdeDiCarne">  Verde di Carne </label> <a href="https://ricette.giallozafferano.it/Tortellini.html"> &#10170; </a> <br>
+      <input type="radio" id="TortelliPere" onclick="TortelliPere(); this.onclick=null;">  <label for="TortelliPere">Tortelli con Pere e Formaggi</label> <br>
 
 
 
-              <div class="Groups">  &nbsp; <strong>Pesti, Salse</strong> </div>
+              <div class="Groups">  &nbsp; <strong>Pesto</strong> </div>
       <input type="radio" id="PestoTrapanese" onclick="PestoTrapanese(); this.onclick=null;">  <label for="PestoTrapanese"> Trapanese </label> <a href="https://www.cookist.it/pesto-alla-trapanese-ricetta/"> &#10170; </a> <br>
-      <input type="radio" id="PestoAlleNoci" onclick="PestoAlleNoci(); this.onclick=null;">  <label for="PestoAlleNoci">Alle noci</label> <a href="https://ricette.giallozafferano.it/Salsa-alle-noci.html"> &#10170; </a> <br>
-      <input type="radio" id="PestoPistacchiPomodorini" onclick="PestoPistacchiPomodorini(); this.onclick=null;">  <label for="PestoPistacchiPomodorini">Pistacchi, Pomodorini, Porro</label> <br>
-      <input type="radio" id="PestoDiRucola" onclick="PestoDiRucola(); this.onclick=null;">  <label for="PestoDiRucola">Rucola, mandorle, pinoli, noci, pomodorini</label> <br>
-      <input type="radio" id="PestoDiSedano" onclick="PestoDiSedano(); this.onclick=null;">  <label for="PestoDiSedano">Sedano</label> <a href="https://blog.giallozafferano.it/paola67/pesto-di-sedano/"> &#10170; </a> <br>
-      <input type="radio" id="PestoGenovese" onclick="PestoGenovese(); this.onclick=null;">  <label for="PestoGenovese">Genovese</label> <br>
+      <input type="radio" id="PestoAlleNoci" onclick="PestoAlleNoci(); this.onclick=null;">  <label for="PestoAlleNoci"> Alle noci</label> <a href="https://ricette.giallozafferano.it/Salsa-alle-noci.html"> &#10170; </a> <br>
+      <input type="radio" id="PestoPistacchiPomodorini" onclick="PestoPistacchiPomodorini(); this.onclick=null;">  <label for="PestoPistacchiPomodorini"> Pistacchi, Pomodorini, Porro</label> <br>
+      <input type="radio" id="PestoDiRucola" onclick="PestoDiRucola(); this.onclick=null;">  <label for="PestoDiRucola"> Rucola, Mandorle, Pinoli, Noci, pomodorini</label> <br>
+      <input type="radio" id="PestoDiSedano" onclick="PestoDiSedano(); this.onclick=null;">  <label for="PestoDiSedano"> Di Sedano</label> <a href="https://blog.giallozafferano.it/paola67/pesto-di-sedano/"> &#10170; </a> <br>
+      <input type="radio" id="PestoGenovese" onclick="PestoGenovese(); this.onclick=null;">  <label for="PestoGenovese"> Alla Genovese</label> <br>
 
 
     </ul>
 
-  <li id="liRisotto">Risotto/Riso</li>
+  <li id="liRisotto"> Riso </li>
     <ul>
-      <input type="radio" id="RisottoAllaZucca" onclick="RisottoAllaZucca(); this.onclick=null;">  <label for="RisottoAllaZucca">Alla zucca</label> <a href="https://ricette.giallozafferano.it/Risotto-alla-zucca-con-funghi-e-taleggio.html"> &#10170; </a> <br>
-      <input type="radio" id="RisottoPorroGorgonzola" onclick="RisottoPorroGorgonzola(); this.onclick=null;">  <label for="RisottoPorroGorgonzola">Porro e gorgonzola</label> <br>
-      <input type="radio" id="RisottoZucchine" onclick="RisottoZucchine(); this.onclick=null;">  <label for="RisottoZucchine">Di Zucchine</label> <a href="https://ricette.giallozafferano.it/Risotto-con-zucchine.html"> &#10170; </a> <br>
-      <input type="radio" id="RisoFritto" onclick="RisoFritto(); this.onclick=null;">  <label for="RisoFritto">Fritto</label> <br>
+      <input type="radio" id="RisottoAllaZucca" onclick="RisottoAllaZucca(); this.onclick=null;">  <label for="RisottoAllaZucca">Risotto Alla Zucca</label> <a href="https://ricette.giallozafferano.it/Risotto-alla-zucca-con-funghi-e-taleggio.html"> &#10170; </a> <br>
+      <input type="radio" id="RisottoPorroGorgonzola" onclick="RisottoPorroGorgonzola(); this.onclick=null;">  <label for="RisottoPorroGorgonzola">Risotto Porro e Gorgonzola</label> <br>
+      <input type="radio" id="RisottoZucchine" onclick="RisottoZucchine(); this.onclick=null;">  <label for="RisottoZucchine"> Risotto di Zucchine</label> <a href="https://ricette.giallozafferano.it/Risotto-con-zucchine.html"> &#10170; </a> <br>
+      <input type="radio" id="RisoFritto" onclick="RisoFritto(); this.onclick=null;">  <label for="RisoFritto"> Riso Fritto </label> <br>
     </ul>
 
   <li id="liMinestre">Minestre</li>
@@ -115,14 +102,14 @@ DONE - something new, testing git
 
   <li id="liPanetteria"> Panetteria </li>
     <ul>
-      <input type="radio" id="Hamburger" onclick="Hamburger(); this.onclick=null;">  <label for="Hamburger">Hamburger di fagioli e funghi</label> <a href="https://www.thespruceeats.com/vegan-mushroom-bean-burger-recipe-3378623"> &#10170; </a> <br>
+      <input type="radio" id="Hamburger" onclick="Hamburger(); this.onclick=null;">  <label for="Hamburger">Hamburger di Fagioli e Funghi</label> <a href="https://www.thespruceeats.com/vegan-mushroom-bean-burger-recipe-3378623"> &#10170; </a> <br>
       <input type="radio" id="FrenchToast" onclick="FrenchToast(); this.onclick=null;">  <label for="FrenchToast">French Toast</label> <br>
       <input type="radio" id="Strangolapreti" onclick="Strangolapreti(); this.onclick=null;">  <label for="Strangolapreti">Strangolapreti</label> <br>
       <input type="radio" id="Canederli" onclick="Canederli(); this.onclick=null;">  <label for="Canederli">Canederli</label> <a href="https://www.altoadige-suedtirol.it/prodotti_tipici/gastronomia/ricette/canederli.php"> &#10170; </a> <br>
-      <input type="radio" id="PolentaFunghiGorgonzola" onclick="PolentaFunghiGorgonzola(); this.onclick=null;">  <label for="PolentaFunghiGorgonzola">Polenta funghi e gorgonzola</label> <a href="https://www.cookist.it/ricetta-della-polenta-con-funghi-e-gorgonzola-buona-da-leccarsi-i-baffi-foto-guida/"> &#10170; </a> <br>
+      <input type="radio" id="PolentaFunghiGorgonzola" onclick="PolentaFunghiGorgonzola(); this.onclick=null;">  <label for="PolentaFunghiGorgonzola">Polenta Funghi e Gorgonzola</label> <a href="https://www.cookist.it/ricetta-della-polenta-con-funghi-e-gorgonzola-buona-da-leccarsi-i-baffi-foto-guida/"> &#10170; </a> <br>
       <input type="radio" id="PanettoneGastronomico" onclick="PanettoneGastronomico(); this.onclick=null;">  <label for="PanettoneGastronomico"> Panettone Gastronomico </label> <a href="https://ricette.giallozafferano.it/Panettone-gastronomico.html"> &#10170; </a> <br>
-      <input type="radio" id="PolpetteParmigiano" onclick="PolpetteParmigiano(); this.onclick=null;">  <label for="PolpetteParmigiano">Polpette di parmigiano</label> <br>
-      <input type="radio" id="PolpetteSedanoPatate" onclick="PolpetteSedanoPatate(); this.onclick=null;">  <label for="PolpetteSedanoPatate">Polpette di sedano, patate, formaggio</label> <br>
+      <input type="radio" id="PolpetteParmigiano" onclick="PolpetteParmigiano(); this.onclick=null;">  <label for="PolpetteParmigiano">Polpette di Parmigiano</label> <br>
+      <input type="radio" id="PolpetteSedanoPatate" onclick="PolpetteSedanoPatate(); this.onclick=null;">  <label for="PolpetteSedanoPatate">Polpette di Sedano, Patate, Formaggio</label> <br>
 
 
             <div class="Groups">  &nbsp; <strong>Crescia</strong> <a href="https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"> &#10170; </a> </div>
@@ -134,20 +121,20 @@ DONE - something new, testing git
 
 
             <div class="Groups">  &nbsp; <strong>Sfoglia</strong> <a href="https://ascuoladipasticceria.wordpress.com/2016/09/27/pasta-sfoglia-inclusione-e-pieghe/"> &#10170; </a> </div>
-      <input type="radio" id="SfogliaZucchineUova" onclick="SfogliaZucchineUova(); this.onclick=null;">  <label for="SfogliaZucchineUova"> Zucchine e uova </label>
+      <input type="radio" id="SfogliaZucchineUova" onclick="SfogliaZucchineUova(); this.onclick=null;">  <label for="SfogliaZucchineUova"> Zucchine e Uova </label>
+      <br>
+      <input type="radio" id="SfogliaPatateRicotta" onclick="SfogliaPatateRicotta(); this.onclick=null;">  <label for="SfogliaPatateRicotta"> Patate, Ricotta </label>
+      <br>
+      <input type="radio" id="SfogliaRicottaSpinaci" onclick="SfogliaRicottaSpinaci(); this.onclick=null;">  <label for="SfogliaRicottaSpinaci"> Ricotta, Spinaci </label>
       <br>
       <input type="radio" id="PizzetteSfoglia" onclick="PizzetteSfoglia(); this.onclick=null;">  <label for="PizzetteSfoglia"> Pizzette </label>
-      <br>
-      <input type="radio" id="SfogliaPatateRicotta" onclick="SfogliaPatateRicotta(); this.onclick=null;">  <label for="SfogliaPatateRicotta"> Patate ricotta </label>
-      <br>
-      <input type="radio" id="SfogliaRicottaSpinaci" onclick="SfogliaRicottaSpinaci(); this.onclick=null;">  <label for="SfogliaRicottaSpinaci"> Ricotta, spinaci </label>
       <br>
 
               <div class="Groups">  &nbsp; <strong>Pizza</strong> </div>
       <input type="radio" id="PizzaMargherita" onclick="PizzaMargherita(); this.onclick=null;">  <label for="PizzaMargherita">Margherita</label> <br>
       <input type="radio" id="PizzaQuattroFormaggi" onclick="PizzaQuattroFormaggi(); this.onclick=null;">  <label for="PizzaQuattroFormaggi">Quattro Formaggi</label> <br>
       <input type="radio" id="PizzaCipollaTonno" onclick="PizzaCipollaTonno(); this.onclick=null;">  <label for="PizzaCipollaTonno">Cipolla e Tonno</label> </label> <br>
-      <input type="radio" id="PizzaCavolfiore" onclick="PizzaCavolfiore(); this.onclick=null;">  <label for="PizzaCavolfiore"> Finta pizza al cavolfiore </label> <a href="https://ricette.giallozafferano.it/Finta-pizza-al-cavolfiore.html"> &#10170; </a> <br>
+      <input type="radio" id="PizzaCavolfiore" onclick="PizzaCavolfiore(); this.onclick=null;">  <label for="PizzaCavolfiore"> Finta Pizza al Cavolfiore </label> <a href="https://ricette.giallozafferano.it/Finta-pizza-al-cavolfiore.html"> &#10170; </a> <br>
 
 
 
@@ -169,7 +156,7 @@ DONE - something new, testing git
   <li id="liCarne">Carne</li>
     <ul>
       <input type="radio" id="Ragù" onclick="Ragù(); this.onclick=null;">  <label for="Ragù">Ragù</label><br>
-      <input type="radio" id="Lasagna" onclick="LasagnaRagù(); this.onclick=null;">  <label for="LasagnaRagù"> Lasagna col ragù</label> <br>
+      <input type="radio" id="LasagnaRagù" onclick="LasagnaRagù(); this.onclick=null;">  <label for="LasagnaRagù"> Lasagna col Ragù</label> <br>
       <input type="radio" id="LasagnaBianca" onclick="LasagnaBianca(); this.onclick=null;">  <label for="LasagnaBianca"> Lasagna Bianca</label> <br>
       <input type="radio" id="CrispyMcBacon" onclick="CrispyMcBacon(); this.onclick=null;">  <label for="CrispyMcBacon"> Crispy McBacon </label> <a href="https://chefincamicia.com/ricetta/crispy-mcbacon-homemade/"> &#10170;</a>  <br>
       <input type="radio" id="KaeseLauch" onclick="KaeseLauch(); this.onclick=null;">  <label for="KaeseLauch">Käse-Lauch Suppe</label> <br>
@@ -180,7 +167,7 @@ DONE - something new, testing git
 
                 <div class="Groups">  &nbsp; <strong>Pollo</strong> </div>
       <input type="radio" id="TikkaMasala" onclick="TikkaMasala(); this.onclick=null;">  <label for="TikkaMasala"> Tikka Masala </label> <a href="https://www.theguardian.com/lifeandstyle/wordofmouth/2014/apr/24/how-to-cook-perfect-chicken-tikka-masala"> &#10170; </a> <br>
-      <input type="radio" id="RedCurryChicken" onclick="RedCurryChicken(); this.onclick=null;">  <label for="RedCurryChicken"> Red curry chicken </a></label> <a href=""> &#10170;</a> <br>
+      <input type="radio" id="RedCurryChicken" onclick="RedCurryChicken(); this.onclick=null;">  <label for="RedCurryChicken"> Red Curry Chicken </a></label> <a href=""> &#10170;</a> <br>
       </ul>
 
 
@@ -189,15 +176,15 @@ DONE - something new, testing git
       <ul>
         <input type="radio" id="Parmigiana" onclick="Parmigiana(); this.onclick=null;">  <label for="Parmigiana"> Parmigiana </label> <br>
         <input type="radio" id="Zangarkoepfe" onclick="Zangarkoepfe(); this.onclick=null;">  <label for="Zangarkoepfe"> Zangarköpfe </label> <br>
-        <input type="radio" id="SformatoZucca" onclick="SformatoZucca(); this.onclick=null;">  <label for="SformatoZucca"> SformatoZucca </label> <br>
+        <input type="radio" id="SformatoZucca" onclick="SformatoZucca(); this.onclick=null;">  <label for="SformatoZucca"> Sformato di Zucca e Carote </label> <br>
 
 
                 <div class="Groups">  &nbsp; <strong>Uova</strong> </div>
-        <input type="radio" id="Crepe4formaggi" onclick="Crepe4formaggi(); this.onclick=null;">  <label for="Crepe4formaggi">Crepe ai quattro formaggi e noci</label>
+        <input type="radio" id="Crepe4formaggi" onclick="Crepe4formaggi(); this.onclick=null;">  <label for="Crepe4formaggi">Crepe ai Quattro Formaggi e Noci</label>
         <br>
         <input type="radio" id="Deviled" onclick="Deviled(); this.onclick=null;">  <label for="Deviled">Deviled</label>
         <br>
-        <input type="radio" id="InSalsaPomodoro" onclick="InSalsaPomodoro(); this.onclick=null;">  <label for="InSalsaPomodoro">In salsa di pomodoro</label>
+        <input type="radio" id="InSalsaPomodoro" onclick="InSalsaPomodoro(); this.onclick=null;">  <label for="InSalsaPomodoro">In Salsa di Pomodoro</label>
         <br>
         <input type="radio" id="Reibekuchen" onclick="Reibekuchen(); this.onclick=null;">  <label for="Reibekuchen">Reibekuchen</label>
         <br>
@@ -214,8 +201,8 @@ DONE - something new, testing git
 
                 <div class="Groups">  &nbsp; <strong>Insalate</strong> </div>
         <input type="radio" id="InsalataGreca" onclick="InsalataGreca(); this.onclick=null;">  <label for="InsalataGreca">Insalata Greca</label><br>
-        <input type="radio" id="InsalataCaesar" onclick="InsalataCaesar(); this.onclick=null;">  <label for="InsalataCaesar">Caesar</label><br>
-        <input type="radio" id="InsalataEstiva" onclick="InsalataEstiva(); this.onclick=null;">  <label for="InsalataEstiva">Estiva</label><br>
+        <input type="radio" id="InsalataCaesar" onclick="InsalataCaesar(); this.onclick=null;">  <label for="InsalataCaesar">Insalata Caesar</label><br>
+        <input type="radio" id="InsalataEstiva" onclick="InsalataEstiva(); this.onclick=null;">  <label for="InsalataEstiva">Insalata Estiva</label><br>
 
   </ul>
 
