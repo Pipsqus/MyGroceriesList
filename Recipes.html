@@ -32,7 +32,7 @@ DONE - something new, testing git
 
 <!-- Add here the food we might eat  -->
     <body onload="DefineIngredienti()">
-      <div class="Dropdown">
+      <div class="DropdownDiv">
         <button class="DropdownButton" id="DropdownButton" onclick="Dropdown()"> &#10048; </button>
         <div id="DropdownMenu" class="DropdownContent">
           <button class="GoToButton" type="button" onclick=GoToPasta()> Pasta </button><br>
@@ -44,11 +44,11 @@ DONE - something new, testing git
           <button class="GoToButton" type="button" onclick=GoToSecondi()> Secondi </button><br>
           <button class="GoToButton" type="button" onclick=GoToDolci()> Dolci </button><br>
           <button class="GoToButton" type="button" onclick=GoToFondamentali()> Fondamentali </button><br>
-          <button class="GoToButton" type="button" onclick=GoToUtilita()> Utilità </button><br><br>
+          <button class="GoToButton" type="button" onclick=GoToUtilita()> Utilità </button><br>
 
-          &nbsp;<button type="button" name="generate_list" style="margin-bottom: 4vw;" onclick="generate_list()"> Fai la lista </button> <br>
+          &nbsp;<button class="GoToButton" type="button" style="margin-bottom: 2vh;" onclick="generate_list()"> Fai la lista </button> <br>
 
-          <button type="button" name="clear_list" style="margin: 12px;" onclick="clear_list()"> Ricomincia </button>
+          <button type="button" class="GoToButton" onclick="clear_list()"> Ricomincia </button>
 
         </div>
         </div>
