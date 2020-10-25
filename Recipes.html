@@ -134,13 +134,13 @@ DONE - something new, testing git
 
 
             <div class="Groups">  &nbsp; <strong>Sfoglia</strong> <a href="https://ascuoladipasticceria.wordpress.com/2016/09/27/pasta-sfoglia-inclusione-e-pieghe/"> &#10170; </a> </div>
-      <input type="radio" id="SfogliaZucchineUova" onclick="SfogliaZucchineUova(); this.onclick=null;">  <label for="SfogliaZucchineUova">Zucchine e uova</label>
+      <input type="radio" id="SfogliaZucchineUova" onclick="SfogliaZucchineUova(); this.onclick=null;">  <label for="SfogliaZucchineUova"> Zucchine e uova </label>
       <br>
-      <input type="radio" id="Pizzette" onclick="Pizzette(); this.onclick=null;">  <label for="Pizzette">Pizzette</label>
+      <input type="radio" id="PizzetteSfoglia" onclick="PizzetteSfoglia(); this.onclick=null;">  <label for="PizzetteSfoglia"> Pizzette </label>
       <br>
-      <input type="radio" id="SfogliaPatateRicotta" onclick="SfogliaPatateRicotta(); this.onclick=null;">  <label for="SfogliaPatateRicotta">Patate ricotta</label>
+      <input type="radio" id="SfogliaPatateRicotta" onclick="SfogliaPatateRicotta(); this.onclick=null;">  <label for="SfogliaPatateRicotta"> Patate ricotta </label>
       <br>
-      <input type="radio" id="SfogliaRicottaSpinaciCotto" onclick="SfogliaRicottaSpinaciCotto(); this.onclick=null;">  <label for="SfogliaRicottaSpinaciCotto">Ricotta, spinaci, cotto</label>
+      <input type="radio" id="SfogliaRicottaSpinaci" onclick="SfogliaRicottaSpinaci(); this.onclick=null;">  <label for="SfogliaRicottaSpinaci"> Ricotta, spinaci </label>
       <br>
 
               <div class="Groups">  &nbsp; <strong>Pizza</strong> </div>
@@ -169,8 +169,8 @@ DONE - something new, testing git
   <li id="liCarne">Carne</li>
     <ul>
       <input type="radio" id="Ragù" onclick="Ragù(); this.onclick=null;">  <label for="Ragù">Ragù</label><br>
-
-      <input type="radio" id="Lasagna" onclick="Lasagna(); this.onclick=null;">  <label for="Lasagna">Lasagna (verde; prosciutto e funghi)</label> <br>
+      <input type="radio" id="Lasagna" onclick="LasagnaRagù(); this.onclick=null;">  <label for="LasagnaRagù"> Lasagna col ragù</label> <br>
+      <input type="radio" id="LasagnaBianca" onclick="LasagnaBianca(); this.onclick=null;">  <label for="LasagnaBianca"> Lasagna Bianca</label> <br>
       <input type="radio" id="CrispyMcBacon" onclick="CrispyMcBacon(); this.onclick=null;">  <label for="CrispyMcBacon"> Crispy McBacon </label> <a href="https://chefincamicia.com/ricetta/crispy-mcbacon-homemade/"> &#10170;</a>  <br>
       <input type="radio" id="KaeseLauch" onclick="KaeseLauch(); this.onclick=null;">  <label for="KaeseLauch">Käse-Lauch Suppe</label> <br>
       <input type="radio" id="CroquetasDeJamon" onclick="CroquetasDeJamon(); this.onclick=null;">  <label for="CroquetasDeJamon">Croquetas de Jamon</label> <br>
@@ -188,7 +188,8 @@ DONE - something new, testing git
 
       <ul>
         <input type="radio" id="Parmigiana" onclick="Parmigiana(); this.onclick=null;">  <label for="Parmigiana"> Parmigiana </label> <br>
-        <input type="radio" id="Zangarkoepfe" onclick="Zangarkoepfe(); this.onclick=null;">  <label for="Zangarkoepfe">Zangarköpfe</label> <br>
+        <input type="radio" id="Zangarkoepfe" onclick="Zangarkoepfe(); this.onclick=null;">  <label for="Zangarkoepfe"> Zangarköpfe </label> <br>
+        <input type="radio" id="SformatoZucca" onclick="SformatoZucca(); this.onclick=null;">  <label for="SformatoZucca"> SformatoZucca </label> <br>
 
 
                 <div class="Groups">  &nbsp; <strong>Uova</strong> </div>
@@ -221,7 +222,7 @@ DONE - something new, testing git
   <li id="liDolci">Dolci</li>
     <ul>
       <input type="radio" id="Camille" onclick="Camille(); this.onclick=null;">  <label for="Camille"> Camille </label><br>
-      <input type="radio" id="Cookies" onclick="Cookies(); this.onclick=null;">  <label for="Cookies"> Cookies </label> <a href="https://www.theguardian.com/food/2018/nov/24/pear-recipes-cheesecake-choc-chip-cookie-ginger-cake-yotam-ottolenghi"> &#10170;</a> with <a href="https://www.mnn.com/food/recipes/stories/whats-wrong-with-my-cookies-a-troubleshooting-guide">troubleshooting</a><br>
+      <input type="radio" id="OttolenghiCookies" onclick="OttolenghiCookies(); this.onclick=null;">  <label for="OttolenghiCookies"> Ottolenghi Cookies </label> <a href="https://www.theguardian.com/food/2018/nov/24/pear-recipes-cheesecake-choc-chip-cookie-ginger-cake-yotam-ottolenghi"> &#10170;</a> with <a href="https://www.mnn.com/food/recipes/stories/whats-wrong-with-my-cookies-a-troubleshooting-guide">troubleshooting</a><br>
       <input type="radio" id="PereVino" onclick="PereVino(); this.onclick=null;">  <label for="PereVino"> Pere e Vino  </label> <a href="https://ricette.giallozafferano.it/pere-al-vino-rosso.html">&#10170;</a> <br>
       <input type="radio" id="PistachioEclaire" onclick="PistachioEclaire(); this.onclick=null;">  <label for="PistachioEclaire"> Pistachio Eclaire </label> <a href="https://www.roadtopastry.com/blog/recipes/pate-a-choux/recipe-pistachio-and-strawberry-eclairs"> &#10170; </a> <br>
       <input type="radio" id="Cicerchiata" onclick="Cicerchiata(); this.onclick=null;"> <label for="Cicerchiata"> Cicerchiata </label> <a href="https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/"> &#10170;</a><br>
@@ -304,6 +305,10 @@ DONE - something new, testing git
 
 <p id="end">
 </p>
+
+
+
+
 
     </body>
 </html>

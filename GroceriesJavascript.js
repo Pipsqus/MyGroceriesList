@@ -28,7 +28,6 @@ function Aggiunte() {
   ;localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
 }
 
-
 function generate_list() {
   document.getElementById("list_groceries").innerHTML = "";
   for (const [key, value] of Object.entries(ingredienti)) {
@@ -117,91 +116,21 @@ document.getElementById("DropdownMenu").classList.toggle("show");
 
 // Following, all our recipes
 
-function Scarpinocc() {
-  (ingredienti.pane += 2) || (ingredienti.pane = 2);
-  (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
+function Aglione() {
+}
+function AglioOlio() {
+}
+function Soffritto() {
 }
 function SfogliaLorda() {
   (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
   (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
   (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
 }
-function Parmigiana() {
-  (ingredienti.zucchine += 2) || (ingredienti.zucchine = 2);
-  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-}
-function PestoAlleNoci() {
-  (ingredienti.noci += 1) || (ingredienti.noci = 1);
-  (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
-  (ingredienti.pane += 1) || (ingredienti.pane = 1);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-}
-function PestoTrapanese() {
-  (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
-  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-}
-function PestoDiRucola() {
-  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
-  (ingredienti.noci += 1) || (ingredienti.noci = 1);
-  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-}
-function PestoPistacchiPomodorini() {
-  (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
-  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-  (ingredienti.porri += 1) || (ingredienti.porri = 1);
-}
-function Vichyssoise() {
-  (ingredienti.panna += 1) || (ingredienti.panna = 1);
-  (ingredienti.patate += 1) || (ingredienti.patate = 1);
-  (ingredienti.porri += 1) || (ingredienti.porri = 1);
-}
-function PolentaFunghiGorgonzola() {
-  (ingredienti.polenta += 1) || (ingredienti.polenta = 1);
-  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-  (ingredienti.panna += 1) || (ingredienti.panna = 1);
-}
 function Cannelloni() {
     (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
     (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
     (ingredienti.burro += 1) || (ingredienti.burro = 1);
-}
-
-// Carne
-function Ragù() {
-    (ingredienti.carote += 1) || (ingredienti.carote = 1);
-    (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
-    (ingredienti.vino_rosso += 1) || (ingredienti.vino_rosso = 1);
-    (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-  }
-function KaeseLauch() {
-    (ingredienti.hackfleisch += 1) || (ingredienti.hackfleisch = 1);
-    (ingredienti.saure_sahne += 1) || (ingredienti.saure_sahne = 1);
-    (ingredienti.schmelzkäse += 1) || (ingredienti.schmelzkäse = 1);
-    (ingredienti.porro += 1) || (ingredienti.porro = 1);
-  }
-
-function PaneCipolle() {
-    (ingredienti.pane += 1) || (ingredienti.pane = 1);
-    (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-    (ingredienti.cipolle += 1) || (ingredienti.cipolle = 1);
-}
-function RipienoTartufo() {
-  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-  (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-  (ingredienti.tartufo += 1) || (ingredienti.tartufo = 1);
-}
-function GorgonzolaRadicchio() {
-  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-  (ingredienti.noci += 2) || (ingredienti.noci = 2);
-  (ingredienti.radicchio += 1) || (ingredienti.radicchio = 1);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
 }
 function LasagnaRolls() {
   (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
@@ -209,25 +138,108 @@ function LasagnaRolls() {
   (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
   (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
 }
+function PaneCipolle() {
+    (ingredienti.pane += 1) || (ingredienti.pane = 1);
+    (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+    (ingredienti.cipolle += 1) || (ingredienti.cipolle = 1);
+}
+function GorgonzolaRadicchio() {
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (ingredienti.noci += 2) || (ingredienti.noci = 2);
+  (ingredienti.radicchio += 1) || (ingredienti.radicchio = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+}
+function CremaAsparagi() {
+}
+function RipienoTartufo() {
+  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+  (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.tartufo += 1) || (ingredienti.tartufo = 1);
+}
+function Soffritto() {
+}
+
+      // Ravioli, Scarpinocc, Pi Fasacc
+
+      function RavioliRicottaSpinaci() {
+      }
+      function PereRicottaZafferanoBurro() {
+      }
+      function Scarpinocc() {
+        (ingredienti.pane += 2) || (ingredienti.pane = 2);
+        (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
+      }
+      function Gyoza() {
+      }
+      function Soffritto() {
+      }
+
+      // Tortellini, Cappellacci
+
+      function CappellacciAllaZucca() {
+      }
+      function VerdeDiCarne() {
+      }
+      function TortelliPere() {
+      }
+      function Soffritto() {
+      }
+
+      // Pesti, Salse
+
+      function PestoTrapanese() {
+        (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
+        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+        (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+      }
+      function PestoAlleNoci() {
+        (ingredienti.noci += 1) || (ingredienti.noci = 1);
+        (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
+        (ingredienti.pane += 1) || (ingredienti.pane = 1);
+        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+      }
+      function PestoPistacchiPomodorini() {
+        (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
+        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+        (ingredienti.porri += 1) || (ingredienti.porri = 1);
+      }
+      function PestoDiRucola() {
+        (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+        (ingredienti.noci += 1) || (ingredienti.noci = 1);
+        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+      }
+      function PestoDiSedano() {
+      }
+      function PestoGenovese() {
+      }
+
+      // Risotto, Riso
+
+      function RisottoAllaZucca() {
+      }
+      function RisottoPorroGorgonzola() {
+      }
+      function RisottoZucchine() {
+      }
+      function RisoFritto() {
+      }
+
+      // Minestre
+
+      function Vichyssoise() {
+        (ingredienti.panna += 1) || (ingredienti.panna = 1);
+        (ingredienti.patate += 1) || (ingredienti.patate = 1);
+        (ingredienti.porri += 1) || (ingredienti.porri = 1);
+      }
+      function Stracciatella() {
+      }
 
 // Panetteria
-function PizzaMargherita() {
-  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-}
-function PizzaQuattroFormaggi() {
-  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-}
-function PizzaCipollaTonno() {
-  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-  (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
-}
-function PizzaCavolfiore() {
-  (ingredienti.blumenkohl += 1) || (ingredienti.blumenkohl = 1);
-  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-}
+
 function Hamburger() {
   (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
   (ingredienti.fagioli += 1) || (ingredienti.fagioli = 1);
@@ -236,45 +248,207 @@ function Hamburger() {
   (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
   (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
 }
-function Gnocco() {
-  (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
-  (ingredienti.mortadella += 1) || (ingredienti.mortadella = 1);
-  (ingredienti.pancetta += 1) || (ingredienti.pancetta = 1);
-  (ingredienti.pecorino += 1) || (ingredienti.pecorino = 1);
+function FrenchToast() {
 }
-function Crescia() {
-  (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
+function Strangolapreti() {
 }
-function CresciaHummus() {
-  (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
-  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+function Canederli() {
 }
-function CresciaOrtolana() {
-  (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
-  (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
-  (ingredienti.aceto_balsamico +=1) || (ingredienti.aceto_balsamico+=1);
-}
-function CresciaAutunno() {
+function PolentaFunghiGorgonzola() {
+  (ingredienti.polenta += 1) || (ingredienti.polenta = 1);
   (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-  (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
 }
-function CresciaProvenzale() {
-  (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
-  (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
+function PanettoneGastronomico() {
 }
-function CresciaSquacqueroneRucolaPomodorini() {
-  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
-  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-  (ingredienti.stracchino += 1) || (ingredienti.stracchino = 1);
+function PolpetteParmigiano() {
 }
-function CresciaBrie() {
-  (ingredienti.brie += 1) || (ingredienti.brie = 1);
-  (ingredienti.mele += 1) || (ingredienti.mele = 1);
-  (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
+function PolpetteSedanoPatate() {
 }
 
+      // Crescia
+
+      function Crescia() {
+        (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
+      }
+      function CresciaHummus() {
+        (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
+        (ingredienti.carote += 1) || (ingredienti.carote = 1);
+      }
+      function CresciaOrtolana() {
+        (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+        (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
+        (ingredienti.aceto_balsamico +=1) || (ingredienti.aceto_balsamico+=1);
+      }
+      function CresciaAutunno() {
+        (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+        (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+        (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
+      }
+      function CresciaProvenzale() {
+        (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
+        (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
+      }
+      function CresciaSquacqueroneRucolaPomodorini() {
+        (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+        (ingredienti.stracchino += 1) || (ingredienti.stracchino = 1);
+      }
+      function CresciaBrie() {
+        (ingredienti.brie += 1) || (ingredienti.brie = 1);
+        (ingredienti.mele += 1) || (ingredienti.mele = 1);
+        (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
+      }
+
+      // Sfoglia
+
+      function SfogliaZucchineUova() {
+      }
+      function PizzetteSfoglia() {
+      }
+      function SfogliaPatateRicotta() {
+      }
+      function SfogliaRicottaSpinaci() {
+      }
+
+      // Pizza
+
+      function PizzaMargherita() {
+        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+      }
+      function PizzaQuattroFormaggi() {
+        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+        (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+      }
+      function PizzaCipollaTonno() {
+        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+        (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
+      }
+      function PizzaCavolfiore() {
+        (ingredienti.blumenkohl += 1) || (ingredienti.blumenkohl = 1);
+        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+      }
+
+      // Focaccia
+
+      function FocacciaCipollaGorgonzola() {
+      }
+      function FocacciaPomodoriOlive() {
+      }
+      function FocacciaPatateRosmarino() {
+      }
+
+      // Frittura
+
+      function Gnocco() {
+        (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
+        (ingredienti.mortadella += 1) || (ingredienti.mortadella = 1);
+        (ingredienti.pancetta += 1) || (ingredienti.pancetta = 1);
+        (ingredienti.pecorino += 1) || (ingredienti.pecorino = 1);
+      }
+      function OliveAscolane() {
+      }
+      function ZucchineAllaRomana() {
+      }
+      function MozzarellaInCarrozza() {
+      }
+
+// Carne
+function Ragù() {
+    (ingredienti.carote += 1) || (ingredienti.carote = 1);
+    (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
+    (ingredienti.vino_rosso += 1) || (ingredienti.vino_rosso = 1);
+    (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  }
+function LasagnaRagù () {
+}
+function LasagnaBianca() {
+}
+function CrispyMcBacon () {
+}
+function KaeseLauch() {
+    (ingredienti.hackfleisch += 1) || (ingredienti.hackfleisch = 1);
+    (ingredienti.saure_sahne += 1) || (ingredienti.saure_sahne = 1);
+    (ingredienti.schmelzkäse += 1) || (ingredienti.schmelzkäse = 1);
+    (ingredienti.porro += 1) || (ingredienti.porro = 1);
+  }
+function CroquetasDeJamon() {
+}
+function BratwurstSauerkraut () {
+}
+function AllaFilippo() {
+}
+function PastaSalsicciaZucca() {
+}
+
+      // Pollo
+
+      function TikkaMasala() {
+      }
+      function RedCurryChicken() {
+      }
+
+// Secondi
+
+function Parmigiana() {
+  (ingredienti.zucchine += 2) || (ingredienti.zucchine = 2);
+  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+}
+function Zangarkoepfe() {
+}
+function SformatoZucca() {
+  (ingredienti.zucca += 1) || (ingredienti.zucca = 1);
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+}
+
+// Uova
+
+      function Crepe4formaggi() {
+      }
+      function Deviled() {
+      }
+      function InSalsaPomodoro() {
+      }
+      function Reibekuchen() {
+      }
+
+// Sauces
+
+      function BabaGanoush() {
+      }
+      function ThaiChiliSauce() {
+      }
+      function CremaBroccoliCeci() {
+      }
+
+// Insalate
+
+      function InsalataGreca() {
+      }
+      function InsalataCaesar() {
+      }
+      function InsalataEstiva() {
+      }
+
+
 // Dolci
+
+function Camille() {
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+  (ingredienti.succo_di_arancia += 1) || (ingredienti.succo_di_arancia = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+}
+function OttolenghiCookies() {
+}
+function PereVino() {
+}
 function PistachioEclaire () {
   (ingredienti.burro += 1) || (ingredienti.burro = 1);
   (ingredienti.gelatina += 1) || (ingredienti.gelatina = 1);
@@ -284,7 +458,23 @@ function PistachioEclaire () {
   (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
   (ingredienti.fragole += 1) || (ingredienti.fragole = 1);
 }
+function Cicerchiata() {
+  (ingredienti.vino_liquoroso += 1) || (ingredienti.vino_liquoroso = 1);
+  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
+}
+function PannaCotta() {
+}
+function Waffles() {
+}
+function Milkshake() {
+  (ingredienti.marmellata += 1) || (ingredienti.marmellata = 1);
+  (ingredienti.nocciole += 1) || (ingredienti.nocciole = 1);
+  (ingredienti.berries += 1) || (ingredienti.berries = 1);
+  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
+  (ingredienti.gelato_alla_vaniglia += 1) || (ingredienti.gelato_alla_vaniglia = 1);
+}
 function Cestini() {
+  CremaPasticcera();
   (ingredienti.berries_or_pesca_or_pere += 1) || (ingredienti.berries_or_pesca_or_pere = 1);
 }
 function Profiteroles() {
@@ -298,21 +488,7 @@ function Tiramisù() {
   (ingredienti.savoiardi += 1) || (ingredienti.savoiardi = 1);
   (ingredienti.cacao += 1) || (ingredienti.cacao = 1);
 }
-function Camille() {
-  (ingredienti.carote += 1) || (ingredienti.carote = 1);
-  (ingredienti.succo_di_arancia += 1) || (ingredienti.succo_di_arancia = 1);
-  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-}
-function Cicerchiata() {
-  (ingredienti.vino_liquoroso += 1) || (ingredienti.vino_liquoroso = 1);
-  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
-}
-function Milkshake() {
-  (ingredienti.marmellata += 1) || (ingredienti.marmellata = 1);
-  (ingredienti.nocciole += 1) || (ingredienti.nocciole = 1);
-  (ingredienti.berries += 1) || (ingredienti.berries = 1);
-  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
-  (ingredienti.gelato_alla_vaniglia += 1) || (ingredienti.gelato_alla_vaniglia = 1);
+function CremaPasticcera() {
 }
 
 // Fondamentali
