@@ -80,6 +80,8 @@ function clear_list() {
 // Menu Dropdown
   function Dropdown() {
     document.getElementById("DropdownMenu").classList.toggle("show");
+    document.getElementsByClassName("DropdownButton")[1].classList.toggle("hidden");
+    document.getElementsByClassName("DropdownButton")[2].classList.toggle("hidden");
     event.stopPropagation();
   }
   function GoToPasta() {

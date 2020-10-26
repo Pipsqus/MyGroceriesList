@@ -13,9 +13,12 @@
 
 
       <div class="DropdownDiv">
-        <button class="DropdownButton" id="DropdownButton" onclick="Dropdown()"> &#10048; </button>
+        <button class="DropdownButton" id="DropdownButton" onclick="Dropdown()"> &#10048; </button> <br>
+        <button type="button" class="DropdownButton" onclick="generate_list()"> <span class="PolygonalGenerate"> &nbsp;&nbsp;&nbsp; </span> </button> <br>
+        <button type="button" class="DropdownButton" onclick="clear_list()"> <span class="PolygonalReset"> &nbsp;&nbsp;&nbsp; </span> </button>
+
         <div class="DropdownContent" id="DropdownMenu">
-          <p> Categories </p>
+          <button class="GoToButton" type="button" onclick=GoToPasta()> Pasta </button><br>
           <button class="GoToButton" type="button" onclick=GoToRisotto()> Risotto </button><br>
           <button class="GoToButton" type="button" onclick=GoToMinestre()> Minestre </button><br>
           <button class="GoToButton" type="button" onclick=GoToPanetteria()> Panetteria </button><br>
@@ -150,11 +153,12 @@
       <input type="radio" id="AllaFilippo" onclick="AllaFilippo(); this.onclick=null;">  <label for="AllaFilippo">Alla Filippo </label> <br>
       <input type="radio" id="PastaSalsicciaZucca" onclick="PastaSalsicciaZucca(); this.onclick=null;">  <label for="PastaSalsicciaZucca">Pasta Salsiccia e Zucca</label> <br>
 
+<!--
                 <div class="Groups">  &nbsp; <strong>Pollo</strong> </div>
       <input type="radio" id="TikkaMasala" onclick="TikkaMasala(); this.onclick=null;">  <label for="TikkaMasala"> Tikka Masala </label> <a href="https://www.theguardian.com/lifeandstyle/wordofmouth/2014/apr/24/how-to-cook-perfect-chicken-tikka-masala"> &#10170; </a> <br>
       <input type="radio" id="RedCurryChicken" onclick="RedCurryChicken(); this.onclick=null;">  <label for="RedCurryChicken"> Red Curry Chicken </a></label> <a href=""> &#10170;</a> <br>
       </ul>
-
+-->
 
   <li id="liSecondi">Secondi</li>
 
@@ -284,6 +288,8 @@
 <script type="text/javascript">
   document.addEventListener("click", function() {
     document.getElementById("DropdownMenu").classList.remove("show");
+    document.getElementsByClassName("DropdownButton")[1].classList.remove("hidden");
+    document.getElementsByClassName("DropdownButton")[2].classList.remove("hidden");
   })
 </script>
 
