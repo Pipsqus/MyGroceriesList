@@ -110,7 +110,7 @@ label {
   border-radius: 4px;
   width: 15em;
   padding: 1vh 0.15em 0.5vh 0.15em;
-  border-bottom: 1vh solid rgb(0,0,50,90%);
+  border-bottom: 0.9vh solid rgb(0,0,50,90%);
   background-color: rgb(240,240,240);
 }
 .DropdownContent button:first-of-type {
