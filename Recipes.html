@@ -9,19 +9,13 @@
     </script>
     <title> Recipes </title>
   </head>
-
-<!--
-TO-DO LIST
-
--->
+  <body onload="DefineIngredienti()">
 
 
-<!-- Add here the food we might eat  -->
-    <body onload="DefineIngredienti()">
       <div class="DropdownDiv">
         <button class="DropdownButton" id="DropdownButton" onclick="Dropdown()"> &#10048; </button>
-        <div id="DropdownMenu" class="DropdownContent">
-          <button class="GoToButton" type="button" onclick=GoToPasta()> Pasta </button><br>
+        <div class="DropdownContent" id="DropdownMenu">
+          <p> Categories </p>
           <button class="GoToButton" type="button" onclick=GoToRisotto()> Risotto </button><br>
           <button class="GoToButton" type="button" onclick=GoToMinestre()> Minestre </button><br>
           <button class="GoToButton" type="button" onclick=GoToPanetteria()> Panetteria </button><br>
@@ -30,19 +24,14 @@ TO-DO LIST
           <button class="GoToButton" type="button" onclick=GoToSecondi()> Secondi </button><br>
           <button class="GoToButton" type="button" onclick=GoToDolci()> Dolci </button><br>
           <button class="GoToButton" type="button" onclick=GoToFondamentali()> Fondamentali </button><br>
-          <button class="GoToButton" type="button" onclick=GoToUtilita()> Utilità </button><br>
-
-          &nbsp;<button class="GoToButton" type="button" style="margin-bottom: 2vh;" onclick="generate_list()"> Fai la lista </button> <br>
-
-          <button type="button" class="GoToButton" onclick="clear_list()"> Ricomincia </button>
-
-        </div>
+          <button class="GoToButton" type="button" onclick=GoToUtilita()> Utilità </button>
         </div>
       </div>
+
       <h1> Sustenance </h1>
-<ul>
-  <li id="liPasta"> Pasta </li>
-    <ul>
+  <ul>
+    <li id="liPasta"> Pasta </li>
+      <ul>
 
               <div class="Groups"> <strong>Tagliatelle, Spätzle, Pici, Corzetti <br>
               <span style="font-size:0.8em;"> Garganelli, Mandilli, Gnocchi, Orecchiette, Strozzapreti, Trofie, Raschiatelli, Sagne Torte </span>   </strong> </div>
@@ -258,8 +247,8 @@ TO-DO LIST
         <input type="radio" id="Detersivo" onclick="Detersivo(); this.onclick=null;">  <label for="Detersivo"> Detersivo/Ammorbidente </label> <br>
         <input type="radio" id="Spugne" onclick="Spugne(); this.onclick=null;">  <label for="Spugne"> Spugne </label><br>
         <input type="radio" id="Guanti" onclick="Guanti(); this.onclick=null;">  <label for="Guanti"> Guanti </label><br>
-        <input type="radio" id="CartaIgienica" onclick="CartaIgienica(); this.onclick=null;">  <label for="CartaIgienica"> CartaIgienica </label><br>
-        <input type="radio" id="CleaningProducts" onclick="CleaningProducts(); this.onclick=null;">  <label for="CleaningProducts"> CleaningProducts </label><br>
+        <input type="radio" id="CartaIgienica" onclick="CartaIgienica(); this.onclick=null;">  <label for="CartaIgienica"> Carta Igienica </label><br>
+        <input type="radio" id="CleaningProducts" onclick="CleaningProducts(); this.onclick=null;">  <label for="CleaningProducts"> Cleaning Products </label><br>
         <input type="radio" id="Spazzatura" onclick="Spazzatura(); this.onclick=null;">  <label for="Spazzatura"> Spazzatura </label><br>
         <input type="radio" id="Lettiera" onclick="Lettiera(); this.onclick=null;">  <label for="Lettiera"> Lettiera </label><br>
         <input type="radio" id="CatFood" onclick="CatFood(); this.onclick=null;">  <label for="CatFood"> Cat Food </label><br>
