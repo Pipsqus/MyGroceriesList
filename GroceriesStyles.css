@@ -66,7 +66,9 @@ label {
   top: 0; right: 45px;
   float: right;
   display: inline-block;
-  z-index: 6;
+}
+.DropdownDiv button:first-of-type {
+  z-index: 999;
 }
 .DropdownButton {
   border-radius: 30px;
