@@ -40,14 +40,6 @@ li {
 .Groups {
   margin: 0.6em 1em;
 }
-.Buttons {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  float: right;
-  margin-right: 4vw;
-  margin-bottom: 2vw;
-}
 button {
   transform: scale(1.2)
 }

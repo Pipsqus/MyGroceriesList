@@ -27,7 +27,6 @@
           <button class="GoToButton" type="button" onclick=GoToSecondi()> Secondi </button><br>
           <button class="GoToButton" type="button" onclick=GoToDolci()> Dolci </button><br>
           <button class="GoToButton" type="button" onclick=GoToFondamentali()> Fondamentali </button><br>
-          <button class="GoToButton" type="button" onclick=GoToUtilita()> Utilità </button>
         </div>
       </div>
 
@@ -215,6 +214,8 @@
 
     <li id="liFondamentali"> Fondamentali </li>
       <ul>
+
+                <div class="Groups">  &nbsp; <strong> Cibo </strong> </div>
         <input type="radio" id="Farina" onclick="Farina(); this.onclick=null;">  <label for="Farina"> Farina </label> <br>
         <input type="radio" id="Aglio" onclick="Aglio(); this.onclick=null;">  <label for="Aglio"> Aglio </label> <br>
         <input type="radio" id="Cipolle" onclick="Cipolle(); this.onclick=null;">  <label for="Cipolle"> Cipolle </label> <br>
@@ -231,7 +232,7 @@
         <input type="radio" id="Riso" onclick="Riso(); this.onclick=null;">  <label for="Riso"> Riso </label> <br>
 
 
-                <div class="Groups">  &nbsp; <strong>Spezie</strong> </div>
+                <div class="Groups">  &nbsp; <strong> Spezie </strong> </div>
         <input type="radio" id="Sale" onclick="Sale(); this.onclick=null;">  <label for="Sale"> Sale </label><br>
         <input type="radio" id="Pepe" onclick="Pepe(); this.onclick=null;">  <label for="Pepe"> Pepe </label><br>
         <input type="radio" id="Origano" onclick="Origano(); this.onclick=null;">  <label for="Origano"> Origano </label><br>
@@ -240,10 +241,9 @@
         <input type="radio" id="Noce_Moscata" onclick="Noce_Moscata(); this.onclick=null;">  <label for="Noce_Moscata"> Noce moscata </label><br>
         <input type="radio" id="Cannella" onclick="Cannella(); this.onclick=null;">  <label for="Cannella"> Cannella </label><br>
         <input type="radio" id="Zafferano" onclick="Zafferano(); this.onclick=null;">  <label for="Zafferano"> Zafferano </label><br>
-      </ul>
 
-    <li id="liUtilita"> Utilità </li>
-      <ul>
+
+              <div class="Groups">  &nbsp; <strong> Utilità </strong> </div>
         <input type="radio" id="Scottex" onclick="Scottex(); this.onclick=null;">  <label for="Scottex"> Scottex </label> <br>
         <input type="radio" id="Tissues" onclick="Tissues(); this.onclick=null;">  <label for="Tissues"> Tissues </label> <br>
         <input type="radio" id="BagnoschiumaSapone" onclick="BagnoschiumaSapone(); this.onclick=null;">  <label for="BagnoschiumaSapone"> Bagnoschiuma, sapone </label> <br>
@@ -271,18 +271,14 @@
 
 <!-- The list of groceries is generated in the following div's -->
 
-<div id="list_groceries">
+  <p id="end">
 
-</div>
-  <p id="list_aggiunte">  </p>
+  <button onclick="toggleRecipesAndIngredients()" style="margin: 3em;"> Toggle recipes and ingredients </button>
 
+  <div id="list_groceries"> </div>
+  <p id="list_aggiunte"> </p>
 
-<div class="Buttons">
-
-</div>
-
-<p id="end">
-</p>
+  </p>
 
 
 <script type="text/javascript">
@@ -290,7 +286,16 @@
     document.getElementById("DropdownMenu").classList.remove("show");
     document.getElementsByClassName("DropdownButton")[1].classList.remove("hidden");
     document.getElementsByClassName("DropdownButton")[2].classList.remove("hidden");
-  })
+  });
+
+
+  document.getElementById("Aggiunte").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        var sectionAggiunte = document.getElementById("Aggiunte");
+        Aggiunte();
+        sectionAggiunte.value = "";
+    }
+  });
 </script>
 
 

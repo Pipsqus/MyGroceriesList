@@ -1,10 +1,28 @@
 function DefineIngredienti() {
     var retrievedObject = localStorage.getItem("ingredienti");
     if (retrievedObject) {
-    ingredienti = JSON.parse(retrievedObject);
+      ingredienti = JSON.parse(retrievedObject);
     } else {
-    ingredienti = {};
+      ingredienti = {};
   }
+}
+
+
+function generate_list() {
+  document.getElementById("list_groceries").innerHTML = "";
+  for (const [key, value] of Object.entries(ingredienti)) {
+      AppendToList(key, value)
+  };
+  localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
+  document.getElementById("end").scrollIntoView()
+}
+
+function AppendToList(key, value) {
+  box = createBox(key);
+  label = createLabel(key, value)
+  paragraph = createParagraph(key, box, label)
+
+  document.getElementById("list_groceries").appendChild(paragraph);
 }
 
 function Aggiunte() {
@@ -28,37 +46,6 @@ function Aggiunte() {
   ;localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
 }
 
-function generate_list() {
-  document.getElementById("list_groceries").innerHTML = "";
-  for (const [key, value] of Object.entries(ingredienti)) {
-    if (value > 0) {
-      AppendToList(key, value)
-    };
-  };
-  localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
-  document.getElementById("end").scrollIntoView()
-}
-
-function AppendToList(key, value) {
-  var box = document.createElement("INPUT");
-  box.type = "checkbox";
-  box.name = key;
-  box.id = "box" + key;
-
-  var label = document.createElement("LABEL")
-  label.htmlFor = "box" + key;
-  var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value
-  var TextNode = TextNode.replace("_", " ");
-  var TextNode = document.createTextNode(TextNode);
-  label.appendChild(TextNode);
-
-  var parag = document.createElement("P")
-  parag.id = key;
-  parag.appendChild(box);
-  parag.appendChild(label);
-
-  document.getElementById("list_groceries").appendChild(parag);
-}
 
 function clear_list() {
     if (window.confirm("Sure you want to reset the list?")) {
@@ -73,6 +60,36 @@ function clear_list() {
     document.getElementById("list_groceries").innerHTML = "";
     location.reload();
   }
+}
+
+
+function createBox(key) {
+  var box = document.createElement("INPUT");
+  box.type = "checkbox";
+  box.name = key;
+  box.id = "box" + key;
+
+  return box;
+}
+
+function createLabel(key, value) {
+  var label = document.createElement("LABEL")
+  label.htmlFor = "box" + key;
+  var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value
+  var TextNode = TextNode.replace("_", " ");
+  var TextNode = document.createTextNode(TextNode);
+  label.appendChild(TextNode);
+
+  return label;
+}
+
+function createParagraph(key, box, label) {
+  var paragraph = document.createElement("P")
+  paragraph.id = key;
+  paragraph.appendChild(box);
+  paragraph.appendChild(label);
+
+  return paragraph;
 }
 
 
@@ -107,9 +124,6 @@ function clear_list() {
   }
   function GoToDolci() {
     document.getElementById("liDolci").scrollIntoView()
-  }
-  function GoToUtilita() {
-    document.getElementById("liUtilita").scrollIntoView()
   }
   function GoToFondamentali() {
     document.getElementById("liFondamentali").scrollIntoView()
