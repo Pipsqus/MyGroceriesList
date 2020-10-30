@@ -9,13 +9,13 @@
     </script>
     <title> Recipes </title>
   </head>
-  <body onload="DefineIngredienti()">
+  <body onload="defineIngredienti(); defineRecipes()">
 
 
       <div class="DropdownDiv">
         <button class="DropdownButton" id="DropdownButton" onclick="Dropdown()"> <span class="PolygonalMenu"> &nbsp;&nbsp;&nbsp; </span> </button> <br>
-        <button class="DropdownButton" onclick="generate_list()"> <span class="PolygonalGenerate"> &nbsp;&nbsp;&nbsp; </span> </button> <br>
-        <button class="DropdownButton" onclick="clear_list()"> <span class="PolygonalReset"> &nbsp;&nbsp;&nbsp; </span> </button>
+        <button class="DropdownButton" onclick="generateListGroceries(); generateListRecipes();"> <span class="PolygonalGenerate"> &nbsp;&nbsp;&nbsp; </span> </button> <br>
+        <button class="DropdownButton" onclick="clearLists()"> <span class="PolygonalReset"> &nbsp;&nbsp;&nbsp; </span> </button>
 
         <div class="DropdownContent" id="DropdownMenu">
           <button class="GoToButton" type="button" onclick=GoToPasta()> Pasta </button><br>
@@ -264,7 +264,7 @@
       <li id="liAggiunte"> Aggiunte </li>
       <ul>
           <input type="text" id="Aggiunte" style="transform: scale(1); width: 30vw" position:"absolute">
-          <button style="position:relative; left:5px" onclick="Aggiunte()"> Aggiungi </button>
+          <button style="position:relative; left:5px" onclick="aggiunte()"> Aggiungi </button>
       </ul>
 </ul> <br>
 
@@ -275,8 +275,12 @@
 
   <button onclick="toggleRecipesAndIngredients()" style="margin: 3em;"> Toggle recipes and ingredients </button>
 
-  <div id="list_groceries"> </div>
-  <p id="list_aggiunte"> </p>
+  <div id="list_groceries">
+
+    <p id="list_aggiunte"> </p>
+  </div>
+  <div id="list_recipes" class="hidden"> Baloba </div>
+
 
   </p>
 
@@ -292,7 +296,7 @@
   document.getElementById("Aggiunte").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         var sectionAggiunte = document.getElementById("Aggiunte");
-        Aggiunte();
+        aggiunte();
         sectionAggiunte.value = "";
     }
   });

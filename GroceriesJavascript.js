@@ -1,4 +1,4 @@
-function DefineIngredienti() {
+function defineIngredienti() {
     var retrievedObject = localStorage.getItem("ingredienti");
     if (retrievedObject) {
       ingredienti = JSON.parse(retrievedObject);
@@ -7,25 +7,43 @@ function DefineIngredienti() {
   }
 }
 
+function defineRecipes() {
+  var retrievedObject = localStorage.getItem("recipes");
+  if (retrievedObject) {
+    recipes = JSON.parse(retrievedObject);
+  } else {
+    recipes = {};
+}
+}
 
-function generate_list() {
+
+function generateListGroceries() {
   document.getElementById("list_groceries").innerHTML = "";
   for (const [key, value] of Object.entries(ingredienti)) {
-      AppendToList(key, value)
+      AppendToList(key, value, "list_groceries")
   };
   localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
   document.getElementById("end").scrollIntoView()
 }
 
-function AppendToList(key, value) {
-  box = createBox(key);
-  label = createLabel(key, value)
-  paragraph = createParagraph(key, box, label)
-
-  document.getElementById("list_groceries").appendChild(paragraph);
+function generateListRecipes() {
+  document.getElementById("list_recipes").innerHTML = "";
+  for (const [key, value] of Object.entries(recipes)) {
+      AppendToList(key, value, "list_recipes")
+  };
+  localStorage.setItem("recipes", JSON.stringify(recipes));
 }
 
-function Aggiunte() {
+function AppendToList(key, value, list_input) {
+  var box = createBox(key);
+  var label = createLabel(key, value);
+  var paragraph = createParagraph(key, box, label);
+
+  var list_add = list_input;
+  document.getElementById(list_add).appendChild(paragraph);
+}
+
+function aggiunte() {
   var AggiunteInputTrimRight = document.getElementById("Aggiunte").value.trimRight()
   var AggiunteInputTrimAll = AggiunteInputTrimRight.trimLeft()
   var TextNode = " " + AggiunteInputTrimAll;
@@ -41,13 +59,16 @@ function Aggiunte() {
 
   var AddedParagraph = document.getElementById(TextNode);
   if (AddedParagraph) {AddedParagraph.remove();}
-  AppendToList(TextNode, ingredienti[TextNode])
+  AppendToList(TextNode, ingredienti[TextNode], "list_groceries")
 
   ;localStorage.setItem("ingredienti", JSON.stringify(ingredienti));
+
+  var sectionAggiunte = document.getElementById("Aggiunte");
+  sectionAggiunte.value = "";
 }
 
 
-function clear_list() {
+function clearLists() {
     if (window.confirm("Sure you want to reset the list?")) {
       list_input_elements = document.getElementsByTagName("input");
       var i = 0;
@@ -60,6 +81,13 @@ function clear_list() {
     document.getElementById("list_groceries").innerHTML = "";
     location.reload();
   }
+}
+
+function toggleRecipesAndIngredients() {
+  var listGroceries = document.getElementById("list_groceries")
+  var listRecipes = document.getElementById("list_recipes")
+  listGroceries.classList.toggle("hidden");
+  listRecipes.classList.toggle("hidden");
 }
 
 
@@ -75,7 +103,7 @@ function createBox(key) {
 function createLabel(key, value) {
   var label = document.createElement("LABEL")
   label.htmlFor = "box" + key;
-  var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value
+  var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value;
   var TextNode = TextNode.replace("_", " ");
   var TextNode = document.createTextNode(TextNode);
   label.appendChild(TextNode);
@@ -91,7 +119,6 @@ function createParagraph(key, box, label) {
 
   return paragraph;
 }
-
 
 
 // Menu Dropdown
