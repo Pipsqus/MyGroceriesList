@@ -161,12 +161,15 @@ function createParagraph(key, box, label) {
 // Following, all our recipes
 
 function Aglione() {
+  (recipes.aglione += 1) || (recipes.aglione = 1);
 }
 function AglioOlio() {
+  (recipes.aglio_olio += 1) || (recipes.aglio_olio = 1);
 }
 function Soffritto() {
   (ingredienti.carote += 2) || (ingredienti.carote = 2);
   (ingredienti.sedano += 2) || (ingredienti.sedano = 2);
+  (recipes.soffritto += 1) || (recipes.soffritto = 1);
 }
 function SfogliaLorda() {
   (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
