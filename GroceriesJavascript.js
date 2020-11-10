@@ -104,7 +104,7 @@ function createLabel(key, value) {
   var label = document.createElement("LABEL")
   label.htmlFor = "box" + key;
   var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value;
-  var TextNode = TextNode.replaceAll("_", " ");
+  var TextNode = TextNode.replace(/_/g, " ");
   var TextNode = document.createTextNode(TextNode);
   label.appendChild(TextNode);
 
