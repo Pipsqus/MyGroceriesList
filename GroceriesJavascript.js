@@ -738,6 +738,10 @@ function Tiramisù() {
 function CremaPasticcera() {
   (recipes.crema_pasticcera += 1) || (recipes.crema_pasticcera = 1)
 }
+function CrepeKompottPinoli() {
+  (ingredienti.mele += 1) || (ingredienti.mele = 1);
+  (recipes.crepe_kompott_e_pinoli += 1) || (recipes.crepe_kompott_e_pinoli = 1)
+}
 
 // Fondamentali
 
