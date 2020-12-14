@@ -196,6 +196,12 @@ function PaneCipolle() {
     (ingredienti.cipolle += 1) || (ingredienti.cipolle = 1);
     (recipes.pane_e_cipolle += 1) || (recipes.pane_e_cipolle = 1)
   }
+function PastaTonnoZucchinePomodorini() {
+    (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
+    (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+    (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+    (recipes.tonno_zucchine_pomodorini_prezzemolo_e_chili += 1) || (recipes.tonno_zucchine_pomodorini_prezzemolo_e_chili = 1)
+  }
 function GorgonzolaRadicchio() {
   (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
   (ingredienti.noci += 2) || (ingredienti.noci = 2);
