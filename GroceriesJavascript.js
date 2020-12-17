@@ -528,6 +528,7 @@ function PolpetteSedanoPatate() {
 
 // Carne
 function Ragù() {
+    (ingredienti.hackfleisch += 1) || (ingredienti.hackfleisch = 1);
     (ingredienti.carote += 1) || (ingredienti.carote = 1);
     (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
     (ingredienti.vino_rosso += 1) || (ingredienti.vino_rosso = 1);
