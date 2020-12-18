@@ -89,6 +89,9 @@ function toggleRecipesAndIngredients() {
   listGroceries.classList.toggle("hidden");
   listRecipes.classList.toggle("hidden");
 }
+function fischratgeber() {
+  document.getElementById("fischratgeber").classList.toggle("hidden");
+}
 
 
 function createBox(key) {
