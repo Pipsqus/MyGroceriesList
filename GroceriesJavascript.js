@@ -512,6 +512,12 @@ function PolpetteSedanoPatate() {
         (ingredienti.pecorino += 1) || (ingredienti.pecorino = 1);
         (recipes.gnocco_fritto += 1) || (recipes.gnocco_fritto = 1)
       }
+      function Panzerotti() {
+        (ingredienti.friarielli += 1) || (ingredienti.friarielli = 1);
+        (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+        (recipes.panzerotti += 1) || (recipes.panzerotti = 1)
+      }
       function OliveAscolane() {
         (ingredienti.hackfleisch += 1) || (ingredienti.hackfleisch = 1);
         (ingredienti.olive += 1) || (ingredienti.olive = 1);
