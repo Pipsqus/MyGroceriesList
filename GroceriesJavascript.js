@@ -205,10 +205,15 @@ function PastaTonnoZucchinePomodorini() {
     (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
     (recipes.tonno_zucchine_pomodorini_prezzemolo_e_chili += 1) || (recipes.tonno_zucchine_pomodorini_prezzemolo_e_chili = 1)
   }
+function PastaPomodoroScamorza() {
+    (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
+    (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
+    (recipes.pasta_pomodoro_scamorza += 1) || (recipes.pasta_pomodoro_scamorza = 1)
+}
 function CremaZuccaGorgonzola() {
     (ingredienti.zucca += 1) || (ingredienti.zucca = 1);
     (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-    (recipes.CremaZuccaGorgonzola += 1) || (recipes.CremaZuccaGorgonzola = 1)
+    (recipes.crema_zucca_gorgonzola += 1) || (recipes.crema_zucca_gorgonzola = 1)
   }
 function GorgonzolaRadicchio() {
   (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
