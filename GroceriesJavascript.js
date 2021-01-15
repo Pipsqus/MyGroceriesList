@@ -193,6 +193,13 @@ function LasagnaRolls() {
   (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
   (recipes.lasagna_rolls += 1) || (recipes.lasagna_rolls = 1)
 }
+function LasagnaZuccaFunghi() {
+  (ingredienti.zucca += 1) || (ingredienti.zucca = 1);
+  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
+  (recipes.lasagna_zucca_funghi += 1) || (recipes.lasagna_zucca_funghi = 1)
+}
 function PaneCipolle() {
     (ingredienti.pane += 1) || (ingredienti.pane = 1);
     (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
