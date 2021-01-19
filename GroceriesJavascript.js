@@ -821,7 +821,9 @@ function Amido() {
 function Riso() {
   (ingredienti.riso += 1) || (ingredienti.riso = 1);
 }
-
+function AcetoBalsamico() {
+  (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
+}
 
 function Sale() {
 (ingredienti.sale += 1) || (ingredienti.sale = 1);
