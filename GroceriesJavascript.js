@@ -599,6 +599,12 @@ function AllaFilippo() {
 function PastaSalsicciaZucca() {
   (recipes.pasta_salsiccia_e_zucca += 1) || (recipes.pasta_salsiccia_e_zucca = 1)
 }
+function Currywurst() {
+  (ingredienti.bratwurst += 1) || (ingredienti.bratwurst = 1);
+  (ingredienti.worcestershire_sauce += 1) || (ingredienti.worcestershire_sauce = 1);
+  (ingredienti.tomato_paste += 1) || (ingredienti.tomato_paste = 1);
+  (recipes.currywurst += 1) || (recipes.currywurst = 1)
+}
 
       // Pollo
 
