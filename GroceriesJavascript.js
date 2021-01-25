@@ -250,6 +250,13 @@ function RipienoTartufo() {
         (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
         (recipes.ravioli_ricotta_e_spinaci += 1) || (recipes.ravioli_ricotta_e_spinaci = 1)
       }
+      function PansotiPnoci() {
+        (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
+        (ingredienti.erbette += 1) || (ingredienti.erbette = 1);
+        (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
+        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+        (recipes.pansoti_con_pesto_pane_pnoci += 1) || (recipes.pansoti_con_pesto_pane_pnoci = 1)
+      }
       function PereRicottaZafferanoBurro() {
         (ingredienti.pere += 1) || (ingredienti.pere = 1);
         (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
