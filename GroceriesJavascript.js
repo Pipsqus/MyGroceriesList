@@ -198,7 +198,13 @@ function LasagnaZuccaFunghi() {
   (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
   (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
   (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
-  (recipes.lasagna_zucca_funghi += 1) || (recipes.lasagna_zucca_funghi = 1)
+  (recipes.lasagna_zucca_e_funghi += 1) || (recipes.lasagna_zucca_e_funghi = 1)
+}
+function LasagnaCavoloRosso() {
+  (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.lasagna_al_cavolo_rosso += 1) || (recipes.lasagna_al_cavolo_rosso = 1)
 }
 function PaneCipolle() {
     (ingredienti.pane += 1) || (ingredienti.pane = 1);
