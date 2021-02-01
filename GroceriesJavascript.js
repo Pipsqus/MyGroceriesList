@@ -247,6 +247,14 @@ function RipienoTartufo() {
   (ingredienti.tartufo += 1) || (ingredienti.tartufo = 1);
   (recipes.pasta_ripiena_di_tartufo += 1) || (recipes.pasta_ripiena_di_tartufo = 1)
 }
+function GnocchiZuccaConCavoloRosso() {
+  (ingredienti.zucca += 1) || (ingredienti.zucca = 1);
+  (ingredienti.cavolo_rosso += 2) || (ingredienti.cavolo_rosso = 2);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.patate += 1) || (ingredienti.patate = 1);
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
+  (recipes.gnocchi_di_zucca_con_cavolo_rosso += 1) || (recipes.gnocchi_di_zucca_con_cavolo_rosso = 1)
+}
 
 // Ravioli, Scarpinocc, Pi Fasacc
 
