@@ -398,6 +398,11 @@ function Stracciatella() {
   (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
   (recipes.stracciatella += 1) || (recipes.stracciatella = 1)
 }
+function VellutataCavoloRosso() {
+  (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
+  (recipes.vellutata_di_cavolo_rosso += 1) || (recipes.vellutata_di_cavolo_rosso = 1)
+}
 
 // Panetteria
 
@@ -541,6 +546,10 @@ function FocacciaPomodoriOlive() {
 function FocacciaPatateRosmarino() {
   (ingredienti.patate += 1) || (ingredienti.patate = 1);
   (recipes.focaccia_patate_e_rosmarino += 1) || (recipes.focaccia_patate_e_rosmarino = 1)
+}
+function FocacciaCavoloRosso() {
+  (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
+  (recipes.focaccia_al_cavolo_rosso += 1) || (recipes.focaccia_al_cavolo_rosso = 1)
 }
 
 // Frittura
