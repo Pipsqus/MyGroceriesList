@@ -248,141 +248,148 @@ function RipienoTartufo() {
   (recipes.pasta_ripiena_di_tartufo += 1) || (recipes.pasta_ripiena_di_tartufo = 1)
 }
 
-      // Ravioli, Scarpinocc, Pi Fasacc
+// Ravioli, Scarpinocc, Pi Fasacc
 
-      function RavioliRicottaSpinaci() {
-        (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-        (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.ravioli_ricotta_e_spinaci += 1) || (recipes.ravioli_ricotta_e_spinaci = 1)
-      }
-      function PansotiPnoci() {
-        (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
-        (ingredienti.erbette += 1) || (ingredienti.erbette = 1);
-        (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.pansoti_con_pesto_pane_pnoci += 1) || (recipes.pansoti_con_pesto_pane_pnoci = 1)
-      }
-      function PereRicottaZafferanoBurro() {
-        (ingredienti.pere += 1) || (ingredienti.pere = 1);
-        (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (ingredienti.zafferano += 1) || (ingredienti.zafferano = 1);
-        (recipes.ravioli_pere_ricotta_zafferano += 1) || (recipes.ravioli_pere_ricotta_zafferano = 1)
-      }
-      function Scarpinocc() {
-        (ingredienti.pane += 2) || (ingredienti.pane = 2);
-        (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
-        (recipes.scarpinocc += 1) || (recipes.scarpinocc = 1)
-      }
-      function Gyoza() {
-        (ingredienti.cavolo_cinese += 2) || (ingredienti.cavolo_cinese = 2);
-        (ingredienti.carote += 2) || (ingredienti.carote = 2);
-        (ingredienti.zenzero += 2) || (ingredienti.zenzero = 2);
-        (recipes.gyoza += 1) || (recipes.gyoza = 1)
-      }
+function RavioliRicottaSpinaci() {
+  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+  (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.ravioli_ricotta_e_spinaci += 1) || (recipes.ravioli_ricotta_e_spinaci = 1)
+}
+function PansotiPnoci() {
+  (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
+  (ingredienti.erbette += 1) || (ingredienti.erbette = 1);
+  (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.pansoti_con_pesto_pane_pnoci += 1) || (recipes.pansoti_con_pesto_pane_pnoci = 1)
+}
+function PereRicottaZafferanoBurro() {
+  (ingredienti.pere += 1) || (ingredienti.pere = 1);
+  (ingredienti.ricotta += 2) || (ingredienti.ricotta = 2);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.zafferano += 1) || (ingredienti.zafferano = 1);
+  (recipes.ravioli_pere_ricotta_zafferano += 1) || (recipes.ravioli_pere_ricotta_zafferano = 1)
+}
+function Scarpinocc() {
+  (ingredienti.pane += 2) || (ingredienti.pane = 2);
+  (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
+  (recipes.scarpinocc += 1) || (recipes.scarpinocc = 1)
+}
+function Gyoza() {
+  (ingredienti.cavolo_cinese += 2) || (ingredienti.cavolo_cinese = 2);
+  (ingredienti.carote += 2) || (ingredienti.carote = 2);
+  (ingredienti.zenzero += 2) || (ingredienti.zenzero = 2);
+  (recipes.gyoza += 1) || (recipes.gyoza = 1)
+}
 
-      // Tortellini, Cappellacci
+// Tortellini, Cappellacci
 
-      function CappellacciAllaZucca() {
-        (ingredienti.zucca += 2) || (ingredienti.zucca = 2);
-        (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
-        (recipes.cappellacci_alla_zucca += 1) || (recipes.cappellacci_alla_zucca = 1)
-      }
-      function VerdeDiCarne() {
-        (ingredienti.hackfleisch += 2) || (ingredienti.hackfleisch = 2);
-        (ingredienti.prosciutto_crudo += 2) || (ingredienti.prosciutto_crudo = 2);
-        (ingredienti.mortadella += 2) || (ingredienti.mortadella = 2);
-        (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
-        (recipes.tortellini_verdi_di_carne += 1) || (recipes.tortellini_verdi_di_carne = 1)
-      }
+function CappellacciAllaZucca() {
+  (ingredienti.zucca += 2) || (ingredienti.zucca = 2);
+  (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
+  (recipes.cappellacci_alla_zucca += 1) || (recipes.cappellacci_alla_zucca = 1)
+}
+function VerdeDiCarne() {
+  (ingredienti.hackfleisch += 2) || (ingredienti.hackfleisch = 2);
+  (ingredienti.prosciutto_crudo += 2) || (ingredienti.prosciutto_crudo = 2);
+  (ingredienti.mortadella += 2) || (ingredienti.mortadella = 2);
+  (ingredienti.parmigiano += 2) || (ingredienti.parmigiano = 2);
+  (recipes.tortellini_verdi_di_carne += 1) || (recipes.tortellini_verdi_di_carne = 1)
+}
 
-      // Pesti, Salse
+// Pesti, Salse
 
-      function PestoTrapanese() {
-        (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
-        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-        (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.pesto_trapanese += 1) || (recipes.pesto_trapanese = 1)
-      }
-      function PestoAlleNoci() {
-        (ingredienti.noci += 1) || (ingredienti.noci = 1);
-        (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
-        (ingredienti.pane += 1) || (ingredienti.pane = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.pesto_alle_noci += 1) || (recipes.pesto_alle_noci = 1)
-      }
-      function PestoPistacchiPomodorini() {
-        (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
-        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-        (ingredienti.porri += 1) || (ingredienti.porri = 1);
-        (recipes.pesto_pistacchi_e_pomodorini += 1) || (recipes.pesto_pistacchi_e_pomodorini = 1)
-      }
-      function PestoDiRucola() {
-        (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
-        (ingredienti.noci += 1) || (ingredienti.noci = 1);
-        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-        (recipes.pesto_di_rucola += 1) || (recipes.pesto_di_rucola = 1)
-      }
-      function PestoDiSedano() {
-        (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
-        (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
-        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.pesto_di_sedano += 1) || (recipes.pesto_di_sedano = 1)
-      }
-      function PestoGenovese() {
-        (ingredienti.basilico += 1) || (ingredienti.basilico = 1);
-        (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.pesto_genovese += 1) || (recipes.pesto_genovese = 1)
-      }
+function PestoTrapanese() {
+  (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.pesto_trapanese += 1) || (recipes.pesto_trapanese = 1)
+}
+function PestoAlleNoci() {
+  (ingredienti.noci += 1) || (ingredienti.noci = 1);
+  (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
+  (ingredienti.pane += 1) || (ingredienti.pane = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.pesto_alle_noci += 1) || (recipes.pesto_alle_noci = 1)
+}
+function PestoAlCavoloRosso() {
+  (ingredienti.noci += 1) || (ingredienti.noci = 1);
+  (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
+  (recipes.pesto_al_cavolo_rosso += 1) || (recipes.pesto_al_cavolo_rosso = 1)
+}
+function PestoPistacchiPomodorini() {
+  (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
+  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+  (ingredienti.porri += 1) || (ingredienti.porri = 1);
+  (recipes.pesto_pistacchi_e_pomodorini += 1) || (recipes.pesto_pistacchi_e_pomodorini = 1)
+}
+function PestoDiRucola() {
+  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+  (ingredienti.noci += 1) || (ingredienti.noci = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+  (recipes.pesto_di_rucola += 1) || (recipes.pesto_di_rucola = 1)
+}
+function PestoDiSedano() {
+  (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
+  (ingredienti.pistacchi += 1) || (ingredienti.pistacchi = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.pesto_di_sedano += 1) || (recipes.pesto_di_sedano = 1)
+}
+function PestoGenovese() {
+  (ingredienti.basilico += 1) || (ingredienti.basilico = 1);
+  (ingredienti.pinoli += 1) || (ingredienti.pinoli = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.pesto_genovese += 1) || (recipes.pesto_genovese = 1)
+}
 
-      // Risotto, Riso
+// Risotto, Riso
 
-      function RisottoAllaZucca() {
-        (ingredienti.zucca += 1) || (ingredienti.zucca = 1);
-        (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
-        (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.risotto_alla_zucca += 1) || (recipes.risotto_alla_zucca = 1)
-      }
-      function RisottoPorroGorgonzola() {
-        (ingredienti.porro += 1) || (ingredienti.porro = 1);
-        (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
-        (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.risotto_porro_e_gorgonzola += 1) || (recipes.risotto_porro_e_gorgonzola = 1)
-      }
-      function RisottoZucchine() {
-        (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
-        (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
-        (ingredienti.menta += 1) || (ingredienti.menta = 1);
-        (recipes.risotto_alle_zucchine += 1) || (recipes.risotto_alle_zucchine = 1)
-      }
-      function RisoFritto() {
-        (ingredienti.zenzero += 1) || (ingredienti.zenzero = 1);
-        (ingredienti.carote += 1) || (ingredienti.carote = 1);
-        (ingredienti.olio_arachidi += 1) || (ingredienti.olio_arachidi = 1);
-        (recipes.riso_fritto += 1) || (recipes.riso_fritto = 1)
-      }
+function RisottoAllaZucca() {
+  (ingredienti.zucca += 1) || (ingredienti.zucca = 1);
+  (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
+  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.risotto_alla_zucca += 1) || (recipes.risotto_alla_zucca = 1)
+}
+function RisottoPorroGorgonzola() {
+  (ingredienti.porro += 1) || (ingredienti.porro = 1);
+  (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.risotto_porro_e_gorgonzola += 1) || (recipes.risotto_porro_e_gorgonzola = 1)
+}
+function RisottoZucchine() {
+  (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+  (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
+  (ingredienti.menta += 1) || (ingredienti.menta = 1);
+  (recipes.risotto_alle_zucchine += 1) || (recipes.risotto_alle_zucchine = 1)
+}
+function RisoFritto() {
+  (ingredienti.zenzero += 1) || (ingredienti.zenzero = 1);
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+  (ingredienti.olio_arachidi += 1) || (ingredienti.olio_arachidi = 1);
+  (recipes.riso_fritto += 1) || (recipes.riso_fritto = 1)
+}
 
-      // Minestre
+// Minestre
 
-      function Vichyssoise() {
-        (ingredienti.panna += 1) || (ingredienti.panna = 1);
-        (ingredienti.patate += 1) || (ingredienti.patate = 1);
-        (ingredienti.porri += 1) || (ingredienti.porri = 1);
-        (recipes.vichyssoise += 1) || (recipes.vichyssoise = 1)
-      }
-      function Stracciatella() {
-        (ingredienti.pastina += 1) || (ingredienti.pastina = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (recipes.stracciatella += 1) || (recipes.stracciatella = 1)
-      }
+function Vichyssoise() {
+  (ingredienti.panna += 1) || (ingredienti.panna = 1);
+  (ingredienti.patate += 1) || (ingredienti.patate = 1);
+  (ingredienti.porri += 1) || (ingredienti.porri = 1);
+  (recipes.vichyssoise += 1) || (recipes.vichyssoise = 1)
+}
+function Stracciatella() {
+  (ingredienti.pastina += 1) || (ingredienti.pastina = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (recipes.stracciatella += 1) || (recipes.stracciatella = 1)
+}
 
 // Panetteria
 
@@ -428,137 +435,137 @@ function PolpetteSedanoPatate() {
   (recipes.polpette_di_sedano_e_patate += 1) || (recipes.polpette_di_sedano_e_patate = 1)
 }
 
-      // Crescia
+// Crescia
 
-      function Crescia() {
-        (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
-        (recipes.crescia += 1) || (recipes.crescia = 1)
-      }
-      function CresciaHummus() {
-        (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
-        (ingredienti.carote += 1) || (ingredienti.carote = 1);
-        (recipes.crescia_con_hummus += 1) || (recipes.crescia_con_hummus = 1)
-      }
-      function CresciaOrtolana() {
-        (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
-        (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
-        (ingredienti.aceto_balsamico +=1) || (ingredienti.aceto_balsamico+=1);
-        (recipes.crescia_ortolana += 1) || (recipes.crescia_ortolana = 1)
-      }
-      function CresciaAutunno() {
-        (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-        (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-        (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
-        (recipes.crescia_autunno += 1) || (recipes.crescia_autunno = 1)
-      }
-      function CresciaProvenzale() {
-        (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
-        (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
-        (recipes.crescia_provenzale += 1) || (recipes.crescia_provenzale = 1)
-      }
-      function CresciaSquacqueroneRucolaPomodorini() {
-        (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
-        (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
-        (ingredienti.stracchino += 1) || (ingredienti.stracchino = 1);
-        (recipes.crescia_squacquerone_rucola_e_pomodorini += 1) || (recipes.crescia_squacquerone_rucola_e_pomodorini = 1)
-      }
-      function CresciaBrie() {
-        (ingredienti.brie += 1) || (ingredienti.brie = 1);
-        (ingredienti.mele += 1) || (ingredienti.mele = 1);
-        (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
-        (recipes.crescia_al_brie += 1) || (recipes.crescia_al_brie = 1)
-      }
+function Crescia() {
+  (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
+  (recipes.crescia += 1) || (recipes.crescia = 1)
+}
+function CresciaHummus() {
+  (ingredienti.lenticchie_rosse += 1) || (ingredienti.lenticchie_rosse = 1);
+  (ingredienti.carote += 1) || (ingredienti.carote = 1);
+  (recipes.crescia_con_hummus += 1) || (recipes.crescia_con_hummus = 1)
+}
+function CresciaOrtolana() {
+  (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+  (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
+  (ingredienti.aceto_balsamico +=1) || (ingredienti.aceto_balsamico+=1);
+  (recipes.crescia_ortolana += 1) || (recipes.crescia_ortolana = 1)
+}
+function CresciaAutunno() {
+  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+  (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
+  (recipes.crescia_autunno += 1) || (recipes.crescia_autunno = 1)
+}
+function CresciaProvenzale() {
+  (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
+  (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
+  (recipes.crescia_provenzale += 1) || (recipes.crescia_provenzale = 1)
+}
+function CresciaSquacqueroneRucolaPomodorini() {
+  (ingredienti.rucola += 1) || (ingredienti.rucola = 1);
+  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+  (ingredienti.stracchino += 1) || (ingredienti.stracchino = 1);
+  (recipes.crescia_squacquerone_rucola_e_pomodorini += 1) || (recipes.crescia_squacquerone_rucola_e_pomodorini = 1)
+}
+function CresciaBrie() {
+  (ingredienti.brie += 1) || (ingredienti.brie = 1);
+  (ingredienti.mele += 1) || (ingredienti.mele = 1);
+  (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
+  (recipes.crescia_al_brie += 1) || (recipes.crescia_al_brie = 1)
+}
 
-      // Sfoglia
+// Sfoglia
 
-      function SfogliaZucchineUovaSpinaci() {
-        (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
-        (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-        (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
-        (recipes.sfoglia_zucchine_uova_e_spinaci += 1) || (recipes.sfoglia_zucchine_uova_e_spinaci = 1)
-      }
-      function PizzetteSfoglia() {
-        (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
-        (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-        (recipes.pizzette_di_sfoglia += 1) || (recipes.pizzette_di_sfoglia = 1)
-      }
-      function SfogliaPatateRicotta() {
-        (ingredienti.patate += 1) || (ingredienti.patate = 1);
-        (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
-        (recipes.sfoglia_patate_e_ricotta += 1) || (recipes.sfoglia_patate_e_ricotta = 1)
-      }
+function SfogliaZucchineUovaSpinaci() {
+  (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+  (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
+  (recipes.sfoglia_zucchine_uova_e_spinaci += 1) || (recipes.sfoglia_zucchine_uova_e_spinaci = 1)
+}
+function PizzetteSfoglia() {
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+  (recipes.pizzette_di_sfoglia += 1) || (recipes.pizzette_di_sfoglia = 1)
+}
+function SfogliaPatateRicotta() {
+  (ingredienti.patate += 1) || (ingredienti.patate = 1);
+  (ingredienti.ricotta += 1) || (ingredienti.ricotta = 1);
+  (recipes.sfoglia_patate_e_ricotta += 1) || (recipes.sfoglia_patate_e_ricotta = 1)
+}
 
-      // Pizza
+// Pizza
 
-      function PizzaMargherita() {
-        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-        (recipes.pizza_margherita += 1) || (recipes.pizza_margherita = 1)
-      }
-      function PizzaQuattroFormaggi() {
-        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-        (recipes.pizza_quattro_formaggi += 1) || (recipes.pizza_quattro_formaggi = 1)
-      }
-      function PizzaCipollaTonno() {
-        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-        (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
-        (recipes.pizza_cipolla_e_tonno += 1) || (recipes.pizza_cipolla_e_tonno = 1)
-      }
-      function PizzaCavolfiore() {
-        (ingredienti.blumenkohl += 1) || (ingredienti.blumenkohl = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
-        (recipes.finta_pizza_al_cavolfiore += 1) || (recipes.finta_pizza_al_cavolfiore = 1)
-      }
+function PizzaMargherita() {
+  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+  (recipes.pizza_margherita += 1) || (recipes.pizza_margherita = 1)
+}
+function PizzaQuattroFormaggi() {
+  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (recipes.pizza_quattro_formaggi += 1) || (recipes.pizza_quattro_formaggi = 1)
+}
+function PizzaCipollaTonno() {
+  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+  (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
+  (recipes.pizza_cipolla_e_tonno += 1) || (recipes.pizza_cipolla_e_tonno = 1)
+}
+function PizzaCavolfiore() {
+  (ingredienti.blumenkohl += 1) || (ingredienti.blumenkohl = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.mozzarella += 2) || (ingredienti.mozzarella = 2);
+  (recipes.finta_pizza_al_cavolfiore += 1) || (recipes.finta_pizza_al_cavolfiore = 1)
+}
 
-      // Focaccia
+// Focaccia
 
-      function FocacciaCipollaGorgonzola() {
-        (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-        (recipes.focaccia_cipolla_e_gorgonzola += 1) || (recipes.focaccia_cipolla_e_gorgonzola = 1)
-      }
-      function FocacciaPomodoriOlive() {
-        (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
-        (ingredienti.olive += 1) || (ingredienti.olive = 1);
-        (recipes.focaccia_pomodorini_e_olive += 1) || (recipes.focaccia_pomodorini_e_olive = 1)
-      }
-      function FocacciaPatateRosmarino() {
-        (ingredienti.patate += 1) || (ingredienti.patate = 1);
-        (recipes.focaccia_patate_e_rosmarino += 1) || (recipes.focaccia_patate_e_rosmarino = 1)
-      }
+function FocacciaCipollaGorgonzola() {
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (recipes.focaccia_cipolla_e_gorgonzola += 1) || (recipes.focaccia_cipolla_e_gorgonzola = 1)
+}
+function FocacciaPomodoriOlive() {
+  (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
+  (ingredienti.olive += 1) || (ingredienti.olive = 1);
+  (recipes.focaccia_pomodorini_e_olive += 1) || (recipes.focaccia_pomodorini_e_olive = 1)
+}
+function FocacciaPatateRosmarino() {
+  (ingredienti.patate += 1) || (ingredienti.patate = 1);
+  (recipes.focaccia_patate_e_rosmarino += 1) || (recipes.focaccia_patate_e_rosmarino = 1)
+}
 
-      // Frittura
+// Frittura
 
-      function Gnocco() {
-        (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
-        (ingredienti.mortadella += 1) || (ingredienti.mortadella = 1);
-        (ingredienti.pancetta += 1) || (ingredienti.pancetta = 1);
-        (ingredienti.pecorino += 1) || (ingredienti.pecorino = 1);
-        (recipes.gnocco_fritto += 1) || (recipes.gnocco_fritto = 1)
-      }
-      function Panzerotti() {
-        (ingredienti.friarielli += 1) || (ingredienti.friarielli = 1);
-        (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
-        (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
-        (recipes.panzerotti += 1) || (recipes.panzerotti = 1)
-      }
-      function OliveAscolane() {
-        (ingredienti.hackfleisch += 1) || (ingredienti.hackfleisch = 1);
-        (ingredienti.olive += 1) || (ingredienti.olive = 1);
-        (ingredienti.pane += 1) || (ingredienti.pane = 1);
-        (recipes.olive_ascolane += 1) || (recipes.olive_ascolane = 1)
-      }
-      function ZucchineAllaRomana() {
-        (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
-        (recipes.zucchine_alla_romana += 1) || (recipes.zucchine_alla_romana = 1)
-      }
-      function MozzarellaInCarrozza() {
-        (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
-        (ingredienti.pane += 1) || (ingredienti.pane = 1);
-        (ingredienti.paniermehl += 1) || (ingredienti.paniermehl = 1);
-        (recipes.mozzarella_in_carrozza += 1) || (recipes.mozzarella_in_carrozza = 1)
-      }
+function Gnocco() {
+  (ingredienti.strutto += 1) || (ingredienti.strutto = 1);
+  (ingredienti.mortadella += 1) || (ingredienti.mortadella = 1);
+  (ingredienti.pancetta += 1) || (ingredienti.pancetta = 1);
+  (ingredienti.pecorino += 1) || (ingredienti.pecorino = 1);
+  (recipes.gnocco_fritto += 1) || (recipes.gnocco_fritto = 1)
+}
+function Panzerotti() {
+  (ingredienti.friarielli += 1) || (ingredienti.friarielli = 1);
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.mandorle += 1) || (ingredienti.mandorle = 1);
+  (recipes.panzerotti += 1) || (recipes.panzerotti = 1)
+}
+function OliveAscolane() {
+  (ingredienti.hackfleisch += 1) || (ingredienti.hackfleisch = 1);
+  (ingredienti.olive += 1) || (ingredienti.olive = 1);
+  (ingredienti.pane += 1) || (ingredienti.pane = 1);
+  (recipes.olive_ascolane += 1) || (recipes.olive_ascolane = 1)
+}
+function ZucchineAllaRomana() {
+  (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+  (recipes.zucchine_alla_romana += 1) || (recipes.zucchine_alla_romana = 1)
+}
+function MozzarellaInCarrozza() {
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.pane += 1) || (ingredienti.pane = 1);
+  (ingredienti.paniermehl += 1) || (ingredienti.paniermehl = 1);
+  (recipes.mozzarella_in_carrozza += 1) || (recipes.mozzarella_in_carrozza = 1)
+}
 
 // Carne
 function Ragù() {
@@ -619,14 +626,14 @@ function Currywurst() {
   (recipes.currywurst += 1) || (recipes.currywurst = 1)
 }
 
-      // Pollo
+// Pollo
 
-      function TikkaMasala() {
-        (recipes.tikka_masala += 1) || (recipes.tikka_masala = 1)
-      }
-      function RedCurryChicken() {
-        (recipes.red_curry_chicken += 1) || (recipes.red_curry_chicken = 1)
-      }
+function TikkaMasala() {
+  (recipes.tikka_masala += 1) || (recipes.tikka_masala = 1)
+}
+function RedCurryChicken() {
+  (recipes.red_curry_chicken += 1) || (recipes.red_curry_chicken = 1)
+}
 
 // Secondi
 
@@ -647,69 +654,69 @@ function SformatoZucca() {
 
 // Uova
 
-      function Crepe4formaggi() {
-        (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
-        (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
-        (ingredienti.noci += 1) || (ingredienti.noci = 1);
-        (recipes.crepe_ai_4_formaggi += 1) || (recipes.crepe_ai_4_formaggi = 1)
-      }
-      function Deviled() {
-        (ingredienti.maionese += 1) || (ingredienti.maionese = 1);
-        (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
-        (recipes.deviled_eggs += 1) || (recipes.deviled_eggs = 1)
-      }
-      function InSalsaPomodoro() {
-        (recipes.uova_in_salsa_di_pomodoro += 1) || (recipes.uova_in_salsa_di_pomodoro = 1)
-      }
-      function Reibekuchen() {
-        (ingredienti.patate += 1) || (ingredienti.patate = 1);
-        (recipes.reibekuchen += 1) || (recipes.reibekuchen = 1)
-      }
+function Crepe4formaggi() {
+  (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.scamorza += 1) || (ingredienti.scamorza = 1);
+  (ingredienti.noci += 1) || (ingredienti.noci = 1);
+  (recipes.crepe_ai_4_formaggi += 1) || (recipes.crepe_ai_4_formaggi = 1)
+}
+function Deviled() {
+  (ingredienti.maionese += 1) || (ingredienti.maionese = 1);
+  (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
+  (recipes.deviled_eggs += 1) || (recipes.deviled_eggs = 1)
+}
+function InSalsaPomodoro() {
+  (recipes.uova_in_salsa_di_pomodoro += 1) || (recipes.uova_in_salsa_di_pomodoro = 1)
+}
+function Reibekuchen() {
+  (ingredienti.patate += 1) || (ingredienti.patate = 1);
+  (recipes.reibekuchen += 1) || (recipes.reibekuchen = 1)
+}
 
 // Sauces
 
-      function BabaGanoush() {
-        (ingredienti.melanzane += 1) || (ingredienti.melanzane = 1);
-        (ingredienti.tahini += 1) || (ingredienti.tahini = 1);
-        (recipes.baba_ganoush += 1) || (recipes.baba_ganoush = 1)
-      }
-      function ThaiChiliSauce() {
-        (recipes.thai_chili_sauce += 1) || (recipes.thai_chili_sauce = 1)
-      }
-      function CremaBroccoliCeci() {
-        (ingredienti.broccoli += 1) || (ingredienti.broccoli = 1);
-        (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
-        (ingredienti.lenticchie += 1) || (ingredienti.lenticchie = 1);
-        (recipes.crema_di_broccoli_e_ceci += 1) || (recipes.crema_di_broccoli_e_ceci = 1)
-      }
+function BabaGanoush() {
+  (ingredienti.melanzane += 1) || (ingredienti.melanzane = 1);
+  (ingredienti.tahini += 1) || (ingredienti.tahini = 1);
+  (recipes.baba_ganoush += 1) || (recipes.baba_ganoush = 1)
+}
+function ThaiChiliSauce() {
+  (recipes.thai_chili_sauce += 1) || (recipes.thai_chili_sauce = 1)
+}
+function CremaBroccoliCeci() {
+  (ingredienti.broccoli += 1) || (ingredienti.broccoli = 1);
+  (ingredienti.ceci += 1) || (ingredienti.ceci = 1);
+  (ingredienti.lenticchie += 1) || (ingredienti.lenticchie = 1);
+  (recipes.crema_di_broccoli_e_ceci += 1) || (recipes.crema_di_broccoli_e_ceci = 1)
+}
 
 // Insalate
 
-      function InsalataGreca() {
-        (ingredienti.olive += 1) || (ingredienti.olive = 1);
-        (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
-        (ingredienti.feta += 1) || (ingredienti.feta = 1);
-        (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
-        (ingredienti.cetriolo += 1) || (ingredienti.cetriolo = 1);
-        (recipes.insalata_greca += 1) || (recipes.insalata_greca = 1)
-      }
-      function InsalataCaesar() {
-        (ingredienti.pane += 1) || (ingredienti.pane = 1);
-        (ingredienti.insalata += 1) || (ingredienti.insalata = 1);
-        (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-        (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
-        (recipes.insalata_Caesar += 1) || (recipes.insalata_Caesar = 1)
-      }
-      function InsalataEstiva() {
-        (ingredienti.mozzarelline += 1) || (ingredienti.mozzarelline = 1);
-        (ingredienti.mais += 1) || (ingredienti.mais = 1);
-        (ingredienti.olive += 1) || (ingredienti.olive = 1);
-        (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
-        (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
-        (recipes.insalata_estiva += 1) || (recipes.insalata_estiva = 1)
-      }
+function InsalataGreca() {
+  (ingredienti.olive += 1) || (ingredienti.olive = 1);
+  (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
+  (ingredienti.feta += 1) || (ingredienti.feta = 1);
+  (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
+  (ingredienti.cetriolo += 1) || (ingredienti.cetriolo = 1);
+  (recipes.insalata_greca += 1) || (recipes.insalata_greca = 1)
+}
+function InsalataCaesar() {
+  (ingredienti.pane += 1) || (ingredienti.pane = 1);
+  (ingredienti.insalata += 1) || (ingredienti.insalata = 1);
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.succo_di_limone += 1) || (ingredienti.succo_di_limone = 1);
+  (recipes.insalata_Caesar += 1) || (recipes.insalata_Caesar = 1)
+}
+function InsalataEstiva() {
+  (ingredienti.mozzarelline += 1) || (ingredienti.mozzarelline = 1);
+  (ingredienti.mais += 1) || (ingredienti.mais = 1);
+  (ingredienti.olive += 1) || (ingredienti.olive = 1);
+  (ingredienti.pomodori += 1) || (ingredienti.pomodori = 1);
+  (ingredienti.cipolle_rosse += 1) || (ingredienti.cipolle_rosse = 1);
+  (recipes.insalata_estiva += 1) || (recipes.insalata_estiva = 1)
+}
 
 
 // Dolci
