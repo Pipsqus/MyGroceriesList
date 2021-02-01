@@ -357,12 +357,12 @@ function RisottoAllaZucca() {
   (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
   (recipes.risotto_alla_zucca += 1) || (recipes.risotto_alla_zucca = 1)
 }
-function RisottoPorroGorgonzola() {
-  (ingredienti.porro += 1) || (ingredienti.porro = 1);
+function RisottoCavoloRossoGorgonzola()() {
+  (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
   (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
   (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
   (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
-  (recipes.risotto_porro_e_gorgonzola += 1) || (recipes.risotto_porro_e_gorgonzola = 1)
+  (recipes.risotto_cavolo_rosso_gorgonzola += 1) || (recipes.risotto_cavolo_rosso_gorgonzola = 1)
 }
 function RisottoZucchine() {
   (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
