@@ -365,7 +365,7 @@ function RisottoAllaZucca() {
   (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
   (recipes.risotto_alla_zucca += 1) || (recipes.risotto_alla_zucca = 1)
 }
-function RisottoCavoloRossoGorgonzola()() {
+function RisottoCavoloRossoGorgonzola() {
   (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
   (ingredienti.vino_bianco += 1) || (ingredienti.vino_bianco = 1);
   (ingredienti.gorgonzola += 1) || (ingredienti.gorgonzola = 1);
