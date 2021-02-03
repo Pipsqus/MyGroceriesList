@@ -97,7 +97,11 @@ label {
   z-index: 1;
 
   animation-name: "slidingmenu";
-  animation-duration: 0.5s;
+  animation-duration: 0.25s;
+}
+@keyframes slidingmenu {
+  from { left: 100%; }
+  to { left: calc(100% - 200px); }
 }
 .GoToButton {
   text-align: left;
@@ -123,8 +127,4 @@ label {
 }
 .hidden {
   display: none;
-}
-@keyframes slidingmenu {
-  from { left: 100%; }
-  to { left: calc(100% - 200px); }
 }
