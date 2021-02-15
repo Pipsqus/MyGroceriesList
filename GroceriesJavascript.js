@@ -441,12 +441,6 @@ function PolentaFunghiGorgonzola() {
 function PanettoneGastronomico() {
   (recipes.panettone_gastronomico += 1) || (recipes.panettone_gastronomico = 1)
 }
-function PolpetteSedanoPatate() {
-  (ingredienti.sedano += 1) || (ingredienti.sedano = 1);
-  (ingredienti.patate += 1) || (ingredienti.patate = 1);
-  (ingredienti.paniermehl += 1) || (ingredienti.paniermehl = 1);
-  (recipes.polpette_di_sedano_e_patate += 1) || (recipes.polpette_di_sedano_e_patate = 1)
-}
 
 // Crescia
 
@@ -470,6 +464,11 @@ function CresciaAutunno() {
   (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
   (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
   (recipes.crescia_autunno += 1) || (recipes.crescia_autunno = 1)
+}
+function CresciaInverno() {
+  (ingredienti.cavolo_rosso += 1) || (ingredienti.cavolo_rosso = 1);
+  (ingredienti.aceto_balsamico += 1) || (ingredienti.aceto_balsamico = 1);
+  (recipes.crescia_inverno += 1) || (recipes.crescia_inverno = 1)
 }
 function CresciaProvenzale() {
   (ingredienti.tonno += 1) || (ingredienti.tonno = 1);
