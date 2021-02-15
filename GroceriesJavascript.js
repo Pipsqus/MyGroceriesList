@@ -844,9 +844,6 @@ function Olio() {
 function Burro() {
   (ingredienti.olio += 1) || (ingredienti.olio = 1);
 }
-function Brodo() {
-  (ingredienti.brodo += 1) || (ingredienti.brodo = 1);
-}
 function LievitoBirraDolci() {
   (ingredienti.lievito_birra += 1) || (ingredienti.lievito_birra = 1);
   (ingredienti.lievito_dolce += 1) || (ingredienti.lievito_dolce = 1);
