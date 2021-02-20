@@ -29,18 +29,24 @@ function generateListGroceries() {
 function generateListRecipes() {
   document.getElementById("list_recipes").innerHTML = "";
   for (const [key, value] of Object.entries(recipes)) {
-      AppendToList(key, value, "list_recipes")
+      AppendToList(key, null, "list_recipes")
   };
   localStorage.setItem("recipes", JSON.stringify(recipes));
 }
 
 function AppendToList(key, value, list_input) {
-  var box = createBox(key);
-  var label = createLabel(key, value);
-  var paragraph = createParagraph(key, box, label);
+  	var box = createBox(key);
+  	var label = createLabel(key, value);
+  	var paragraph = createParagraph(key, box, label);
 
-  var list_add = list_input;
-  document.getElementById(list_add).appendChild(paragraph);
+  	var list_add = list_input;
+  	document.getElementById(list_add).appendChild(paragraph);
+  
+ 	document.getElementById(box.id).addEventListener("click", function() {
+		var nameOfElement = this.getAttribute("name");
+		recipes[nameOfElement] = (recipes[nameOfElement] + 1) % 2;
+  		localStorage.setItem("recipes", JSON.stringify(recipes));
+  });
 }
 
 function aggiunte() {
@@ -84,34 +90,39 @@ function clearLists() {
 }
 
 function toggleRecipesAndIngredients() {
-  var listGroceries = document.getElementById("list_groceries")
-  var listRecipes = document.getElementById("list_recipes")
-  listGroceries.classList.toggle("hidden");
-  listRecipes.classList.toggle("hidden");
+ 	var listGroceries = document.getElementById("list_groceries")
+  	var listRecipes = document.getElementById("list_recipes")
+  	listGroceries.classList.toggle("hidden");
+	listRecipes.classList.toggle("hidden");
 }
 function fischratgeber() {
-  document.getElementById("fischratgeber").classList.toggle("hidden");
+  	document.getElementById("fischratgeber").classList.toggle("hidden");
 }
 
 
 function createBox(key) {
-  var box = document.createElement("INPUT");
-  box.type = "checkbox";
-  box.name = key;
-  box.id = "box" + key;
+	var box = document.createElement("INPUT");
+	box.type = "checkbox";
+	box.name = key;
+	box.id = "box" + key;
 
-  return box;
+  	return box;
 }
 
 function createLabel(key, value) {
-  var label = document.createElement("LABEL")
-  label.htmlFor = "box" + key;
-  var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value;
-  var TextNode = TextNode.replace(/_/g, " ");
-  var TextNode = document.createTextNode(TextNode);
-  label.appendChild(TextNode);
+  	var label = document.createElement("LABEL")
+  	label.htmlFor = "box" + key;
+	
+	if (value == null) {
+  	var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1);
+	} else {
+  	var TextNode = " " + key.charAt(0).toUpperCase() + key.slice(1) + " " + value;
+	}
+  	var TextNode = TextNode.replace(/_/g, " ");
+  	var TextNode = document.createTextNode(TextNode);
+  	label.appendChild(TextNode);
 
-  return label;
+  	return label;
 }
 
 function createParagraph(key, box, label) {
@@ -181,10 +192,10 @@ function SfogliaLorda() {
   (recipes.sfoglia_lorda += 1) || (recipes.sfoglia_lorda = 1)
 }
 function Cannelloni() {
-    (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
-    (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
-    (ingredienti.burro += 1) || (ingredienti.burro = 1);
-    (recipes.cannelloni_funghi_e_spinaci += 1) || (recipes.cannelloni_funghi_e_spinaci = 1)
+  (ingredienti.funghi += 1) || (ingredienti.funghi = 1);
+  (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
+  (ingredienti.burro += 1) || (ingredienti.burro = 1);
+  (recipes.cannelloni_funghi_e_spinaci += 1) || (recipes.cannelloni_funghi_e_spinaci = 1)
   }
 function LasagnaRolls() {
   (ingredienti.spinaci += 1) || (ingredienti.spinaci = 1);
