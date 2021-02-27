@@ -681,6 +681,13 @@ function SformatoZucca() {
   (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
   (recipes.sformato_di_zucca = 0)
 }
+function Khachapuri() {
+  (ingredienti.parmigiano += 1) || (ingredienti.parmigiano = 1);
+  (ingredienti.gouda += 1) || (ingredienti.gouda = 1);
+  (ingredienti.mozzarella += 1) || (ingredienti.mozzarella = 1);
+  (ingredienti.emmenthaler += 1) || (ingredienti.emmenthaler = 1);
+  (recipes.khachapuri = 0)
+}
 
 // Uova
 
