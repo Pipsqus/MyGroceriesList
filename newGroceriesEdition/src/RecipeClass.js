@@ -3,10 +3,10 @@ class Recipe {
 		this.name = name;
 		this.ingredientsArray = ingredientsArray;
 
-		this._generateHTMLOfAlternatives();
+		this._generateHTMLOfKnownRecipes();
 	};
 
-	_generateHTMLOfAlternatives() {
+	_generateHTMLOfKnownRecipes() {
 		var recipeParagraph = document.getElementById("myRecipesCollection");
 		var listElement =
 		`<input type="radio" id="${this.name}"

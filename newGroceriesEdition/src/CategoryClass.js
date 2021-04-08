@@ -7,8 +7,9 @@ class Category {
 	}
 
 	_generateHTMLOfCategories() {
-		var categorySection = document.getElementsById("CategoryContainer");
-		var categoryElement = `<div class="Category">${this.name}</div>`
+		var categorySection = document.getElementById("CategoryContainer");
+		var categoryElement = `<div class="Category" 
+		id="${this.name}">${this.name}</div>`
 
 		categorySection.insertAdjacentHTML('beforeend', categoryElement);
 	}
