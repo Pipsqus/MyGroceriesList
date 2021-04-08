@@ -1,7 +1,7 @@
 function generateRecipe(nameOfRecipe, ingredientsArray) {
 	window[nameOfRecipe] = new Recipe(nameOfRecipe, ingredientsArray);
 };
-function generateCategory(nameOfCategory) {
+function generateCategory(nameOfCategory, []) {
 	window[nameOfCategory] = new Category(nameOfCategory, ["Pasta", "Sale"]);
 }
 
