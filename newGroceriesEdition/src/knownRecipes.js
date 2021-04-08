@@ -1,12 +1,16 @@
-function generateRecipe(nameOfRecipe, ingredientsArray) {
-	window[nameOfRecipe] = new Recipe(nameOfRecipe, ingredientsArray);
-};
-function generateCategory(nameOfCategory, []) {
-	window[nameOfCategory] = new Category(nameOfCategory, ["Pasta", "Sale"]);
-}
+const CATEGORY_HOLDER = {
+	
+	"Pasta" : {
+		"Ragù" : ["macinata", "pane", "parmigiano"],
+		"Aglione" : ["aglio", "baloba", "caprese"],
+		"Cannelloni" : ["ricotta", "spinaci", "parmigiano"],
+	},
+	
+	"Secondi" : {
+		"Parmigiana" : ["macinata", "pane", "parmigiano"],
+		"Scarrafone" : ["aglio", "baloba", "caprese"],
+		"Cannellata" : ["ricotta", "spinaci", "parmigiano"]
+	},
 
-generateRecipe("Ragù", ["macinata", "pane", "parmigiano"]);
-generateRecipe("Aglione", ["aglio", "peperoncino", "parmigiano"]);
-generateRecipe("Cannelloni", ["ricotta", "spinaci", "parmigiano"]);
-generateCategory("Pasta", [])
+}
 

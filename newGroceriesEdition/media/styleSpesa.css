@@ -8,6 +8,9 @@ body {
   font-size: 1.45em;
   line-height: 1.4;
 }
+h1 {
+	text-align: center;
+}
 .Category {
   padding: 1em 1.6em;
   margin: 0.6em auto;

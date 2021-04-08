@@ -7,13 +7,30 @@
 		<link rel="icon" href="media/paperbag.png">
 	</head>
 	<body>
-		<p> Baloba </p>
+		<h1> FOODOMA </h1>
 		<div id="CategoryContainer"></div>
 		<div id="myRecipesCollection"></div>
 
+		<div id="listOfSelectedRecipes"></div>
 		
-		<script src="src/CategoryClass.js"> </script>
-		<script src="src/RecipeClass.js"> </script>
-		<script src="src/knownRecipes.js"> </script>
+		<script src="src/CategoryClass.js"></script>
+		<script src="src/RecipeClass.js"></script>
+		<script src="src/knownRecipes.js"></script>
+		<script>
+			// initializer
+			for (var i = 0; i < Object.keys(CATEGORY_HOLDER).length; i++) {
+				generateCategory(Object.keys(CATEGORY_HOLDER)[i],
+					Object.values(CATEGORY_HOLDER)[i])
+			}
 
+			var retrievedShoppingCart = localStorage.getItem("shoppingCart");
+			if (retrievedShoppingCart) {
+				shoppingCart = JSON.parse(retrievedShoppingCart);
+			} else {
+				shoppingCart = {
+					recipes : {},
+					ingredients: {},
+				};
+			}
+		</script>
 	</body>
