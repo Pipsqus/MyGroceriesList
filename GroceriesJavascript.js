@@ -862,8 +862,11 @@ function Latte() {
 function Olio() {
   (ingredienti.olio += 1) || (ingredienti.olio = 1);
 }
+function OlioGirasole() {
+  (ingredienti.olio_di_girasole += 1) || (ingredienti.olio_di_girasole = 1);
+}
 function Burro() {
-  (ingredienti.olio += 1) || (ingredienti.olio = 1);
+  (ingredienti.burro_o_strutto += 1) || (ingredienti.burro_o_strutto = 1);
 }
 function LievitoBirraDolci() {
   (ingredienti.lievito_birra += 1) || (ingredienti.lievito_birra = 1);
