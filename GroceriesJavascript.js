@@ -1,5 +1,5 @@
 function defineIngredienti() {
-    var retrievedObject = localStorage.getItem("ingredienti");
+    let retrievedObject = localStorage.getItem("ingredienti");
     if (retrievedObject) {
       ingredienti = JSON.parse(retrievedObject);
     } else {
@@ -8,12 +8,12 @@ function defineIngredienti() {
 }
 
 function defineRecipes() {
-  var retrievedObject = localStorage.getItem("recipes");
-  if (retrievedObject) {
-    recipes = JSON.parse(retrievedObject);
-  } else {
-    recipes = {};
-}
+  	let retrievedObject = localStorage.getItem("recipes");
+	if (retrievedObject) {
+		recipes = JSON.parse(retrievedObject);
+	 } else {
+		recipes = {};
+	}
 }
 
 
@@ -47,8 +47,10 @@ function AppendToList(key, value, list_input) {
 	}
  	document.getElementById(box.id).addEventListener("click", function() {
 		var nameOfElement = this.getAttribute("name");
-		recipes[nameOfElement] = (recipes[nameOfElement] + 1) % 2;
-  		localStorage.setItem("recipes", JSON.stringify(recipes));
+		if (list_input == "list_recipes") {
+			recipes[nameOfElement] = (recipes[nameOfElement] + 1) % 2;
+  			localStorage.setItem("recipes", JSON.stringify(recipes));
+		}
   });
 }
 
