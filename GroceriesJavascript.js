@@ -598,6 +598,18 @@ function MozzarellaInCarrozza() {
   (ingredienti.paniermehl += 1) || (ingredienti.paniermehl = 1);
   (recipes.mozzarella_in_carrozza = 0)
 }
+function Tzatziki() {
+  (ingredienti.cetrioli += 1) || (ingredienti.cetrioli = 1);
+  (ingredienti.yogurt_greco += 1) || (ingredienti.yogurt_greco = 1);
+  (recipes.tzatziki = 0)
+}
+function Kolokythokeftedes() {
+  (ingredienti.zucchine += 1) || (ingredienti.zucchine = 1);
+  (ingredienti.pomodorini += 1) || (ingredienti.pomodorini = 1);
+  (ingredienti.feta += 1) || (ingredienti.feta = 1);
+  (ingredienti.menta += 1) || (ingredienti.menta = 1);
+  (recipes.kolokythokeftedes = 0)
+}
 
 // Carne
 function Ragù() {

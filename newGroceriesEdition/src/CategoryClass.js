@@ -12,16 +12,16 @@ class Category {
 	}
 
 	_generateHTMLOfCategories() {
-		var categorySection = document.getElementById("CategoryContainer");
-		var categoryElement = `<div class="Category">${this.name}</div>
+		let categorySection = document.getElementById("CategoryContainer");
+		let categoryElement = `<div class="Category">${this.name}</div>
 			<div id="${this.name}"></div>`
 
 		categorySection.insertAdjacentHTML('beforeend', categoryElement);
 	}
 	
 	_addRecipes() {
-		for (var j = 0; j < Object.keys(this.recipes).length; j++) {
-			var currentString = Object.keys(this.recipes)[j];
+		for (let j = 0; j < Object.keys(this.recipes).length; j++) {
+			let currentString = Object.keys(this.recipes)[j];
 			this[currentString] = new Recipe(Object.keys(this.recipes)[j],
 					Object.values(this.recipes)[j], this.name);
 		}

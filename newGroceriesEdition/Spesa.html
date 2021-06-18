@@ -9,21 +9,25 @@
 	<body>
 		<h1>FOODOMA</h1>
 		<div id="CategoryContainer"></div>
-		<div id="myRecipesCollection"></div>
 
+			<button onclick="toggleRecipesAndIngredients()">
+				Mostra Ricette o Ingredienti
+			</button>
 		<div id="listOfSelectedRecipes"></div>
+		<div id="listOfIngredients" class="hidden"></div>
 		
+		<script src="src/Navigation.js"></script>
 		<script src="src/CategoryClass.js"></script>
 		<script src="src/RecipeClass.js"></script>
 		<script src="src/knownRecipes.js"></script>
 		<script>
 			// initializer
-			for (var i = 0; i < Object.keys(CATEGORY_HOLDER).length; i++) {
+			for (let i = 0; i < Object.keys(CATEGORY_HOLDER).length; i++) {
 				generateCategory(Object.keys(CATEGORY_HOLDER)[i],
 					Object.values(CATEGORY_HOLDER)[i])
 			}
 
-			var retrievedShoppingCart = localStorage.getItem("shoppingCart");
+			let retrievedShoppingCart = localStorage.getItem("shoppingCart");
 			if (retrievedShoppingCart) {
 				shoppingCart = JSON.parse(retrievedShoppingCart);
 			} else {
@@ -31,6 +35,8 @@
 					recipes : {},
 					ingredients: {},
 				};
-			}
-		</script>
+			}	
+			
+			updateLists(shoppingCart);
+			</script>
 	</body>

@@ -8,8 +8,8 @@ class Recipe {
 	};
 
 	_generateHTMLOfKnownRecipes() {
-		var recipeParagraph = document.getElementById(this.category);
-		var listElement =
+		let recipeParagraph = document.getElementById(this.category);
+		let listElement =
 		`<input type="radio" id="${this.name}"
 		onclick="${this.category}.${this.name}.addToShoppingCart(); this.onclick=null"
 		><label for="${this.name}">${this.name}</label></input><br>`;
@@ -18,12 +18,16 @@ class Recipe {
 	}
 
 	addToShoppingCart() {
-		shoppingCart.recipes[this.name] = 1;
-		for (var i = 0; i < this.ingredientsArray.length; i++) {
+		shoppingCart.recipes[this.name] = 0;
+		for (let i = 0; i < this.ingredientsArray.length; i++) {
 			shoppingCart.ingredients[this.ingredientsArray[i]] ?
 				shoppingCart.ingredients[this.ingredientsArray[i]] += 1 :
 				shoppingCart.ingredients[this.ingredientsArray[i]] = 1 ;
 		}
-		localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart))
+
+		localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+
+		updateLists(shoppingCart);
 	}
 }
+
