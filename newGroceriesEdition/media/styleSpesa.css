@@ -16,7 +16,7 @@ input {
 	margin: 0 25px;	
 }
 .Category {
-  padding: 1em 1.6em;
+  padding: 1em 0.5em;
   margin: 0.6em auto;
   font-size: 1.3em;
   letter-spacing: 4px;
@@ -33,6 +33,7 @@ input {
 	display: none;
 }
 button {
-	transform: scale(1.2);
+	font-size: 1.4rem;
 	margin: 2rem;
 }
+
