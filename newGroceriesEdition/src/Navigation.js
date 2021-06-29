@@ -6,12 +6,15 @@ function toggleRecipesAndIngredients() {
 	listOfIngredients.classList.toggle("hidden");
 	updateLists(shoppingCart);
 
-	if ((toggleIndex % 2) === 1) {
-		document.getElementById("toggleButton").innerHTML = "Mostra Ingredienti"
-		toggleIndex++ % 2;
+	toggleShownText(document.getElementById("toggleButton"));
+}
+ 
+function toggleShownText(element) {
+	let currentText = element.innerHTML;
+	if (currentText === "Mostra Ricette") {
+		element.innerHTML = "Mostra Ingredienti"
 	} else {
-		document.getElementById("toggleButton").innerHTML = "Mostra Ricette"
-		toggleIndex++ % 2;
+		element.innerHTML = "Mostra Ricette"
 	}
 }
 
