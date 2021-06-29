@@ -51,3 +51,12 @@ function resetLists() {
 	window.location.reload();
 }
 
+function nextCategory() {
+	const currentScreenPosition = window.pageYOffset;
+	for (let category of document.getElementsByClassName("Category")) {
+		if (category.offsetTop > currentScreenPosition + 20) {
+			category.scrollIntoView();
+			break;
+		}	
+	}
+}

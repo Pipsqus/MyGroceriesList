@@ -7,6 +7,7 @@ body {
   font-family: "DejaVu Serif";
   font-size: 1.45em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 h1 {
 	text-align: center;
@@ -37,5 +38,11 @@ button {
 	margin: 2rem;
 }
 a {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+.Menu {
+	position: fixed;
+	right: 1em; top: 0.5em;
+	z-index: 2;
 }
