@@ -7,16 +7,20 @@
 		<link rel="icon" href="media/paperbag.png">
 	</head>
 	<body>
-		<h1>FOODOMA</h1>
+		<h1 class="centered">FOODOMA</h1>
 		<img class="Menu" src="media/arrow.png" onclick="nextCategory()">
 		<div id="CategoryContainer"></div>
+		
+		<div class="centered">
+			<button onclick="toggleRecipesAndIngredients()" id="toggleButton">RICETTE</button>
+		</div>
 
-			<button onclick="toggleRecipesAndIngredients()" id="toggleButton">
-				Mostra Ingredienti
-			</button>
 		<div id="listOfSelectedRecipes"></div>
 		<div id="listOfIngredients" class="hidden"></div>
-		<button onclick="resetLists()">Reset le liste</button>
+		
+		<div class="centered">
+			<button onclick="resetLists()">RESET LE LISTE</button>
+		</div>
 
 		<script src="src/Navigation.js"></script>
 		<script src="src/CategoryClass.js"></script>
