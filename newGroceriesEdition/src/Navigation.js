@@ -5,6 +5,14 @@ function toggleRecipesAndIngredients() {
 	listOfSelectedRecipes.classList.toggle("hidden");
 	listOfIngredients.classList.toggle("hidden");
 	updateLists(shoppingCart);
+
+	if ((toggleIndex % 2) === 1) {
+		document.getElementById("toggleButton").innerHTML = "Mostra Ingredienti"
+		toggleIndex++ % 2;
+	} else {
+		document.getElementById("toggleButton").innerHTML = "Mostra Ricette"
+		toggleIndex++ % 2;
+	}
 }
 
 function updateLists(shoppingCart) {

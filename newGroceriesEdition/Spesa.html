@@ -11,8 +11,8 @@
 		<img class="Menu" src="media/arrow.png" onclick="nextCategory()">
 		<div id="CategoryContainer"></div>
 
-			<button onclick="toggleRecipesAndIngredients()">
-				Mostra Ricette o Ingredienti
+			<button onclick="toggleRecipesAndIngredients()" id="toggleButton">
+				Mostra Ingredienti
 			</button>
 		<div id="listOfSelectedRecipes"></div>
 		<div id="listOfIngredients" class="hidden"></div>
@@ -40,5 +40,6 @@
 			}	
 			
 			updateLists(shoppingCart);
+			toggleIndex = 0;
 			</script>
 	</body>
