@@ -3,7 +3,7 @@ html {
 }
 body {
  	margin: 0 0 0 2vw;
-  	background-color: rgb(235,230,255, 40%);
+  	background-color: rgb(235,230,255, 0.5);
  	font-family: "DejaVu Serif";
  	font-size: 1.45em;
  	line-height: 1.4;
@@ -55,4 +55,8 @@ a {
 }
 .centered {
 	text-align: center;
+}
+#temporaryRecipes *, #temporaryIngredients * {
+	margin: 0 auto;
+	transform: scale(1);
 }

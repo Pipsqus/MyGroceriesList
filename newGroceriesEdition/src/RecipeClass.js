@@ -4,7 +4,9 @@ class Recipe {
 		this.ingredientsArray = ingredientsArray;
 		this.category = appropriateCategory;
 
-		this._generateHTMLOfKnownRecipes();
+		if (this.category != undefined) {
+			this._generateHTMLOfKnownRecipes();
+		}
 	};
 
 	_generateHTMLOfKnownRecipes() {

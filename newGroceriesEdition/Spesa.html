@@ -16,8 +16,18 @@
 		</div>
 
 		<div id="listOfSelectedRecipes"></div>
+			<div id="temporaryRecipes">
+				<input type="text" placeholder="Add a recipe" id="temporaryRecipeInput">
+				<button onclick="addTemporaryRecipe(document.getElementById('temporaryRecipeInput').value)">+</button>
+			</div>
+
 		<div id="listOfIngredients" class="hidden"></div>
-		
+			<div id="temporaryIngredients" class="hidden">
+				<input type="text" placeholder="Add an ingredient" id="temporaryIngredientInput">
+
+				<button onclick="addTemporaryIngredient(document.getElementById('temporaryIngredientInput').value)">+</button>
+			</div>
+
 		<div class="centered">
 			<button onclick="resetLists()">RESET LE LISTE</button>
 		</div>
@@ -26,6 +36,7 @@
 		<script src="src/CategoryClass.js"></script>
 		<script src="src/RecipeClass.js"></script>
 		<script src="src/knownRecipes.js"></script>
+		<script src="src/temporaryRecipes.js"></script>
 		<script>
 			// initializer
 			for (let i = 0; i < Object.keys(CATEGORY_HOLDER).length; i++) {

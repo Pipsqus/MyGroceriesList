@@ -1,9 +1,15 @@
 function toggleRecipesAndIngredients() {
 	let listOfSelectedRecipes = document.getElementById("listOfSelectedRecipes");
+	let listOfTemporaryRecipes = document.getElementById("temporaryRecipes");
+
 	let listOfIngredients = document.getElementById("listOfIngredients");
+	let listOfTemporaryIngredients = document.getElementById("temporaryIngredients");
 
 	listOfSelectedRecipes.classList.toggle("hidden");
 	listOfIngredients.classList.toggle("hidden");
+	listOfTemporaryRecipes.classList.toggle("hidden");
+	listOfTemporaryIngredients.classList.toggle("hidden");
+
 	updateLists(shoppingCart);
 
 	toggleShownText(document.getElementById("toggleButton"));
@@ -38,10 +44,10 @@ function updateLists(shoppingCart) {
 
 	for (const [key, value] of Object.entries(shoppingCart.ingredients)) {
 		if (shoppingCart.ingredients[key] === "acquired") {
-			let ingredientItem = `<div><input id="${key}Ingredient" type="radio" onclick=ingredientWasAcquired('${key}') checked><label for="${key}Ingredient">${key}</label></input></div>`
+			let ingredientItem = `<div><input id="${key}Ingredient" type="radio" onclick="ingredientWasAcquired('${key}')" checked><label for="${key}Ingredient">${key}</label></input></div>`
 			listOfIngredients.insertAdjacentHTML('beforeend', ingredientItem);
 		} else {
-			let ingredientItem = `<div><input id="${key}Ingredient" type="radio" onclick=ingredientWasAcquired('${key}')><label for="${key}Ingredient">${key}</label></input></div>`
+			let ingredientItem = `<div><input id="${key}Ingredient" type="radio" onclick="ingredientWasAcquired('${key}')"><label for="${key}Ingredient">${key}</label></input></div>`
 			listOfIngredients.insertAdjacentHTML('beforeend', ingredientItem);
 		}
 	}
