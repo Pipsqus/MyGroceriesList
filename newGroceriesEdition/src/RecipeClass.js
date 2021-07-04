@@ -21,7 +21,9 @@ class Recipe {
 	}
 
 	addToShoppingCart() {
-		shoppingCart.recipes[this.name] = 0;
+		if (this.name != "") {
+			shoppingCart.recipes[this.name] = 0;
+		}
 		for (let i = 0; i < this.ingredientsArray.length - 1; i++) {
 			shoppingCart.ingredients[this.ingredientsArray[i]] ?
 				shoppingCart.ingredients[this.ingredientsArray[i]] += 1 :

@@ -8,6 +8,12 @@ function addTemporaryRecipe(name) {
 	inputText.value = "";
 }
 
-function addTemporaryIngredient() {
-	
+function addTemporaryIngredient(name) {
+	let inputText = document.getElementById("temporaryIngredientInput");
+	if (inputText.value != "") {
+		const addedIngredient = new Recipe("", [inputText.value, ""], undefined);
+		addedIngredient.addToShoppingCart();
+	}
+
+	inputText.value = "";
 }
