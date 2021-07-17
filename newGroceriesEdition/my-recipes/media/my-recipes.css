@@ -69,7 +69,7 @@ img {
 	}
 	body {
 		margin: 3rem;
-		background: url("background-mobile.png") 15% 10% / cover fixed;
+		background: url("background-mobile.png") 15% 10% / contain fixed;
 		height: 100%;
 	}
 }
