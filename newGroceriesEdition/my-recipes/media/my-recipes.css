@@ -4,7 +4,7 @@ body {
 	font-family: "serif";
 }
 body, h1::before, h2::before, .grid::before {
-	background: url("pexels-lukas-1410141.jpg") 30% 10% / cover fixed;
+	background: url("pexels-lukas-1410141.jpg") 10% 10% / cover fixed;
 }
 h1, h2 {
 	color: rgb(0,40,80);
