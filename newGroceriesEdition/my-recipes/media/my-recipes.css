@@ -1,0 +1,73 @@
+body {
+	margin: 3rem 10vw 18vw 25vw;
+	font-size: 1.2rem;
+	font-family: "serif";
+}
+body, h1::before, h2::before, .grid::before {
+	background: url("pexels-lukas-1410141.jpg") 30% 10% / cover fixed;
+}
+h1, h2 {
+	color: rgb(0,40,80);
+	text-align: center;
+	width: 14rem;
+	padding: 0.7rem;
+	position: relative;
+  	background: rgb(255, 255, 255, 0.4);
+	border-radius: 10px;
+	margin: 2rem auto;
+	box-shadow: 5px -3px 10px rgb(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+h1::before, h2::before {
+  	content: '';
+  	margin: -35px;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	filter: blur(50px);
+	z-index: -1;
+}
+.grid > * {
+	padding: 0.8rem;	
+	align-self: center;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: relative;
+	max-width: 30rem;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.grid::before {
+  	content: '';
+  	margin: -35px;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	filter: blur(100px);
+	z-index: -1;
+}
+.imageWrap {
+	margin: 0 auto;
+	position: relative;
+	width: 0; height: 1px;
+}
+.ingredientsDing {
+	position: relative;
+	width: 57px;
+	top: -160px;
+	left: 80px;
+	transform: rotateZ(20deg);
+}
+img {
+	width: 250px;
+}
+@media screen and (max-width: 640px) {
+	img {
+		width: 120px;
+	}
+	body {
+		margin: 3rem;
+	}
+}
