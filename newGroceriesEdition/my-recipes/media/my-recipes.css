@@ -70,5 +70,6 @@ img {
 	body {
 		margin: 3rem;
 		background: url("pexels-lukas-1410141.jpg") 15% 10% / cover fixed;
+		height: 100%;
 	}
 }
