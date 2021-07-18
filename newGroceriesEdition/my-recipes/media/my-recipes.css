@@ -3,7 +3,7 @@ body {
 	font-size: 1.2rem;
 	font-family: "Trebuchet MS";
 }
-h1::before, h2::before, .grid::before {
+body, h1::before, h2::before, .grid::before {
 	background: url("pexels-lukas-1410141.jpg") 20% 10% / cover fixed;
 }
 h1, h2 {
@@ -70,5 +70,7 @@ img {
 	}
 	body {
 		margin: 3rem;
+		background: url("background-mobile.png") cover fixed;
+		height: 100%;
 	}
 }
