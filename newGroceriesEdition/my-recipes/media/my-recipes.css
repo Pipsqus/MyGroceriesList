@@ -1,9 +1,9 @@
 body {
 	margin: 3rem 10vw 18vw 25vw;
 	font-size: 1.2rem;
-	font-family: "serif";
+	font-family: "Trebuchet MS";
 }
-body, h1::before, h2::before, .grid::before {
+h1::before, h2::before, .grid::before {
 	background: url("pexels-lukas-1410141.jpg") 20% 10% / cover fixed;
 }
 h1, h2 {
@@ -29,6 +29,7 @@ h1::before, h2::before {
 .grid > * {
 	padding: 0.8rem;	
 	align-self: center;
+	font-weight: 600;
 }
 .grid {
 	display: grid;
