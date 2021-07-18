@@ -70,7 +70,5 @@ img {
 	}
 	body {
 		margin: 3rem;
-		background: url("background-mobile.png") cover fixed;
-		height: 100%;
 	}
 }
