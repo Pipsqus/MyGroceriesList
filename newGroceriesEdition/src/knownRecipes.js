@@ -15,16 +15,12 @@ const CATEGORY_HOLDER = {
 
 	},
 	
-	"Secondi" : 
-	{
-		
-	},
 
 	"Dolci" : {
 		"Waffles" : ["zucchero perlato", "burro", "lievito",  "https://blog.giallozafferano.it/inventaricette/waffel-gaufres-liege/"]
 	},
 	
-	"Basilari" : {
+	"Fondamentali" : {
 		"Farina" : ["farina", ""],
 		"Uova" : ["uova", ""],
 		"Aglio" : ["aglio", ""],
