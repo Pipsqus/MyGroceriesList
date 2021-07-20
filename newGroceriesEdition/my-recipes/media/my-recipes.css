@@ -32,7 +32,6 @@ h1::before, h2::before {
 	top: 0; right: 0; bottom: 0; left: 0;
 	filter: blur(30px);
 	z-index: -1;
-
 } 
 h1, h2 {
 	color: rgb(0,40,80);
@@ -60,6 +59,7 @@ h1, h2 {
 	position: relative;
 	border-radius: 0.5rem;
 	overflow: hidden;
+	box-shadow: 0 -2px 10px rgb(0, 0, 0, 0.7);
 }
 .imageWrap {
 	margin: 0 auto;

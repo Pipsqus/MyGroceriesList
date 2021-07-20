@@ -67,6 +67,7 @@ function resetLists() {
 	window.location.reload();
 }
 
+/*
 function nextCategory() {
 	const currentScreenPosition = window.pageYOffset;
 	for (let category of document.getElementsByClassName("Category")) {
@@ -75,4 +76,7 @@ function nextCategory() {
 			break;
 		}	
 	}
+}*/
+function nextCategory() {
+
 }

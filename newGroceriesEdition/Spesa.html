@@ -12,24 +12,24 @@
 		<div id="CategoryContainer"></div>
 		
 		<div class="centered">
-			<button onclick="toggleRecipesAndIngredients()" id="toggleButton">RICETTE</button>
+			<button class="add" onclick="toggleRecipesAndIngredients()" id="toggleButton">RICETTE</button>
 		</div>
 
 		<div id="listOfSelectedRecipes"></div>
 			<div id="temporaryRecipes">
 				<input type="text" placeholder="Ricetta extra" id="temporaryRecipeInput">
-				<button onclick="addTemporaryRecipe(document.getElementById('temporaryRecipeInput').value)">+</button>
+				<button class="add" onclick="addTemporaryRecipe(document.getElementById('temporaryRecipeInput').value)">+</button>
 			</div>
 
 		<div id="listOfIngredients" class="hidden"></div>
 			<div id="temporaryIngredients" class="hidden">
 				<input type="text" placeholder="Ingrediente extra" id="temporaryIngredientInput">
 
-				<button onclick="addTemporaryIngredient(document.getElementById('temporaryIngredientInput').value)">+</button>
+				<button class="add" onclick="addTemporaryIngredient(document.getElementById('temporaryIngredientInput').value)">+</button>
 			</div>
 
 		<div class="centered">
-			<button onclick="resetLists()">RESET LE LISTE</button>
+			<button class="add" onclick="resetLists()">RESET LE LISTE</button>
 		</div>
 
 		<script src="src/Navigation.js"></script>
@@ -55,5 +55,5 @@
 			}	
 			
 			updateLists(shoppingCart);
-			</script>
+		</script>
 	</body>

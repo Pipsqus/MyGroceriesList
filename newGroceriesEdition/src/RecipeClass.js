@@ -21,7 +21,7 @@ class Recipe {
 	}
 
 	addToShoppingCart() {
-		if (this.name != "") {
+		if (this.name != "" && this.category != "Basilari") {
 			shoppingCart.recipes[this.name] = 0;
 		}
 		for (let i = 0; i < this.ingredientsArray.length - 1; i++) {
