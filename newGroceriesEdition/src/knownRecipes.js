@@ -6,7 +6,7 @@ const CATEGORY_HOLDER = {
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 
 		"Aglione" : [""],
-		"Aglio e olio" : ["aglio", "olio", ""],
+		"Aglio e olio" : [""],
 	},
 
 	"Panetteria" : 
