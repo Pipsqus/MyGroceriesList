@@ -48,7 +48,6 @@ h1, h2 {
 .grid > * {
 	padding: 0.8rem;	
 	align-self: center;
-	font-weight: 600;
 }
 .grid {
 	display: grid;
@@ -72,6 +71,9 @@ h1, h2 {
 	top: -160px;
 	left: 80px;
 	transform: rotateZ(20deg);
+}
+.ingredientList {
+	font-weight: 700;
 }
 img {
 	width: 250px;

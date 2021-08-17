@@ -4,7 +4,6 @@ const CATEGORY_HOLDER = {
 	{
 		"Sfoglia Lorda" : ["ricotta", "parmigiano",  "https://www.cibo360.it/cucina/mondo/spoja_lorda.htm"],
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
-
 		"Aglione" : [""],
 		"Aglio e olio" : [""],
 	},
@@ -15,6 +14,11 @@ const CATEGORY_HOLDER = {
 
 	},
 	
+	"Secondi" : {
+		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano" , "my-recipes/parmigiana.html"],
+		"Kolokithokeftedes" : ["zucchine", "pomodorini", "feta", "cipollotto", "menta", "my-recipes/kolokithokeftedes.html"],
+		"Uova alla Diavola" : [""],
+	},
 
 	"Dolci" : {
 		"Waffles" : ["zucchero perlato", "burro", "lievito",  "https://blog.giallozafferano.it/inventaricette/waffel-gaufres-liege/"]
