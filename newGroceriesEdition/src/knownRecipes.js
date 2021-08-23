@@ -6,18 +6,27 @@ const CATEGORY_HOLDER = {
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 		"Aglione" : [""],
 		"Aglio e olio" : [""],
+		"Pesto alle Noci" : [""],
+		"Pesto Trapanese" : [""],
+
 	},
 
 	"Panetteria" : 
 	{
 		"Crescia Estate" : ["strutto", "mortadella", "ricotta", ""],
-
+		"Crescia Scappatella" : ["funghi", "pomodori", "insalata", "maionese", ""],
+		"Crescia Ortolana" : ["zucchine", "uova", "grana", "pomodori",  ""],
 	},
 	
 	"Secondi" : {
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano" , "my-recipes/parmigiana.html"],
 		"Kolokithokeftedes" : ["zucchine", "pomodorini", "feta", "cipollotto", "menta", "my-recipes/kolokithokeftedes.html"],
+		"Tzatziki" : ["cetriolo", "yogurt greco", ""],
 		"Uova alla Diavola" : [""],
+	},
+
+	"Carne" : {
+		"Käse-Lauchsuppe" : ["crème fraîche", "schmelzkäse", "porro", "carne macinata", ""],
 	},
 
 	"Dolci" : {
