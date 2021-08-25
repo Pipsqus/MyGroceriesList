@@ -59,10 +59,10 @@ const CATEGORY_HOLDER = {
 		"Olive Ascolane" : ["carne macinata", "olive grandi", "pane grattuggiato", ""],
 		"Zucchine alla Romana" : ["zucchine", ""],
 		"Mozzarella in Carrozza" : ["mozzarella", "pane", "pane grattuggiato", ""],
-	}
+	},
 		
 	"Secondi" : {
-		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano" , "my-recipes/parmigiana.html"],
+		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
 		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
