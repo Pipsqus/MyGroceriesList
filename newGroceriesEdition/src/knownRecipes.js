@@ -4,33 +4,96 @@ const CATEGORY_HOLDER = {
 	{
 		"Sfoglia Lorda" : ["ricotta", "parmigiano",  "https://www.cibo360.it/cucina/mondo/spoja_lorda.htm"],
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
+		"Lasagna Zucca e Funghi" : ["zucca", "funghi", "burro", "vino bianco", "mozzarella", "parmigiano", "my-recipes/lasagna-zucca-funghi.html"],
+		"Lasagna al Cavolo Rosso" : ["cavolo rosso", "mozzarella", "parmigiano", "my-recipes/lasagna-cavolo-rosso.html"],
+		"Tonno Estiva" : ["tonno", "zucchine", "pomodorini", "prezzemolo", ""],
+		"Pomodoro, Scamorza e Peperoncino" : ["pomodori", "scamorza", "peperoncino", ""],
+		"Crema di Zucca e Gorgonzola" : ["zucca", "gorgonzola", "cipolle", ""],
+		"Gorgonzola e Radicchio" : ["gorgonzola", "radicchio", "noci", "https://www.lospicchiodaglio.it/ricetta/gnocchi-gorgonzola-noci-radicchio?refresh_ce"],
+		"Pasta ripiena con tartufo": ["spinaci", "ricotta", "(olio di) tartufo", "https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/"],
+		"Gnocchi di Zucca con Cavolo Rosso" : ["zucca", "cavolo rosso", "patate", "panna", "https://ricette.giallozafferano.it/Gnocchi-di-zucca-con-Grana-Padano-cavolo-rosso-e-speck.html"],
 		"Aglione" : [""],
 		"Aglio e olio" : [""],
-		"Pesto alle Noci" : [""],
-		"Pesto Trapanese" : [""],
-
+		"Pesto Trapanese" : ["basilico", "pinoli", "pomodori", ""],
+		"Pesto Genovese" : ["basilico", "pinoli", ""],
+		"Pesto al Cavolo Rosso" : ["noci", "cavolo rosso", "peperoncino", ""],
+		"Ravioli Ricotta e Spinaci" : ["ricotta", "spinaci", ""],
+		"Pesto Pistacchi, Pomodorini, Porro" : ["pistacchi", "pomodorini", "porro", ""],
+		"Pansoti con pesto alle noci" : ["erbette", "vino bianco", "ricotta", "noci", "pinoli", "rosmarino", ""],
+		"Pere, Ricotta, Zafferano, Burro" : ["ricotta", "zafferano", "burro", ""],
+		"Scarpinocc" : ["pane grattuggiato", "burro", ""],
+		"Tortellini" : ["carne macinata", "mortadella", "prosciutto crudo", ""],
+		"Stracciatella" : ["brodo", "pane grattuggiato", ""],
+		
 	},
 
 	"Panetteria" : 
 	{
 		"Crescia Estate" : ["strutto", "mortadella", "ricotta", ""],
+		"Crescia Autunno" : ["spinaci", "funghi", "aceto balsamico", ""],
+		"Crescia Inverno" : ["cavolo rosso", "pinoli", "cipolle", "noci", ""],
+		"Crescia Provenzale" : ["tonno", "mozzarella", "pomodori", ""],
 		"Crescia Scappatella" : ["funghi", "pomodori", "insalata", "maionese", ""],
 		"Crescia Ortolana" : ["zucchine", "uova", "grana", "pomodori",  ""],
+		"Crescia con Hummus" : ["lenticchie", "pomodori", ""],
+		"French Toast" : ["pane", ""],
+		"Strangolapreti" : ["salvia", "burro", "pane", "bietola", ""],
+		"Canederli" : ["pane", "burro", "brodo", ""],
+		"Polenta Funghi e Gorgonzola" : ["polenta", "gorgonzola", "funghi", "vino bianco", ""],
+		"Pizzette di Sfoglia" : ["pomodori", "mozzarella", "burro", ""],
+		"Sfoglia Ricotta e Spinaci" : ["ricotta", "spinaci", ""],
+		"Pizza Margherita" : ["mozzarella", "pomodoro", ""],
+		"Pizza Cipolla e Tonno" : ["cipolla rossa", "tonno", "mozzarella", ""],
+		"Focaccia Cipolla e Gorgonzola" : ["cipolla", "gorgonzola", ""],
+		"Focaccia Pomodori e Olive" : ["pomodori", "olive", ""],
 	},
-	
-	"Secondi" : {
-		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano" , "my-recipes/parmigiana.html"],
+
+	"Frittura" : {
+		"Gnocco" : [""],
+		"Panzerotti Pomodoro e Mozzarella" : ["pomodori", "mozzarella", "cipolle", ""],
+		"Panzerotti Salsiccia e Friarielli" : ["salsiccia", "friarielli", ""],
+		"Panzerotti Nuvole" : ["ricotta", ""],
 		"Kolokithokeftedes" : ["zucchine", "pomodorini", "feta", "cipollotto", "menta", "my-recipes/kolokithokeftedes.html"],
 		"Tzatziki" : ["cetriolo", "yogurt greco", ""],
+		"Reibekuchen" : ["patate", ""],
+		"Olive Ascolane" : ["carne macinata", "olive grandi", "pane grattuggiato", ""],
+		"Zucchine alla Romana" : ["zucchine", ""],
+		"Mozzarella in Carrozza" : ["mozzarella", "pane", "pane grattuggiato", ""],
+	}
+		
+	"Secondi" : {
+		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano" , "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
+		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
+		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
+		"Uova in Salsa di Pomodoro" : [""],
+		
 	},
 
 	"Carne" : {
 		"Käse-Lauchsuppe" : ["crème fraîche", "schmelzkäse", "porro", "carne macinata", ""],
+		"Ragù" : ["carne macinata", "sedano", "cipolle", "carote", "passata", "vino rosso", ""],
+		"Lasagna col Ragù" : ["ragù", ""],
+		"Lasagna Bianca" : [""],
+		"Bratwurst mit Sauerkraut" : ["Bratwurst", "Sauerkraut", ""],
+		"Alla Filippo" : ["vino rosso", "panna", "cipolle", "salsiccia", ""],
+		"Currywurst" :  ["Bratwurst", "pomodori", "brodo", "miele", "aceto di mele", ""],
 	},
 
 	"Dolci" : {
-		"Waffles" : ["zucchero perlato", "burro", "lievito",  "https://blog.giallozafferano.it/inventaricette/waffel-gaufres-liege/"]
+		"Waffles" : ["zucchero perlato", "burro", "lievito",  "https://blog.giallozafferano.it/inventaricette/waffel-gaufres-liege/"],
+		"Camille" : ["carote", "mandorle", "succo di arancia", ""],
+		"Ottolenghi Cookies" : ["pere", "cioccolato bianco", "limone", "https://www.theguardian.com/food/2018/nov/24/pear-recipes-cheesecake-choc-chip-cookie-ginger-cake-yotam-ottolenghi"],
+		"Pere e Vino" : ["pere", "vino rosso", "https://ricette.giallozafferano.it/pere-al-vino-rosso.html"],
+		"Cicerchiata" : ["miele di acacia", "vino liquoroso", "https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/"],
+		"Panna Cotta" : ["panna", "agar agar", "frutti di bosco", ""],
+		"Pancakes" : [""],
+		"Milkshake" : ["fragole", "lamponi", "marmellata", "gelato fiordilatte", "https://www.theguardian.com/food/2020/aug/12/how-to-make-the-perfect-strawberry-milkshake-recipe-felicity-cloake"],
+		"Cestini" : ["frutti di bosco", "https://www.misya.info/ricetta/cestini-di-frutta.htm"],
+		"Profiteroles" : ["panna fresca", "cioccolato fondente", "cioccolato bianco", "https://ricette.giallozafferano.it/Profiteroles-al-cioccolato-bianco.html"],
+		"Tiramisù" : ["mascarpone", "cacao amaro", "caffè", "savoiardi", ""],
+		"Savoiardi" : ["https://www.tavolartegusto.it/ricetta/savoiardi/"],
+		"Crepes, Kompott, Pinoli" : ["mele", "pinoli", ""],
 	},
 	
 	"Fondamentali" : {
@@ -42,6 +105,7 @@ const CATEGORY_HOLDER = {
 		"Latte" : ["latte", ""],
 		"Olio di Oliva" : ["olio di oliva", ""],
 		"Olio di Girasole" : ["olio di girasole", ""],
+		"Parmigiano" : ["parmigiano", ""],
 		"Burro" : ["burro", ""],
 		"Lievito di birra" : ["lievito di birra", ""],
 		"Lievito per dolci" : ["lievito per dolci", ""],
