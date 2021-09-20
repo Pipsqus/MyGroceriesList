@@ -76,3 +76,7 @@ function nextCategory() {
 		}	
 	}
 }
+
+function toggleSection() {
+	document.getElementById("fischratgeber").classList.toggle("hidden");
+}

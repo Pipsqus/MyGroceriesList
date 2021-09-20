@@ -4,10 +4,10 @@ body {
 	font-family: "Trebuchet MS";
 }
 body {
-    background-attachment: fixed;
-    background-image: url("pexels-lukas-1410141.jpg");
+	background-attachment: fixed;
+	background-image: url("pexels-lukas-1410141.jpg");
 	background-position: 20% 0;
-    background-size: cover;
+	background-size: cover;
 }
 h1::before, h2::before {
     background-attachment: fixed;

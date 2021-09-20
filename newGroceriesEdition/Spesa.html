@@ -57,7 +57,8 @@
 			
 			updateLists(shoppingCart);
 
-			let fischratgeberImage = `<img src="media/fischratgeber.jpg">`;
+			let fischratgeberImage = `<button onclick='toggleSection()'>Show Fischratgeber</button>
+			<div id='fischratgeber' class='hidden'><img src="media/fischratgeber.jpg"></div>`;
 			let secondiCategory = document.getElementById("Secondi");
 			secondiCategory.insertAdjacentHTML('beforeend', fischratgeberImage);
 		</script>
