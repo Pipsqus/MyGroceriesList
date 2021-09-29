@@ -6,6 +6,7 @@ const CATEGORY_HOLDER = {
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 		"Lasagna Zucca e Funghi" : ["zucca", "funghi", "burro", "vino bianco", "mozzarella", "parmigiano", "my-recipes/lasagna-zucca-funghi.html"],
 		"Lasagna al Cavolo Rosso" : ["cavolo rosso", "mozzarella", "parmigiano", "my-recipes/lasagna-cavolo-rosso.html"],
+		"Alla Norma" : ["pomodori", "melanzane", "parmigiano", ""],
 		"Tonno Estiva" : ["tonno", "zucchine", "pomodorini", "prezzemolo", ""],
 		"Pomodoro, Scamorza e Peperoncino" : ["pomodori", "scamorza", "peperoncino", ""],
 		"Crema di Zucca e Gorgonzola" : ["zucca", "gorgonzola", "cipolle", ""],
