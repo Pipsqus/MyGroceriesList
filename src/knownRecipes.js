@@ -92,6 +92,7 @@ const CATEGORY_HOLDER = {
 		"Pancakes" : [""],
 		"Milkshake" : ["fragole", "lamponi", "marmellata", "gelato fiordilatte", "my-recipes/milkshake.html"],
 		"Cestini" : ["frutti di bosco", "https://www.misya.info/ricetta/cestini-di-frutta.htm"],
+		"Bignè" : ["burro", "https://www.akkiapparicette.it/ricette/bigne-alla-crema-pasticcera-e-zabaione/"],
 		"Profiteroles" : ["panna fresca", "cioccolato fondente", "cioccolato bianco", "https://ricette.giallozafferano.it/Profiteroles-al-cioccolato-bianco.html"],
 		"Tiramisù" : ["mascarpone", "cacao amaro", "caffè", "savoiardi", ""],
 		"Savoiardi" : ["https://www.tavolartegusto.it/ricetta/savoiardi/"],
