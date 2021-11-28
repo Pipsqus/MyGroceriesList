@@ -9,6 +9,7 @@ const CATEGORY_HOLDER = {
 		"Alla Norma" : ["pomodori", "melanzane", "parmigiano", ""],
 		"Tonno Estiva" : ["tonno", "zucchine", "pomodorini", "prezzemolo", ""],
 		"Pomodoro, Scamorza e Peperoncino" : ["pomodori", "scamorza", "peperoncino", ""],
+		"Melanzane con Salsa di Pomodoro" : ["pomodori", "melanzane", "mozzarella", ""],
 		"Crema di Zucca e Gorgonzola" : ["zucca", "gorgonzola", "cipolle", ""],
 		"Gorgonzola e Radicchio" : ["gorgonzola", "radicchio", "noci", "https://www.lospicchiodaglio.it/ricetta/gnocchi-gorgonzola-noci-radicchio?refresh_ce"],
 		"Pasta ripiena con tartufo": ["spinaci", "ricotta", "(olio di) tartufo", "https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/"],
@@ -64,6 +65,9 @@ const CATEGORY_HOLDER = {
 	},
 		
 	"Secondi" : {
+		"Pinzimonio" : ["ricotta", "prezzemolo", ""]
+		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"]
+		"Condimenti per il pane" : ["zucchine", "funghi", "pomodori", "bavaria blu", "pesto di basilico", "pesto di menta", "maionese" , "olive nere", ""]
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
 		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
