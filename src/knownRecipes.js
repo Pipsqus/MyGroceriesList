@@ -32,6 +32,8 @@ const CATEGORY_HOLDER = {
 
 	"Panetteria" : 
 	{
+		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
+		"Condimenti per il pane" : ["zucchine", "funghi", "pomodori", "bavaria blu", "pesto di basilico", "pesto di menta", "maionese" , "olive nere", ""],
 		"Crescia Estate" : ["strutto", "mortadella", "ricotta", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
 		"Crescia Autunno" : ["spinaci", "funghi", "aceto balsamico", ""],
 		"Crescia Inverno" : ["cavolo rosso", "pinoli", "cipolle", "noci", ""],
@@ -66,8 +68,6 @@ const CATEGORY_HOLDER = {
 		
 	"Secondi" : {
 		"Pinzimonio" : ["ricotta", "prezzemolo", ""]
-		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"]
-		"Condimenti per il pane" : ["zucchine", "funghi", "pomodori", "bavaria blu", "pesto di basilico", "pesto di menta", "maionese" , "olive nere", ""]
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
 		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
