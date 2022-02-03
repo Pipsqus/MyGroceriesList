@@ -14,7 +14,7 @@ const CATEGORY_HOLDER = {
 		"Crema di Zucca e Gorgonzola" : ["zucca", "gorgonzola", "cipolle", ""],
 		"Gorgonzola e Radicchio" : ["gorgonzola", "radicchio", "noci", "https://www.lospicchiodaglio.it/ricetta/gnocchi-gorgonzola-noci-radicchio?refresh_ce"],
 		"Pasta ripiena con tartufo": ["spinaci", "ricotta", "(olio di) tartufo", "https://www.fortunatiantonio.it/ravioli-al-tartufo-ricetta/"],
-		"Gnocchi di Zucca con Cavolo Rosso" : ["zucca", "cavolo rosso", "patate", "panna", "https://ricette.giallozafferano.it/Gnocchi-di-zucca-con-Grana-Padano-cavolo-rosso-e-speck.html"],
+		"Gnocchi di Zucca ripieni di gorgonzola" : ["zucca", "gorgonzola", "patate", "salvia", "https://blog.giallozafferano.it/dolcesalatomiky/gnocchi-di-zucca-al-gorgonzola/"],
 		"Aglione" : [""],
 		"Aglio e olio" : [""],
 		"Pesto Trapanese" : ["basilico", "pinoli", "pomodori", ""],
