@@ -3,7 +3,7 @@ const CATEGORY_HOLDER = {
 	"Pasta" : 
 	{
 		"Sfoglia Lorda" : ["ricotta", "parmigiano",  "https://www.cibo360.it/cucina/mondo/spoja_lorda.htm"],
-		"Tortellooty" : ["porri", "parmigiano", "mortadella", "prezzemolo", ""],
+		"Tortelli Porri e Mortadella" : ["porri", "parmigiano", "mortadella", "prezzemolo", ""],
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 		"Lasagna Zucca e Funghi" : ["zucca", "funghi", "burro", "vino bianco", "mozzarella", "parmigiano", "my-recipes/lasagna-zucca-funghi.html"],
 		"Lasagna al Cavolo Rosso" : ["cavolo rosso", "mozzarella", "parmigiano", "my-recipes/lasagna-cavolo-rosso.html"],
@@ -36,8 +36,9 @@ const CATEGORY_HOLDER = {
 		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
 		"Condimenti per il pane" : ["zucchine", "funghi", "pomodori", "bavaria blu", "pesto di basilico", "pesto di menta", "maionese" , "olive nere", ""],
 		"Crescia Estate" : ["strutto", "mortadella", "ricotta", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
+		"Crescia Mortadella, Maionese, Cipolle, Basilico" : ["basilico", "mortadella", ""],
+		"Crescia Mortadella, Pinzimonio, Cipolle, Prezzemolo" : ["prezzemolo", "erba cipollina", "mortadella", "ricotta", ""],
 		"Crescia Autunno" : ["spinaci", "funghi", "aceto balsamico", ""],
-		"Crescia Inverno" : ["cavolo rosso", "pinoli", "cipolle", "noci", ""],
 		"Crescia Provenzale" : ["tonno", "mozzarella", "pomodori", ""],
 		"Crescia Scappatella" : ["funghi", "pomodori", "insalata", "maionese", ""],
 		"Crescia Ortolana" : ["zucchine", "uova", "grana", "pomodori",  ""],
