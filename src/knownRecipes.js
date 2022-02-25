@@ -3,7 +3,6 @@ const CATEGORY_HOLDER = {
 	"Pasta" : 
 	{
 		"Sfoglia Lorda" : ["ricotta", "parmigiano",  "https://www.cibo360.it/cucina/mondo/spoja_lorda.htm"],
-		"Bratwurst" : ["bratwurst", "sauerkraut", ""],
 		"Tortelli Porri e Mortadella" : ["porri", "parmigiano", "mortadella", "prezzemolo", ""],
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 		"Lasagna Zucca e Funghi" : ["zucca", "funghi", "burro", "vino bianco", "mozzarella", "parmigiano", "my-recipes/lasagna-zucca-funghi.html"],
