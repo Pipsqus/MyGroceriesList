@@ -3,6 +3,7 @@ const CATEGORY_HOLDER = {
 	"Pasta" : 
 	{
 		"Sfoglia Lorda" : ["ricotta", "parmigiano",  "https://www.cibo360.it/cucina/mondo/spoja_lorda.htm"],
+		"Bratwurst" : ["bratwurst", "sauerkraut", ""],
 		"Tortelli Porri e Mortadella" : ["porri", "parmigiano", "mortadella", "prezzemolo", ""],
 		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 		"Lasagna Zucca e Funghi" : ["zucca", "funghi", "burro", "vino bianco", "mozzarella", "parmigiano", "my-recipes/lasagna-zucca-funghi.html"],
@@ -31,10 +32,15 @@ const CATEGORY_HOLDER = {
 		
 	},
 
+	"Vegan" : {
+		"Vegan Pizza" : ["tofu", "flour", "tomato", ""],
+	},
+
 	"Panetteria" : 
 	{
 		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
 		"Condimenti per il pane" : ["zucchine", "funghi", "pomodori", "bavaria blu", "pesto di basilico", "pesto di menta", "maionese" , "olive nere", ""],
+		"Calzone" : ["ricotta" , "mozzarella", "basilico", "prezzemolo", ""],
 		"Crescia Estate" : ["strutto", "mortadella", "ricotta", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
 		"Crescia Mortadella, Maionese, Cipolle, Basilico" : ["basilico", "mortadella", ""],
 		"Crescia Mortadella, Pinzimonio, Cipolle, Prezzemolo" : ["prezzemolo", "erba cipollina", "mortadella", "ricotta", ""],
@@ -72,6 +78,7 @@ const CATEGORY_HOLDER = {
 		"Pinzimonio" : ["ricotta", "prezzemolo", ""],
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
+		"Insalata di Broccoli" : ["broccoli", "patate", "carote", ""],
 		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
 		"Uova in Salsa di Pomodoro" : [""],
