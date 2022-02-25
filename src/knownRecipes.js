@@ -32,10 +32,6 @@ const CATEGORY_HOLDER = {
 		
 	},
 
-	"Vegan" : {
-		"Vegan Pizza" : ["tofu", "flour", "tomato", ""],
-	},
-
 	"Panetteria" : 
 	{
 		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
