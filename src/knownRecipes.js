@@ -28,6 +28,7 @@ const CATEGORY_HOLDER = {
 		"Cappellacci alla Zucca" : ["zucca", "burro", "salvia", "https://www.lospicchiodaglio.it/ricetta/cappellacci-di-zucca"],
 		"Tortellini" : ["carne macinata", "mortadella", "prosciutto crudo", ""],
 		"Stracciatella" : ["brodo", "pane grattuggiato", ""],
+		"Ricette Marchigiane" : ["", "https://www.valcesano.com/ricette-marchigiane-tradizionali"]
 		
 	},
 
