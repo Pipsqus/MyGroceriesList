@@ -62,6 +62,7 @@ const CATEGORY_HOLDER = {
 		"Panzerotti Pomodoro e Mozzarella" : ["pomodori", "mozzarella", "cipolle", ""],
 		"Panzerotti Salsiccia e Friarielli" : ["salsiccia", "friarielli", ""],
 		"Panzerotti Nuvole" : ["ricotta", ""],
+		"Patate Fritte" : ["patate" ,"https://yt.artemislena.eu/watch?v=JiEQHFBxC2E"],
 		"Kolokithokeftedes" : ["zucchine", "pomodorini", "feta", "cipollotto", "menta", "my-recipes/kolokithokeftedes.html"],
 		"Tzatziki" : ["cetriolo", "yogurt greco", ""],
 		"Reibekuchen" : ["patate", ""],
