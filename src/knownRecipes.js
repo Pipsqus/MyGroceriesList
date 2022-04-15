@@ -79,6 +79,7 @@ const CATEGORY_HOLDER = {
 		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
 		"Uova in Salsa di Pomodoro" : [""],
+		"Patate Arrosto" : ["patate", "my-recipes/patate-arrosto.html"],
 		
 	},
 
