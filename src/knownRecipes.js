@@ -73,6 +73,7 @@ const CATEGORY_HOLDER = {
 		
 	"Secondi" : {
 		"Pinzimonio" : ["ricotta", "prezzemolo", ""],
+		"Curry" : ["prezzemolo", "aglio", "zenzero", "curcuma", "chili" , "my-recipes/curry.html"],
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
 		"Insalata di Broccoli" : ["broccoli", "patate", "carote", ""],
