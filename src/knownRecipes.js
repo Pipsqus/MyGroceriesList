@@ -149,6 +149,10 @@ const CATEGORY_HOLDER = {
 		"Lettiera" : ["lettiera", ""],
 		"Cibo per Gattino" : ["cibo per gattino", ""],
 		"Roba per Lavastoviglie" : ["roba per lavastoviglie", ""],
+	},
+
+	"Siti di Riferimento" : {
+		"Gamoto.net, sito del dizionario di Latino" : ["https://www.gamoto.net/ricette-cucina/"]
 	}
 }
 
