@@ -55,6 +55,7 @@ const CATEGORY_HOLDER = {
 		"Pizza Cipolla e Tonno" : ["cipolla rossa", "tonno", "mozzarella", ""],
 		"Focaccia Cipolla e Gorgonzola" : ["cipolla", "gorgonzola", "https://www.tavolartegusto.it/ricetta/focaccia-morbida-ricetta-focaccia/"],
 		"Focaccia Pomodori e Olive" : ["pomodori", "olive", "https://www.tavolartegusto.it/ricetta/focaccia-morbida-ricetta-focaccia/"],
+		"Melitzanosalata" : ["melanzane", "yogurt greco", "https://www.misya.info/ricetta/melitzanosalata.htm"],
 	},
 
 	"Frittura" : {
