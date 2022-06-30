@@ -59,7 +59,7 @@ const CATEGORY_HOLDER = {
 	},
 
 	"Frittura" : {
-		"Gnocco" : [""],
+		"Gnocco" : ["my-recipes/gnocco.html"],
 		"Panzerotti Pomodoro e Mozzarella" : ["pomodori", "mozzarella", "cipolle", ""],
 		"Panzerotti Salsiccia e Friarielli" : ["salsiccia", "friarielli", ""],
 		"Panzerotti Nuvole" : ["ricotta", ""],
