@@ -34,7 +34,7 @@ const CATEGORY_HOLDER = {
 
 	"Panetteria" : 
 	{
-		"Pane Booty" : ["", "https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
+		"Pane Booty" : ["https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
 		"Condimenti per il pane" : ["zucchine", "funghi", "pomodori", "bavaria blu", "pesto di basilico", "pesto di menta", "maionese" , "olive nere", ""],
 		"Calzone" : ["ricotta" , "mozzarella", "basilico", "prezzemolo", ""],
 		"Crescia Estate" : ["strutto", "mortadella", "ricotta", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
