@@ -78,9 +78,9 @@ const CATEGORY_HOLDER = {
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
 		"Insalata di Broccoli" : ["broccoli", "patate", "carote", ""],
-		"Insalata affianco" : ["lattuga", "cetriolo", "pomodori", "pinoli", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
 		"Uova in Salsa di Pomodoro" : [""],
+		"Torta di Frittata a Strati" : [""],
 		"Patate Arrosto" : ["patate", "my-recipes/patate-arrosto.html"],
 		
 	},
