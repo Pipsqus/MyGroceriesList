@@ -44,7 +44,7 @@ const CATEGORY_HOLDER = {
 		"Focaccia" : [""]
 		"Sfoglia" : ["ricotta", "spinaci", "my-recipes/sfoglia.html"],
 		"Polenta" : ["polenta", ""]
-		"Estate" : ["mortadella", "ricotta", 
+		"Estate" : ["mortadella", "ricotta",] 
 		"Mortadella, Maionese, Cipolle, Basilico" : ["basilico", "mortadella", ""],
 		"Autunno" : ["spinaci", "funghi", "aceto balsamico", ""],
 		"Provenzale" : ["tonno", "mozzarella", "pomodori", ""],
