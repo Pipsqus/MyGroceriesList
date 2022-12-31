@@ -40,7 +40,7 @@ const CATEGORY_HOLDER = {
 		"French Toast" : ["pane", ""],
 		"Strangolapreti" : ["salvia", "burro", "pane", "bietola", ""],
 		"Canederli" : ["pane", "burro", "brodo", ""],
-		"Pizza" : ["mozzarella", "pomodoro", ""],
+		"Pizza" : ["mozzarella", "pomodoro", "https://magazine.tognana.com/pizza-fatta-in-casa-con-il-fornetto-rotondo-sphera/"],
 		"Focaccia" : [""]
 		"Sfoglia" : ["ricotta", "spinaci", "my-recipes/sfoglia.html"],
 		"Polenta" : ["polenta", ""]
