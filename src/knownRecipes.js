@@ -28,7 +28,7 @@ const CATEGORY_HOLDER = {
 		"Cappellacci alla Zucca" : ["zucca", "burro", "salvia", "https://www.lospicchiodaglio.it/ricetta/cappellacci-di-zucca"],
 		"Tortellini" : ["carne macinata", "mortadella", "prosciutto crudo", ""],
 		"Stracciatella" : ["brodo", "pane grattuggiato", ""],
-		"Ricette Marchigiane" : ["", "https://www.valcesano.com/ricette-marchigiane-tradizionali"]
+		"Ricette Marchigiane" : ["", "https://www.valcesano.com/ricette-marchigiane-tradizionali"],
 		
 	},
 
@@ -41,10 +41,10 @@ const CATEGORY_HOLDER = {
 		"Strangolapreti" : ["salvia", "burro", "pane", "bietola", ""],
 		"Canederli" : ["pane", "burro", "brodo", ""],
 		"Pizza" : ["mozzarella", "pomodoro", "https://magazine.tognana.com/pizza-fatta-in-casa-con-il-fornetto-rotondo-sphera/"],
-		"Focaccia" : [""]
+		"Focaccia" : [""],
 		"Sfoglia" : ["ricotta", "spinaci", "my-recipes/sfoglia.html"],
-		"Polenta" : ["polenta", ""]
-		"Estate" : ["mortadella", "ricotta",] 
+		"Polenta" : ["polenta", ""],
+		"Estate" : ["mortadella", "ricotta",],
 		"Mortadella, Maionese, Cipolle, Basilico" : ["basilico", "mortadella", ""],
 		"Autunno" : ["spinaci", "funghi", "aceto balsamico", ""],
 		"Provenzale" : ["tonno", "mozzarella", "pomodori", ""],
