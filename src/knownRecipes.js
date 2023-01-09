@@ -94,6 +94,7 @@ const CATEGORY_HOLDER = {
 
 	"Dolci" : {
 		"Nutella" : ["zucchero di canna", "cioccolato", "nocciole" ,"my-recipes/nutella.html"],
+		"Ciambellone": ["https://blog.giallozafferano.it/rossellainpadella/ciambella-al-cioccolato-al-latte/"],
 		"Waffles" : ["zucchero perlato", "burro", "lievito",  "my-recipes/waffles.html"],
 		"Camille" : ["carote", "mandorle", "succo di arancia", ""],
 		"Ottolenghi Cookies" : ["pere", "cioccolato bianco", "limone", "https://www.theguardian.com/food/2018/nov/24/pear-recipes-cheesecake-choc-chip-cookie-ginger-cake-yotam-ottolenghi"],
