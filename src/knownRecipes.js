@@ -110,6 +110,7 @@ const CATEGORY_HOLDER = {
 		"Cicerchiata" : ["miele di acacia", "vino liquoroso", "https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/"],
 		"Panna Cotta" : ["panna", "agar agar", "frutti di bosco", ""],
 		"Pancakes" : [""],
+		"Torta Rovesciata all'Ananas" : ["ananas", "https://blog.giallozafferano.it/cuochinprogress/torta-rovesciata-allananas/"],
 		"Milkshake" : ["fragole", "lamponi", "marmellata", "gelato fiordilatte", "my-recipes/milkshake.html"],
 		"Cestini" : ["frutti di bosco", "https://www.misya.info/ricetta/cestini-di-frutta.htm"],
 		"Bignè" : ["burro", "https://www.akkiapparicette.it/ricette/bigne-alla-crema-pasticcera-e-zabaione/"],
