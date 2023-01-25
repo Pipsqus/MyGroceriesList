@@ -73,6 +73,7 @@ const CATEGORY_HOLDER = {
 		"Curry" : ["prezzemolo", "aglio", "zenzero", "curcuma", "chili" , "my-recipes/curry.html"],
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
+		"Finocchi al Forno" : ["finocchi", "mozzarella", "https://www.cucchiaio.it/ricetta/finocchi-al-forno-con-mozzarella-e-uova/"],
 		"Zuppa" : ["patate", "sedano", "carote", ""],
 		"Insalata di Broccoli" : ["broccoli", "patate", "carote", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
@@ -80,6 +81,13 @@ const CATEGORY_HOLDER = {
 		"Torta di Frittata a Strati" : [""],
 		"Patate Arrosto" : ["patate", "my-recipes/patate-arrosto.html"],
 		
+	},
+
+	"Zuppe" : {
+		"Noci" : ["noci", "panna", "https://www.cucchiaio.it/ricetta/ricetta-minestra-noci/"],
+		"Aglio" : ["https://www.buonissimo.it/lericette/3512_Zuppa_d_aglio"],
+		"Castagne" : ["castagne", "porro", "https://www.lacucinaitaliana.it/ricetta/primi/zuppa-di-castagne/"],
+		"Vino" : ["https://www.cucchiaio.it/ricetta/ricetta-zuppa-vino-valle-isarco/"],
 	},
 
 	"Carne" : {
