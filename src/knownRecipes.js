@@ -51,8 +51,6 @@ const CATEGORY_HOLDER = {
 		"Provenzale" : ["tonno", "mozzarella", "pomodori", ""],
 		"Scappatella" : ["funghi", "pomodori", "insalata", "maionese", ""],
 		"Ortolana" : ["zucchine", "uova", "grana", "pomodori",  ""],
-		"Hummus di lenticchie" : ["lenticchie", "pomodori", ""],
-		"Hummus di radicchio" : ["radicchio", "yogurt greco", ""],
 	},
 
 	"Frittura" : {
@@ -62,7 +60,6 @@ const CATEGORY_HOLDER = {
 		"Panzerotti Nuvole" : ["ricotta", ""],
 		"Patate Fritte" : ["patate" ,"https://yt.artemislena.eu/watch?v=JiEQHFBxC2E"],
 		"Kolokithokeftedes" : ["zucchine", "pomodorini", "feta", "cipollotto", "menta", "my-recipes/kolokithokeftedes.html"],
-		"Tzatziki" : ["cetriolo", "yogurt greco", ""],
 		"Reibekuchen" : ["patate", ""],
 		"Olive Ascolane" : ["carne macinata", "olive grandi", "pane grattuggiato", ""],
 		"Zucchine alla Romana" : ["zucchine", ""],
@@ -70,8 +67,6 @@ const CATEGORY_HOLDER = {
 	},
 		
 	"Secondi" : {
-		"Pinzimonio" : ["ricotta", "prezzemolo", ""],
-		"Curry" : ["prezzemolo", "aglio", "zenzero", "curcuma", "chili" , "my-recipes/curry.html"],
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
 		"Finocchi al Forno" : ["finocchi", "mozzarella", "https://www.cucchiaio.it/ricetta/finocchi-al-forno-con-mozzarella-e-uova/"],
@@ -89,6 +84,15 @@ const CATEGORY_HOLDER = {
 		"Aglio" : ["https://www.buonissimo.it/lericette/3512_Zuppa_d_aglio"],
 		"Castagne" : ["castagne", "porro", "https://www.lacucinaitaliana.it/ricetta/primi/zuppa-di-castagne/"],
 		"Vino" : ["https://www.cucchiaio.it/ricetta/ricetta-zuppa-vino-valle-isarco/"],
+	},
+
+	"Dips" : {
+		"Burro alle Erbe" : ["burro", "basilico", "prezzemolo", "https://www.ilclubdellericette.it/ricetta/burro-alle-erbe"],
+		"Hummus di lenticchie" : ["lenticchie", "pomodori", ""],
+		"Hummus di radicchio" : ["radicchio", "yogurt greco", ""],
+		"Pinzimonio" : ["ricotta", "prezzemolo", ""],
+		"Curry" : ["prezzemolo", "aglio", "zenzero", "curcuma", "chili" , "my-recipes/curry.html"],
+		"Tzatziki" : ["cetriolo", "yogurt greco", ""],
 	},
 
 	"Carne" : {
