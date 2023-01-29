@@ -41,7 +41,7 @@ const CATEGORY_HOLDER = {
 		"Crespelle" : ["burro", ""],
 		"Strangolapreti" : ["salvia", "burro", "pane", "bietola", ""],
 		"Canederli" : ["pane", "burro", "brodo", ""],
-		"Pizza" : ["mozzarella", "pomodoro", "https://magazine.tognana.com/pizza-fatta-in-casa-con-il-fornetto-rotondo-sphera/"],
+		"Pizza" : ["mozzarella", "pomodori", "https://magazine.tognana.com/pizza-fatta-in-casa-con-il-fornetto-rotondo-sphera/"],
 		"Focaccia" : [""],
 		"Sfoglia" : ["ricotta", "spinaci", "my-recipes/sfoglia.html"],
 		"Polenta" : ["polenta", ""],
@@ -51,7 +51,8 @@ const CATEGORY_HOLDER = {
 		"Provenzale" : ["tonno", "mozzarella", "pomodori", ""],
 		"Scappatella" : ["funghi", "pomodori", "insalata", "maionese", ""],
 		"Ortolana" : ["zucchine", "uova", "grana", "pomodori",  ""],
-		"Hummus" : ["lenticchie", "pomodori", ""],
+		"Hummus di lenticchie" : ["lenticchie", "pomodori", ""],
+		"Hummus di radicchio" : ["radicchio", "yogurt greco", ""],
 	},
 
 	"Frittura" : {
