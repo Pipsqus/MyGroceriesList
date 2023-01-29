@@ -38,6 +38,7 @@ const CATEGORY_HOLDER = {
 		"Crescia" : ["strutto", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
 		"Calzone" : ["ricotta" , "mozzarella", "basilico", "prezzemolo", ""],
 		"French Toast" : [""],
+		"Pita" : [""],
 		"Crespelle" : ["burro", ""],
 		"Strangolapreti" : ["salvia", "burro", "pane", "bietola", ""],
 		"Canederli" : ["pane", "burro", "brodo", ""],
