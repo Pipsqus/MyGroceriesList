@@ -81,10 +81,10 @@ const CATEGORY_HOLDER = {
 	},
 
 	"Zuppe" : {
-		"Noci" : ["noci", "panna", "https://www.cucchiaio.it/ricetta/ricetta-minestra-noci/"],
-		"Aglio" : ["https://www.buonissimo.it/lericette/3512_Zuppa_d_aglio"],
-		"Castagne" : ["castagne", "porro", "https://www.lacucinaitaliana.it/ricetta/primi/zuppa-di-castagne/"],
-		"Vino" : ["https://www.cucchiaio.it/ricetta/ricetta-zuppa-vino-valle-isarco/"],
+		"Zuppa di Noci" : ["noci", "panna", "https://www.cucchiaio.it/ricetta/ricetta-minestra-noci/"],
+		"Zuppa d'Aglio" : ["https://www.buonissimo.it/lericette/3512_Zuppa_d_aglio"],
+		"Zuppa di Castagne" : ["castagne", "porro", "https://www.lacucinaitaliana.it/ricetta/primi/zuppa-di-castagne/"],
+		"Zuppa di Vino" : ["https://www.cucchiaio.it/ricetta/ricetta-zuppa-vino-valle-isarco/"],
 	},
 
 	"Dips" : {
@@ -108,6 +108,7 @@ const CATEGORY_HOLDER = {
 
 	"Dolci" : {
 		"Nutella" : ["zucchero di canna", "cioccolato", "nocciole" ,"my-recipes/nutella.html"],
+		"Cioccolata Calda" : ["cioccolato", "nocciole", "panna", "https://www.davidezambelli.com/ricette/cioccolata-calda/"],
 		"Ciambellone": ["https://blog.giallozafferano.it/rossellainpadella/ciambella-al-cioccolato-al-latte/"],
 		"Waffles" : ["zucchero perlato", "burro", "lievito",  "my-recipes/waffles.html"],
 		"Camille" : ["carote", "mandorle", "succo di arancia", ""],
