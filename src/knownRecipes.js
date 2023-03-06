@@ -35,6 +35,7 @@ const CATEGORY_HOLDER = {
 	"Panetteria" : 
 	{
 		"Pane Booty" : ["https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
+		"Panini morbidi" : ["https://www.misya.info/ricetta/panini-morbidoni.htm"],
 		"Crescia" : ["strutto", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
 		"Calzone" : ["ricotta" , "mozzarella", "basilico", "prezzemolo", ""],
 		"French Toast" : [""],
@@ -94,6 +95,7 @@ const CATEGORY_HOLDER = {
 		"Pinzimonio" : ["ricotta", "prezzemolo", ""],
 		"Curry" : ["prezzemolo", "aglio", "zenzero", "curcuma", "chili" , "my-recipes/curry.html"],
 		"Tzatziki" : ["cetriolo", "yogurt greco", ""],
+		"Tirokafteri" : ["peperone", "feta", "yogurt greco", "https://erasmusu.com/it/blog-erasmus/ricette-erasmus/come-preparare-la-tradizionale-tirokafteri-salsa-greca-455871"],
 	},
 
 	"Carne" : {
