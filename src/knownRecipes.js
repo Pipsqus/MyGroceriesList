@@ -118,7 +118,7 @@ const CATEGORY_HOLDER = {
 		"Pere e Vino" : ["pere", "vino rosso", "https://ricette.giallozafferano.it/pere-al-vino-rosso.html"],
 		"Cicerchiata" : ["miele di acacia", "vino liquoroso", "https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/"],
 		"Panna Cotta" : ["panna", "agar agar", "frutti di bosco", ""],
-		"Pancakes" : [""],
+		"Pancakes" : ["http://bressanini-lescienze.blogautore.espresso.repubblica.it/2015/07/06/le-ricette-scientifiche-i-pancake/"],
 		"Torta Rovesciata all'Ananas" : ["ananas", "https://blog.giallozafferano.it/cuochinprogress/torta-rovesciata-allananas/"],
 		"Milkshake" : ["fragole", "lamponi", "marmellata", "gelato fiordilatte", "my-recipes/milkshake.html"],
 		"Cestini" : ["frutti di bosco", "https://www.misya.info/ricetta/cestini-di-frutta.htm"],
