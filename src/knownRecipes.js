@@ -88,6 +88,7 @@ const CATEGORY_HOLDER = {
 		"Zuppa d'Aglio" : ["https://www.buonissimo.it/lericette/3512_Zuppa_d_aglio"],
 		"Zuppa di Castagne" : ["castagne", "porro", "https://www.lacucinaitaliana.it/ricetta/primi/zuppa-di-castagne/"],
 		"Zuppa di Vino" : ["https://www.cucchiaio.it/ricetta/ricetta-zuppa-vino-valle-isarco/"],
+		"Zuppa Imperiale" : ["https://ricette.giallozafferano.it/Zuppa-imperiale.html"],
 	},
 
 	"Dips" : {
