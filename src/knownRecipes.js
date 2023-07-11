@@ -9,6 +9,7 @@ const CATEGORY_HOLDER = {
 		"Lasagna al Cavolo Rosso" : ["cavolo rosso", "mozzarella", "parmigiano", "my-recipes/lasagna-cavolo-rosso.html"],
 		"Alla Norma" : ["pomodori", "melanzane", "parmigiano", ""],
 		"Tonno Estiva" : ["tonno", "zucchine", "pomodorini", "prezzemolo", ""],
+		"Pasta fredda" : ["pomodori", "mozzarella", "basilico", ""],
 		"Pomodoro, Scamorza e Peperoncino" : ["pomodori", "scamorza", "peperoncino", ""],
 		"Melanzane con Salsa di Pomodoro" : ["pomodori", "melanzane", "mozzarella", ""],
 		"Crema di Zucca e Gorgonzola" : ["zucca", "gorgonzola", "cipolle", ""],
