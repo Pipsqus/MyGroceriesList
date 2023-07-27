@@ -40,6 +40,7 @@ const CATEGORY_HOLDER = {
 		"Crescia" : ["strutto", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
 		"Calzone" : ["ricotta" , "mozzarella", "basilico", "prezzemolo", ""],
 		"French Toast" : [""],
+		"Bruschetta alla Rita" : ["peperoni", "pomodori", "mozzarella", "zucchine", ""],
 		"Piadina" : ["https://blog.giallozafferano.it/studentiaifornelli/piadina-senza-strutto/"],
 		"Pasta Brisé" : [""],
 		"Pita" : ["https://www.tavolartegusto.it/ricetta/pita-la-ricetta-originale-pita-greca/"],
