@@ -37,6 +37,7 @@ const CATEGORY_HOLDER = {
 	{
 		"Pane Booty" : ["https://www.agrodolce.it/ricette/pane-per-tramezzini/"],
 		"Panini morbidi" : ["https://www.misya.info/ricetta/panini-morbidoni.htm"],
+		"Pettole" : ["", "https://blog.giallozafferano.it/fablesucre/pettole/"],
 		"Crescia" : ["strutto", "https://blog.giallozafferano.it/ricettevelociditania/piadina-sfogliata-marchigiana/"],
 		"Calzone" : ["ricotta" , "mozzarella", "basilico", "prezzemolo", ""],
 		"French Toast" : [""],
