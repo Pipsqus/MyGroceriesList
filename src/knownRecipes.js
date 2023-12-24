@@ -76,6 +76,7 @@ const CATEGORY_HOLDER = {
 	"Secondi" : {
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Uova alla Diavola" : [""],
+		"Milchreis" : ["latte", ""],
 		"Finocchi al Forno" : ["finocchi", "mozzarella", "https://www.cucchiaio.it/ricetta/finocchi-al-forno-con-mozzarella-e-uova/"],
 		"Insalata di Broccoli" : ["broccoli", "patate", "carote", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
