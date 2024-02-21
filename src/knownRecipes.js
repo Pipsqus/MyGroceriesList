@@ -78,7 +78,7 @@ const CATEGORY_HOLDER = {
 		"Uova alla Diavola" : [""],
 		"Milchreis" : ["latte", ""],
 		"Finocchi al Forno" : ["finocchi", "mozzarella", "https://www.cucchiaio.it/ricetta/finocchi-al-forno-con-mozzarella-e-uova/"],
-		"Insalata di Broccoli" : ["broccoli", "patate", "carote", ""],
+		"Sformato di Broccoli" : ["broccoli", "patate", "carote", ""],
 		"Sformato di Zucca e Carote" : ["zucca", "carote", "cipolle", ""],
 		"Uova in Salsa di Pomodoro" : [""],
 		"Torta di Frittata a Strati" : [""],
