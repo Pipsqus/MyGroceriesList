@@ -6,7 +6,7 @@ const CATEGORY_HOLDER = {
 		"Ravioli Ricotta e Spinaci" : ["ricotta", "spinaci", ""],
 		"Ravioli alla Zucca" : ["zucca", "burro", "salvia", "https://www.lospicchiodaglio.it/ricetta/cappellacci-di-zucca"],
 		"Ravioli Porro, Uova e Formaggio" : ["porri", "parmigiano", ""],
-		"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
+		//"Cannelloni Ricotta e Spinaci" : ["ricotta", "spinaci", "parmigiano", ""],
 		"Crema di Zucca e Verdure" : ["zucca", ""],
 		"Lasagna ai Funghi (e Zucca)" : ["zucca", "funghi", "burro", "my-recipes/lasagna-zucca-funghi.html"],
 		"Salsa di Pomodoro" : ["pomodori", ""],
@@ -80,7 +80,7 @@ const CATEGORY_HOLDER = {
 	},
 
 	"Dolci" : {
-		"Zuppa Inglese" : ["alchermes", ""],
+		//"Zuppa Inglese" : ["alchermes", ""],
 		"Crema Pasticcera" : ["alchermes", ""],
 		"Tiramisù" : ["mascarpone", "cacao amaro", "caffè", "savoiardi", ""],
 		"Pere e Vino" : ["pere", "vino rosso", "https://ricette.giallozafferano.it/pere-al-vino-rosso.html"],
