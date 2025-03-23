@@ -75,6 +75,7 @@ const CATEGORY_HOLDER = {
 
 	"Carne" : {
 		"Alla Filippo" : ["vino rosso", "panna", "cipolle", "salsiccia", ""],
+		"Ravioli del Plin" : ["carote", "cipolle", "sedano", "uova", "parmigiano", "https://ricette.giallozafferano.it/Ravioli-del-plin.html"],
 		"Lasagna col Ragù" : ["ragù", ""],
 		"Lasagna Bianca" : [""],
 	},
