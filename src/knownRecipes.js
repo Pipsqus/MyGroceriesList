@@ -39,11 +39,12 @@ const CATEGORY_HOLDER = {
 		
 	"Secondi" : {
 		"Milchreis" : ["latte", ""],
-		"Ragù di Lenticchie" : ["lenticchie", "sedano", "cipolle", "carote", ""],
+		"Rotolo" : [""],
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Besciamella con Verdure" : ["rosenkohl", "funghi", "zucchine", ""],
 		"Sformato di Broccoli" : ["broccoli", "patate", "carote", ""],
 		"Uova in Salsa di Pomodoro" : [""],
+		"Ragù di Lenticchie" : ["lenticchie", "sedano", "cipolle", "carote", ""],
 		"Uova alla Diavola" : [""],
 		"Verdure al Forno con Uova" : ["porri", "carote", ""],
 		
