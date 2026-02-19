@@ -44,7 +44,6 @@ const CATEGORY_HOLDER = {
 		"Besciamella con Verdure" : ["rosenkohl", "funghi", "zucchine", ""],
 		"Sformato di Broccoli" : ["broccoli", "patate", "carote", ""],
 		"Uova in Salsa di Pomodoro" : [""],
-		"Ragù di Lenticchie" : ["lenticchie", "sedano", "cipolle", "carote", ""],
 		"Uova alla Diavola" : [""],
 		"Verdure al Forno con Uova" : ["porri", "carote", ""],
 		
