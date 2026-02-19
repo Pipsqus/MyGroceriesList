@@ -89,7 +89,7 @@ const CATEGORY_HOLDER = {
 		"Cicerchiata" : ["miele di acacia", "vino liquoroso", "https://blog.giallozafferano.it/quasimagia/cicerchiata-ricetta-di-carnevale-marche/"],
 		"Profiteroles" : ["panna fresca", "cioccolato fondente", "cioccolato bianco", "https://ricette.giallozafferano.it/Profiteroles-al-cioccolato-bianco.html"],
 		"Cioccolata Calda" : ["cioccolato", "nocciole", "panna", "https://www.davidezambelli.com/ricette/cioccolata-calda/"],
-		"Pancakes" : ["http://bressanini-lescienze.blogautore.espresso.repubblica.it/2015/07/06/le-ricette-scientifiche-i-pancake/"],
+		"Pancakes" : ["my-recipes/pancakes.html"],
 		"Ciambellone": ["https://blog.giallozafferano.it/rossellainpadella/ciambella-al-cioccolato-al-latte/"],
 		"Nocciolata" : ["zucchero di canna", "cioccolato", "nocciole" ,"my-recipes/nutella.html"],
 	},
