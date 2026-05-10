@@ -83,6 +83,7 @@ const CATEGORY_HOLDER = {
 
 	"Dolci" : {
 		//"Zuppa Inglese" : ["alchermes", ""],
+		"Yogurt da Bere" : ["rabarbaro", "fragole", ""],
 		"Crema Pasticcera" : ["alchermes", ""],
 		"Tiramisù" : ["mascarpone", "cacao amaro", "caffè", "savoiardi", ""],
 		"Pere e Vino" : ["pere", "vino rosso", "https://ricette.giallozafferano.it/pere-al-vino-rosso.html"],
