@@ -39,7 +39,7 @@ const CATEGORY_HOLDER = {
 		
 	"Secondi" : {
 		"Milchreis" : ["latte", ""],
-		"Minestra della Garfagnana" : ["grano", "fagioli", "carote", "sedano", "pomodoro", "cipolla", ""],
+		"Minestra della Garfagnana" : ["grano", "fagioli", "carote", "sedano", "pomodoro", "cipolle", ""],
 		"Rotolo" : [""],
 		"Parmigiana" : ["zucchine", "mozzarella", "parmigiano", "my-recipes/parmigiana.html"],
 		"Besciamella con Verdure" : ["rosenkohl", "funghi", "zucchine", ""],
